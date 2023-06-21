@@ -1,0 +1,3189 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.form-group label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px!important;
+    font-weight: 700;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	/*background:#f0f3f5;*/
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+    line-height: 1.4em;
+	/*background: url(/eloriente/images/back_oriente.jpg);*/
+	background-position: top center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	overflow-x: hidden;
+}
+b, strong {
+    font-weight: 700!important;
+}
+em {
+    font-style: italic!important;
+}
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+a:focus, a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+.overflow-hidden {
+    overflow:hidden
+}
+@media (min-width: 576px){
+.d-sm-block {
+    display: block!important;
+}
+}
+
+@media (max-width: 768px) {
+.mobile_hide { display:none!important }
+}
+
+@media (max-width: 990px) {
+.header { /*background: #70ad47;*/ }
+}
+@media (min-width: 991px) {
+.header { /*background: #70ad47 url(/images/head_oriente2.jpg) repeat top center;*/ }
+}
+
+.header {
+/*
+background: -moz-linear-gradient(top,  rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%); 
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%); 
+background: linear-gradient(to bottom,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#00000000',GradientType=0 ); 
+*/
+}
+
+@media (min-width: 1400px){
+    .container {
+        width: 1300px;
+    }
+}
+
+.container {
+    max-width: initial!important;
+}
+
+@media (min-width: 180px){
+    .header_date {
+        font-size:0.8em; 
+        display:none; 
+        vertical-align:top; 
+        line-height:20px
+    }
+}
+@media (min-width: 1200px){
+    .header_date {
+        display:inline-block; 
+    }
+}
+
+.banner_imagenes {
+    display:flex;
+    align-items:center;
+    height: 130px;
+}
+
+.roboto_slab {
+    font-family: 'Roboto Slab', serif;
+}
+
+/*-- Backgrounds ---*/
+.bg-light {
+    background-color: #f8f8f8!important;
+}
+.bg-primary {
+    color: #fff;
+    background-color: #337ab7!important;
+}
+.bg-success {
+    background-color: #7eb326!important;
+}
+
+/*-- Buttons ---*/
+.btn-success {
+    color: #fff;
+    background-color: #7eb326;
+    border-color: #7eb326;
+}
+
+.btn-group-xs>.btn, .btn-xs {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #dee2e6!important;
+}
+
+/*-- text Styles ---*/
+.text-white {
+    color: #fff!important;
+}
+.text-dark {
+    color: #000!important;
+}
+.text-primary {
+    color: #7eb326!important;
+}
+
+.ico_ticker { display:inline-block; margin-left:20px; vertical-align:middle }
+.ico_ticker img { height:18px; width:auto }
+
+.uppercase { text-transform:uppercase}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.table > tbody > tr > td {
+    vertical-align: middle;
+}
+.marker { display:inline-block; margin-right:5px; height:2px; width:20px; position:absolute; margin:14px 0 0 -30px }
+
+
+.destacados div:last-child a {
+    margin-bottom: 0!important;
+    padding-bottom: 0!important;
+    border-bottom: none!important;
+}
+
+@media (max-width: 768px) {
+  [class*="col-"] {
+      margin-bottom: 15px;
+  }
+
+}
+
+@media (max-width: 990px) {
+.topic {
+	height:auto;
+}
+}
+@media (min-width: 991px) {
+.topic {
+	height:420px;
+}
+}
+.article_topic {
+
+}
+.topic {
+	padding:30px;
+}
+.topic hr {
+	width:33%; display:inline-block; margin-top:10px;
+	}
+.topic.grey, .marker.grey { background:#999 }
+.topic.blue,.marker.blue { background:#3fa5eb }
+.topic.orange,.marker.orange { background:#f6ae37 }
+.topic.yellow,.marker.yellow { background:#f9cc3a; }
+.topic.green,.marker.green { background:#7eb326 }
+
+.topic h1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2em;
+    margin-bottom: 0.4em;
+}
+
+.topic h2 {
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin-bottom: 0.4em;
+}
+
+.network_links {
+	display: inline-block;
+	margin-right:8px;
+	padding-right:8px;
+	border-right:1px solid #ccc;
+	vertical-align:middle
+}
+.network_links a {
+	display: inline-block;
+	cursor:pointer;
+	width:24px;
+	height:24px;
+	line-height:24px;
+	font-size:24px;
+	margin:0 2px 0;
+	color:#999!important;
+}
+.network_links a:hover {
+	color:#444
+}
+.network_links a img {
+	width:100%;
+	opacity:0.4;
+}
+.network_links a:hover img {
+	opacity:0.8;
+}
+
+.btn_ico { margin-right:5px; display:inline-block; width:10px; vertical-align:middle}
+.share_icons a {
+	display:block;
+	cursor:pointer;
+	width:26px;
+	height:auto;
+	line-height:30px;
+	font-size:30px;
+	margin:5px 0;
+	color:#999!important;
+}
+.share_icons a:hover {
+	color:#444
+}
+.share_icons a img {
+	width:100%;
+	opacity:0.4
+}
+@media (max-width: 992px) {
+.share_icons a {
+	float:left;
+	margin:5px;
+}
+.share_icons {
+	float:left;
+	margin-bottom:30px
+}
+}
+@media (min-width: 992px) {
+.share_icons a {
+	clear:both;
+}
+.share_icons {
+	margin-top:30px
+	/*position: absolute; left:-30px; top:0;*/
+}
+}
+
+@media (min-width: 768px) {
+  .article_sidebar {
+    border-left: 1px solid #ccc;
+  }
+}
+@media (min-height: 300px) {
+  .article_sidebar {
+    position: sticky;
+    top: 30px;
+  }
+}
+
+.share_icons a.facebook i {
+	color:#3b5998!important;
+}
+.share_icons a.twitter i {
+	color:#00acee!important;
+}
+.share_icons a.linkedin i {
+	color:#0072b1!important;
+}
+.share_icons a.whatsapp i {
+	color:#34B7F1!important;
+}
+.share_icons a.mail i {
+	color:#f87e1c!important;
+}
+.share_icons a.telegram i {
+	color:#0088cc!important;
+}
+.share_icons a.tumblr i {
+	color:#34526f!important;
+}
+
+.newArticle article {
+	border-top: 2px solid #666;
+    padding-top: 60px;
+	margin-top:60px�
+}
+
+.destacado_seccion { border-radius:4px; overflow:hidden; background:#eee; margin-top:15px; margin-bottom:30px }
+
+@media (min-width: 180px) {
+.destacado_seccion .btn { display:block; }
+.destacado_seccion p {  }
+}
+@media (min-width: 768px) {
+.destacado_seccion .btn { display: inline-block; }
+}
+
+/* --------------------------------------------------
+	9.0 Feature
+-------------------------------------------------- */
+
+.grid_holder {
+	min-height:600px;
+	background:#f8f8f8;
+	padding:15px;
+	margin-left:-15px;
+	margin-right:-15px;
+	margin-bottom:30px;
+	/*background: #999; width:100%; overflow:auto*/
+}
+.feature_holder {
+	width:100%;
+}
+.feature {
+	background-position: center center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	height:280px;
+	position:relative;
+	margin-bottom:30px
+}
+.feature.main {
+	height:430px; margin-bottom:15px;
+}
+span.icon { font-size:26px; background:#c00; color:#fff; padding:20px; border-radius:100%; position:absolute; top:15px; left:15px }
+
+span.tag { font-size:12px; font-weight:700!important; text-transform:uppercase; background:rgba(0, 0, 0, 0.5) none; color:#fff!important; padding:0 5px; line-height:1.6em; margin-bottom:16px; display: inline-block; border-radius:3px; }
+
+.sidebar_latest_news { margin:15px 0; padding:0; font-size:0.9em }
+.sidebar_latest_news a { color:#222 }
+.sidebar_latest_news small { color:#999; display:block; position:absolute; top:0; left:0; line-height:1.4em; }
+.sidebar_latest_news li { padding-bottom:15px; margin-bottom:15px; padding-left:90px; border-bottom:1px dotted #ccc; position:relative; }
+.sidebar_latest_news li:last-child { border-bottom:none; margin-bottom:0; padding-bottom:0 }
+
+.breadcrums {
+	display: inline-block;
+	line-height:1.4em;
+	padding:0 4px;
+	margin-right:3px;
+    color: #fff;
+    margin-bottom: 1em;
+	font-size:0.8em;
+    border-radius:3px;
+    background:#666;
+}
+.breadcrums p {
+	margin-bottom: 0!important;
+}
+.breadcrums:hover {
+	text-decoration:none;
+	background:#ccc;
+	color:#fff;
+}
+
+span.tag.white { background:#fff; color: #333 }
+
+.feature h4 {
+	font-family: 'Roboto Slab', serif; font-weight:400; color:#fff; font-size:20px; line-height:1.3em; margin-bottom:0.4em; width:75%
+}
+.feature.main h4 {
+	font-family: 'Roboto Slab', serif; font-weight:400; color:#fff; line-height:1.2em; margin-bottom:0.4em; width:80%
+}
+.home.container, .section.container { 
+background:#fff; 
+/*
+padding:30px;
+-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow:    0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+	box-shadow:         0px 0px 5px 0px rgba(0, 0, 0, 0.4);*/
+	}
+.article_container {
+	background:#fff; min-height:600px; 
+/*	padding:40px 0;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow:    0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+	box-shadow:         0px 0px 5px 0px rgba(0, 0, 0, 0.4);*/
+}
+.article h1 {
+	font-family: 'Roboto Slab', serif; font-weight:400; line-height:1.2em; margin-bottom:0.4em;
+}
+.article h2 { font-family: 'Roboto Slab', serif; font-weight:400; line-height:1.4em; margin-bottom:1.4em; }
+.article p { line-height:1.6em; margin-bottom:1.6em; }
+.article ul { list-style:initial; line-height:1.6em; }
+.article img { max-width:100%!important; height:auto!important}
+
+.article ol { list-style:decimal; }
+.article ol li {
+line-height: 1.6em;
+    margin-bottom: 1.6em;
+}
+@media (min-width: 180px) {
+.feature.main h4 {
+	font-size:26px; width:100%
+}
+.article h1 { font-size:26px; letter-spacing: 0.1px; }
+.article h2 { font-size:16px; }
+.topic h1 {
+    font-size: 20px;
+}
+}
+@media (min-width: 721px) {
+.feature.main h4 {
+	font-size:30px; width:80%
+}
+.article h1 { font-size:30px; }
+.article h2 { font-size:18px; }
+.topic h1 {
+    font-size: 22px;
+}
+}
+@media (min-width: 993px) {
+.feature.main h4 {
+	font-size:40px; width:80%
+}
+.article h1 { font-size:36px; }
+.article h2 { font-size:18px; }
+.topic h1 {
+    font-size: 32px;
+}
+}
+
+.article table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+.article table p {
+    margin-bottom: 0!important
+}
+.article table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+} 
+.article table td, 
+.article table th {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.feature.main p {
+	line-height:1.3em; margin-bottom:1em; width:80%
+}
+.feature .post-content, .ft-item .post-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px 30px 60px;
+    z-index: 1;
+    color: #fff;
+    width: 100%;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.13) 18%, rgba(0,0,0,0.33) 36%, rgba(0,0,0,0.74) 70%, rgba(0,0,0,0.91) 87%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.13) 18%,rgba(0,0,0,0.33) 36%,rgba(0,0,0,0.74) 70%,rgba(0,0,0,0.91) 87%,rgba(0,0,0,1) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.13) 18%,rgba(0,0,0,0.33) 36%,rgba(0,0,0,0.74) 70%,rgba(0,0,0,0.91) 87%,rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+}
+
+.image_holder {
+	/*margin: 0 30px 30px 0; float:left; width:100%;*/ position:relative;
+	}
+@media (max-width: 992px) {
+.logo h1 { font-size:30px; }
+.logo h2 { font-size:26px; }
+}
+
+.image_holder img {
+	width:100%;
+	height:auto;
+	}
+
+.vermas {
+    display: table;
+	margin:0px auto 30px ;
+    background: #19262e;
+	padding:0 60px;
+	color:#fff;
+    text-transform: uppercase;
+    font-size: 12px;
+	line-height:40px;
+    font-weight: 700;
+}
+.vermas:hover {
+    text-decoration:none;
+	background:#fff;
+	color: #19262e
+}
+.post-content a.open {
+    display: inline-block;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 12px;
+	line-height:26px;
+    font-weight: 700;
+	padding:0 15px;
+	border:1px solid #fff;
+}
+.post-content a.open:hover {
+    display: inline-block;
+    color:#222;
+	background:#fff;
+}
+
+.post-content a:hover  {
+    text-decoration:none!important;
+}
+
+.post-content a:hover h4 {
+    opacity:0.6;
+}
+
+.post-content a span {
+    display: inline-block;
+    font-size: 25px;
+    vertical-align: top;
+    color: inherit;
+}
+
+.navbot {
+display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 26px;
+    font-weight: 700;
+    padding: 0 15px;
+	color:#222;
+}
+.navbot span {
+	display: inline-block;
+    font-size: 25px;
+    vertical-align: top;
+    color: inherit;
+}
+
+.navbot.prev {
+	float:left
+}
+.navbot.next {
+	float:right
+}
+
+
+
+.filters a { margin:0; padding:6px 18px; line-height:2.5em; background:#ccc; color:#fff; font-family: 'Roboto Slab', serif; font-weight:700; }
+.filters a:hover { text-decoration:none; background:#fff; color:#ccc }
+.filters .grey { background:#999 }
+.filters .blue { background:#3fa5eb }
+.filters .orange { background:#f6ae37 }
+.filters .yellow { background:#f9cc3a; }
+.filters .green { background:#7eb326 }
+
+.tag.grey { background:#999 }
+.tag.blue { background:#3fa5eb }
+.tag.orange { background:#f6ae37 }
+.tag.yellow { background:#f9cc3a; }
+.tag.green { background:#7eb326 }
+
+.logo { color:#fff; margin:15px 0; display:block; cursor:pointer; width:80%; max-width:240px }
+.logo:hover { text-decoration:none; color:#fff; opacity:0.5; }
+.logo h1 { font-family: 'Roboto Slab', serif; /*font-family: 'Sintony', sans-serif; */font-size:36px; font-weight:700; display:inline; line-height:1em }
+.logo h2 { font-family: 'Kadwa', serif; font-size:26px; font-weight:400; display:inline }
+
+@media (max-width: 992px) {
+.logo h1 { font-size:30px; }
+.logo h2 { font-size:26px; }
+}
+
+.idiomas { position:absolute; bottom:0; left:0; background:#f0f3f5; padding:0 6px;
+-webkit-border-top-left-radius: 4px;
+-webkit-border-top-right-radius: 4px;
+-moz-border-radius-topleft: 4px;
+-moz-border-radius-topright: 4px;
+border-top-left-radius: 4px;
+border-top-right-radius: 4px; }
+
+@media (max-width: 992px) {
+/*.custom-search-input { display:none; }*/
+}
+
+#custom-search-form {
+        margin:0;
+        padding: 0;
+	}
+
+    #custom-search-form .search-query {
+        /*padding-right: 3px;
+        padding-right: 4px \9;
+        padding-left: 3px;
+        padding-left: 4px \9;
+        IE7-8 doesn't have border-radius, so don't indent the padding */
+		padding:5px;
+		padding-right:24px;
+		margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+		border:1px solid #ccc;
+		width:150px;
+		font-size:12px;
+    }
+
+    #custom-search-form button {
+        border: 0;
+        background: none;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        position: relative;
+        left: -28px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+
+    .search-query:focus + button {
+        z-index: 3;
+    }
+
+/*
+@media only screen and (max-width: 1260px) {
+.redes { display:none }
+.redes a { display:inline-block; padding:6px; font-size:18px; color:#19262e }
+}
+@media only screen and (min-width: 1261px) {
+.redes { position:absolute; top:3px; right:0; padding:0 6px; }
+.redes a { display:inline-block; padding:6px; font-size:18px; color:#fff }
+}
+*/
+/*
+ul.redes {position:fixed; top:150px; right:0; z-index:3000; background:#111;  }
+ul.redes li{ position:relative;border-bottom:1px dotted #fff;margin:0;text-align:center; line-height:30px; height:30px; width:30px;}
+ul.redes li:hover{background:rgba(0, 0, 0, 0.6)}
+ul.redes li i { font-size:18px; line-height:30px; text-align:center; width:100%; color:#FFFFFF;}*/
+
+ul.redes { background:#999; text-align:center ; padding:30px 0 }
+ul.redes li {
+    position: relative;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 48px;
+    height: 48px;
+    width: 48px;
+    display: inline-block;
+    /*border: 2px solid #fff;
+    border-radius: 100%;*/
+}
+ul.redes li a img {
+    width:100%;
+	opacity:0.4;
+}
+ul.redes li:hover{background:rgba(0, 0, 0, 0.6)}
+ul.redes li i { font-size:20px; line-height:48px; text-align:center; width:100%; color:#FFFFFF;}
+
+
+
+
+/*.intro { text-align:center; margin-bottom:40px; color:#444 }*/
+.intro h1 { font-family: 'Roboto Slab', serif; font-size:32px; font-weight:700; display:inline }
+.intro h2 { font-family: 'Roboto Slab', serif; font-size:32px; font-weight:400; display:inline }
+.intro p { font-size:14px; line-height:2em}
+
+@media (min-width: 768px) {
+.section_item { height:320px; }
+}
+
+.ft-item .intro { }
+
+/* ---- 9.1 Feature - Cards ---- */
+.ft-cards .ft-item {
+  /*padding: 25px 30px;*/
+  padding:0;
+  /*border: 1px solid #f8f8f8;*/
+  min-height:320px;
+  /*background: #fff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);*/
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+
+.ft-cards .news .ft-item {
+	background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	position:relative;
+}
+
+.ft-cards .ft-item:hover {
+  /*-webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+          transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);*/
+}
+
+.ft-cards .item.index .ft-item {
+  padding: 25px 30px;
+  border: 1px solid #f8f8f8;
+  background:#00A8E2;
+  color:#fff;
+  box-shadow: none
+}
+
+.ft-cards .item.index .ft-item:hover {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  box-shadow: none;
+}
+
+.ft-cards .item.index .ft-item span {
+  font-size: 32px;
+  color: #fff;
+  margin:10px
+}
+
+.ft-cards .ft-item p.date {
+	font-size:0.8em;
+	color:#999;
+}
+.ft-cards .ft-item p.intro {
+	font-size:0.9em;
+	line-height:1.6em
+}
+.ft-cards .ft-item p.date:before {
+    /*font-family: FontAwesome;
+    content: "\f138";
+    margin-right: 0.5em;
+    color: #ccc;*/
+}
+.ft-cards .ft-item span {
+  color: #999/*#111*/; font-weight:400; margin-left:0.3em
+}
+
+.ft-cards .ft-item .ft-tabs .tabs-list li a .tab-group .tab-heading, .ft-tabs .tabs-list li a .tab-group .ft-cards .ft-item .tab-heading, .ft-cards .ft-item .testimonials-3col .t-item blockquote footer cite, .testimonials-3col .t-item blockquote footer .ft-cards .ft-item cite, .ft-cards .ft-item .testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404 footer cite, .testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404 footer .ft-cards .ft-item cite, .ft-cards .ft-item .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer cite, .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer .ft-cards .ft-item cite, .ft-cards .ft-item .testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p footer cite, .testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p footer .ft-cards .ft-item cite, .ft-cards .ft-item .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer cite, .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer .ft-cards .ft-item cite, .ft-cards .ft-item .team-3col .t-item .t-info .t-role, .team-3col .t-item .t-info .ft-cards .ft-item .t-role, .ft-cards .ft-item .team-4col .t-item .t-info .t-role, .team-4col .t-item .t-info .ft-cards .ft-item .t-role, .ft-cards .ft-item .freelancer-about .t-item .t-info .t-role, .freelancer-about .t-item .t-info .ft-cards .ft-item .t-role, .ft-cards .ft-item .t-join .t-info .t-role, .t-join .t-info .ft-cards .ft-item .t-role, .ft-cards .ft-item .login-2 .bg-overlay .form-wrapper .form-content .cards-header, .login-2 .bg-overlay .form-wrapper .form-content .ft-cards .ft-item .cards-header, .ft-cards .ft-item .login-2 .bg-overlay .form-wrapper .social-signup .social-card .sc-lead, .login-2 .bg-overlay .form-wrapper .social-signup .social-card .ft-cards .ft-item .sc-lead {
+  margin-top: 32px;
+  margin-bottom: 18px;
+}
+.ft-item h4 {
+	margin-top:0.4em;
+	margin-bottom: 18px;
+	}
+
+.ft-cards .ft-item p {
+  padding: 0;
+  margin: 0;
+}
+
+.ft-cards .ft-item a {
+  padding-top: 0px;
+  display: block;
+  text-align: right;
+  color: #fff;
+  line-height:25px;
+}
+.source { color:#444 }
+
+.w-100 {
+    width:100%
+}
+
+.list {
+    padding:0;
+}
+.list li {
+    list-style:none;
+    border-bottom:1px solid #eee;
+    line-height:1.4em;
+    padding:0.6em 0;
+}
+
+@media (min-width: 180px) {
+    .section_listing .item:first-child .txt_holder span {
+    color:#fff!important;
+    }
+    .section_listing .item:first-child .txt_holder span.source {
+    color:#fff!important;
+    }
+
+    .section_listing .item:first-child .img_holder img {
+    margin-bottom:0;
+    }
+
+    .section_listing .item:first-child .txt_holder {
+    position:absolute; bottom:0px; padding:30px; color:#fff; /*width:100%;*/ left:15px; right:15px; margin:auto;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.59+100 */
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.59) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.59) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.59) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#96000000',GradientType=0 ); /* IE6-9 */
+    }
+    .section_listing .item:first-child .txt_holder h4 {
+    font-size: 1.2em;
+    }
+    .section_listing .item:first-child .txt_holder p {
+    color:#fff!important; text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.6);
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .section_listing .item:first-child {
+    width:50%!important;
+    }
+    .section_listing .item:first-child .txt_holder h4 {
+        font-size: 1.6em;
+        }
+
+}
+
+.item_listing .item {
+border-bottom:1px solid #d5d5d5;
+}
+.item_listing .item:last-child {
+border:none;
+}
+
+.item a .ft-item {
+  color: #333!important;
+}
+.item a:hover {
+  text-decoration:none!important;
+}
+
+.ft-cards .ft-item a:hover {
+  opacity:0.5;
+  text-decoration:none;
+}
+
+.ft-cards .ft-item a:focus {
+  text-decoration: none;
+}
+
+.ft-cards .ft-item a span {
+  display: inline-block;
+  font-size: 25px;
+  vertical-align: top;
+  color: inherit;
+}
+
+.item.profile .ft-item p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+	color:#fff;
+}
+/*
+.item.docs .ft-item h4 { font-family: 'Open Sans', sans-serif; font-size:14px;  }
+.item.video .ft-item h4 { font-family: 'Open Sans', sans-serif; font-size:14px; }
+.item.news .ft-item a { color:#00A8E2 }
+.item.news span { color:#00A8E2 }
+.item.video span { color:#fff }
+.item.profile span { color:#fff }
+*/
+.divider { width:25%; border-bottom:2px solid #fff; margin:30px 0}
+
+/*.icon_type { position:absolute; top:50%; margin-top:-16px; right:0; left:0; margin:auto; color:#fff; font-size:32px; background:rgba(0, 0, 0, 0.4) none; padding:15px}*/
+/*
+.icon_type { position:absolute; top:50%; margin:-32px auto 0 auto; right:0; left:0; color:#fff; font-size:64px; display:block; width:64px; height:64px; background:rgba(0, 0, 0, 0.4) none; border-radius:100%}*/
+.icon_type { position:absolute; top:30px; right:30px; color:#fff; font-size:48px; display:block; width:48px; height:48px; z-index:100; border-radius:100%}
+.icon_type_grid {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin: -24px auto 0 auto;
+    color: #fff;
+    font-size: 48px;
+    display: block;
+    width: 48px;
+    height: 48px;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.7) none;
+    border-radius: 100%;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --------------------------------------------------
+	15.0 Portfolio
+-------------------------------------------------- */
+.portfolio-filters {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.portfolio-filters li {
+  display: inline-block;
+}
+
+.portfolio-filters li a {
+  padding: 3px 15px;
+  text-transform: uppercase;
+  font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: .85em;
+  letter-spacing: 2.5px;
+  color: #777;
+}
+
+.portfolio-filters li a:focus,
+.portfolio-filters li a:visited {
+  text-decoration: none;
+}
+
+.portfolio-filters li a:hover {
+  color: #111;
+}
+
+.portfolio-filters .active a {
+  background: #111;
+  color: #ececec;
+  padding: 3px 15px;
+}
+
+.portfolio-filters .active a:hover {
+  color: #ececec;
+}
+
+/* ---- 15.3 Masonry Layout ---- */
+.portfolio-masonry, .portfolio-masonry-2, .portfolio-masonry-3 {
+  padding-top: 160px;
+}
+
+.portfolio-masonry .p-item,
+.portfolio-masonry-2 .p-item,
+.portfolio-masonry-3 .p-item, .portfolio-masonry .grid-sizer, .portfolio-masonry-2 .grid-sizer, .portfolio-masonry-3 .grid-sizer {
+  width: 25%;
+}
+
+.portfolio-masonry .p-item, .portfolio-masonry-2 .p-item, .portfolio-masonry-3 .p-item {
+  float: left;
+  background: #0D8;
+}
+
+.portfolio-masonry .p-wrapper, .portfolio-masonry-2 .p-wrapper, .portfolio-masonry-3 .p-wrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  background: gray;
+  overflow: hidden;
+}
+
+.portfolio-masonry .p-wrapper img, .portfolio-masonry-2 .p-wrapper img, .portfolio-masonry-3 .p-wrapper img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s;
+}
+
+.portfolio-masonry .p-wrapper:hover img,
+.portfolio-masonry-2 .p-wrapper:hover img,
+.portfolio-masonry-3 .p-wrapper:hover img, .portfolio-masonry .p-wrapper:active img, .portfolio-masonry-2 .p-wrapper:active img, .portfolio-masonry-3 .p-wrapper:active img {
+  -webkit-transform: scale(1.07);
+      -ms-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+.portfolio-masonry .p-wrapper .p-hover, .portfolio-masonry-2 .p-wrapper .p-hover, .portfolio-masonry-3 .p-wrapper .p-hover {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(17, 17, 17, 0.8);
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+          transition: opacity 0.5s;
+}
+
+.portfolio-masonry .p-wrapper .p-hover .p-content, .portfolio-masonry-2 .p-wrapper .p-hover .p-content, .portfolio-masonry-3 .p-wrapper .p-hover .p-content {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: 25px;
+  -webkit-transition: bottom 0.5s;
+          transition: bottom 0.5s;
+}
+
+.portfolio-masonry .p-wrapper .p-hover .p-content h2:first-child,
+.portfolio-masonry-2 .p-wrapper .p-hover .p-content h2:first-child,
+.portfolio-masonry-3 .p-wrapper .p-hover .p-content h2:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content h3:first-child,
+.portfolio-masonry-2 .p-wrapper .p-hover .p-content h3:first-child,
+.portfolio-masonry-3 .p-wrapper .p-hover .p-content h3:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .page-title .subheading:first-child,
+.page-title .portfolio-masonry .p-wrapper .p-hover .p-content .subheading:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .page-title .subheading:first-child,
+.page-title .portfolio-masonry-2 .p-wrapper .p-hover .p-content .subheading:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .page-title .subheading:first-child, .page-title .portfolio-masonry-3 .p-wrapper .p-hover .p-content .subheading:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content h4:first-child,
+.portfolio-masonry-2 .p-wrapper .p-hover .p-content h4:first-child,
+.portfolio-masonry-3 .p-wrapper .p-hover .p-content h4:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .ft-tabs .tabs-list li a .tab-group .tab-heading:first-child,
+.ft-tabs .tabs-list li a .tab-group .portfolio-masonry .p-wrapper .p-hover .p-content .tab-heading:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .ft-tabs .tabs-list li a .tab-group .tab-heading:first-child,
+.ft-tabs .tabs-list li a .tab-group .portfolio-masonry-2 .p-wrapper .p-hover .p-content .tab-heading:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .ft-tabs .tabs-list li a .tab-group .tab-heading:first-child, .ft-tabs .tabs-list li a .tab-group .portfolio-masonry-3 .p-wrapper .p-hover .p-content .tab-heading:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .testimonials-3col .t-item blockquote footer cite:first-child,
+.testimonials-3col .t-item blockquote footer .portfolio-masonry .p-wrapper .p-hover .p-content cite:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .testimonials-3col .t-item blockquote footer cite:first-child,
+.testimonials-3col .t-item blockquote footer .portfolio-masonry-2 .p-wrapper .p-hover .p-content cite:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .testimonials-3col .t-item blockquote footer cite:first-child, .testimonials-3col .t-item blockquote footer .portfolio-masonry-3 .p-wrapper .p-hover .p-content cite:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404 footer cite:first-child,
+.testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404 footer .portfolio-masonry .p-wrapper .p-hover .p-content cite:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404 footer cite:first-child,
+.testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404 footer .portfolio-masonry-2 .p-wrapper .p-hover .p-content cite:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404 footer cite:first-child, .testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404 footer .portfolio-masonry-3 .p-wrapper .p-hover .p-content cite:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer cite:first-child,
+.wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer .portfolio-masonry .p-wrapper .p-hover .p-content cite:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer cite:first-child,
+.wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer .portfolio-masonry-2 .p-wrapper .p-hover .p-content cite:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer cite:first-child, .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer .portfolio-masonry-3 .p-wrapper .p-hover .p-content cite:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p footer cite:first-child,
+.testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p footer .portfolio-masonry .p-wrapper .p-hover .p-content cite:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p footer cite:first-child,
+.testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p footer .portfolio-masonry-2 .p-wrapper .p-hover .p-content cite:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p footer cite:first-child, .testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p footer .portfolio-masonry-3 .p-wrapper .p-hover .p-content cite:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer cite:first-child,
+.bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer .portfolio-masonry .p-wrapper .p-hover .p-content cite:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer cite:first-child,
+.bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer .portfolio-masonry-2 .p-wrapper .p-hover .p-content cite:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer cite:first-child, .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer .portfolio-masonry-3 .p-wrapper .p-hover .p-content cite:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .team-3col .t-item .t-info .t-role:first-child,
+.team-3col .t-item .t-info .portfolio-masonry .p-wrapper .p-hover .p-content .t-role:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .team-3col .t-item .t-info .t-role:first-child,
+.team-3col .t-item .t-info .portfolio-masonry-2 .p-wrapper .p-hover .p-content .t-role:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .team-3col .t-item .t-info .t-role:first-child, .team-3col .t-item .t-info .portfolio-masonry-3 .p-wrapper .p-hover .p-content .t-role:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .team-4col .t-item .t-info .t-role:first-child,
+.team-4col .t-item .t-info .portfolio-masonry .p-wrapper .p-hover .p-content .t-role:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .team-4col .t-item .t-info .t-role:first-child,
+.team-4col .t-item .t-info .portfolio-masonry-2 .p-wrapper .p-hover .p-content .t-role:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .team-4col .t-item .t-info .t-role:first-child, .team-4col .t-item .t-info .portfolio-masonry-3 .p-wrapper .p-hover .p-content .t-role:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .freelancer-about .t-item .t-info .t-role:first-child,
+.freelancer-about .t-item .t-info .portfolio-masonry .p-wrapper .p-hover .p-content .t-role:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .freelancer-about .t-item .t-info .t-role:first-child,
+.freelancer-about .t-item .t-info .portfolio-masonry-2 .p-wrapper .p-hover .p-content .t-role:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .freelancer-about .t-item .t-info .t-role:first-child, .freelancer-about .t-item .t-info .portfolio-masonry-3 .p-wrapper .p-hover .p-content .t-role:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .t-join .t-info .t-role:first-child,
+.t-join .t-info .portfolio-masonry .p-wrapper .p-hover .p-content .t-role:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .t-join .t-info .t-role:first-child,
+.t-join .t-info .portfolio-masonry-2 .p-wrapper .p-hover .p-content .t-role:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .t-join .t-info .t-role:first-child, .t-join .t-info .portfolio-masonry-3 .p-wrapper .p-hover .p-content .t-role:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .login-2 .bg-overlay .form-wrapper .form-content .cards-header:first-child,
+.login-2 .bg-overlay .form-wrapper .form-content .portfolio-masonry .p-wrapper .p-hover .p-content .cards-header:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .login-2 .bg-overlay .form-wrapper .form-content .cards-header:first-child,
+.login-2 .bg-overlay .form-wrapper .form-content .portfolio-masonry-2 .p-wrapper .p-hover .p-content .cards-header:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .login-2 .bg-overlay .form-wrapper .form-content .cards-header:first-child, .login-2 .bg-overlay .form-wrapper .form-content .portfolio-masonry-3 .p-wrapper .p-hover .p-content .cards-header:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .login-2 .bg-overlay .form-wrapper .social-signup .social-card .sc-lead:first-child,
+.login-2 .bg-overlay .form-wrapper .social-signup .social-card .portfolio-masonry .p-wrapper .p-hover .p-content .sc-lead:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .login-2 .bg-overlay .form-wrapper .social-signup .social-card .sc-lead:first-child,
+.login-2 .bg-overlay .form-wrapper .social-signup .social-card .portfolio-masonry-2 .p-wrapper .p-hover .p-content .sc-lead:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .login-2 .bg-overlay .form-wrapper .social-signup .social-card .sc-lead:first-child, .login-2 .bg-overlay .form-wrapper .social-signup .social-card .portfolio-masonry-3 .p-wrapper .p-hover .p-content .sc-lead:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content h5:first-child,
+.portfolio-masonry-2 .p-wrapper .p-hover .p-content h5:first-child,
+.portfolio-masonry-3 .p-wrapper .p-hover .p-content h5:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .ft-boxed-hover ul li .hover-content .ft-heading:first-child,
+.ft-boxed-hover ul li .hover-content .portfolio-masonry .p-wrapper .p-hover .p-content .ft-heading:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .ft-boxed-hover ul li .hover-content .ft-heading:first-child,
+.ft-boxed-hover ul li .hover-content .portfolio-masonry-2 .p-wrapper .p-hover .p-content .ft-heading:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .ft-boxed-hover ul li .hover-content .ft-heading:first-child, .ft-boxed-hover ul li .hover-content .portfolio-masonry-3 .p-wrapper .p-hover .p-content .ft-heading:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .ft-tabs .tabs-list li a .tab-group .tab-info:first-child,
+.ft-tabs .tabs-list li a .tab-group .portfolio-masonry .p-wrapper .p-hover .p-content .tab-info:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .ft-tabs .tabs-list li a .tab-group .tab-info:first-child,
+.ft-tabs .tabs-list li a .tab-group .portfolio-masonry-2 .p-wrapper .p-hover .p-content .tab-info:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .ft-tabs .tabs-list li a .tab-group .tab-info:first-child, .ft-tabs .tabs-list li a .tab-group .portfolio-masonry-3 .p-wrapper .p-hover .p-content .tab-info:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .sidebar .comments-widget .widget-item span .widget-comm-title:first-child,
+.sidebar .comments-widget .widget-item span .portfolio-masonry .p-wrapper .p-hover .p-content .widget-comm-title:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .sidebar .comments-widget .widget-item span .widget-comm-title:first-child,
+.sidebar .comments-widget .widget-item span .portfolio-masonry-2 .p-wrapper .p-hover .p-content .widget-comm-title:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .sidebar .comments-widget .widget-item span .widget-comm-title:first-child, .sidebar .comments-widget .widget-item span .portfolio-masonry-3 .p-wrapper .p-hover .p-content .widget-comm-title:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .comingsoon .content-wrapper .content-inner .cs-timer .item .title-timer:first-child,
+.comingsoon .content-wrapper .content-inner .cs-timer .item .portfolio-masonry .p-wrapper .p-hover .p-content .title-timer:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .comingsoon .content-wrapper .content-inner .cs-timer .item .title-timer:first-child,
+.comingsoon .content-wrapper .content-inner .cs-timer .item .portfolio-masonry-2 .p-wrapper .p-hover .p-content .title-timer:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .comingsoon .content-wrapper .content-inner .cs-timer .item .title-timer:first-child, .comingsoon .content-wrapper .content-inner .cs-timer .item .portfolio-masonry-3 .p-wrapper .p-hover .p-content .title-timer:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content h6:first-child,
+.portfolio-masonry-2 .p-wrapper .p-hover .p-content h6:first-child,
+.portfolio-masonry-3 .p-wrapper .p-hover .p-content h6:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .progress-group .progress-title:first-child,
+.progress-group .portfolio-masonry .p-wrapper .p-hover .p-content .progress-title:first-child,
+.portfolio-masonry-2 .p-wrapper .p-hover .p-content .progress-group .progress-title:first-child,
+.progress-group .portfolio-masonry-2 .p-wrapper .p-hover .p-content .progress-title:first-child,
+.portfolio-masonry-3 .p-wrapper .p-hover .p-content .progress-group .progress-title:first-child, .progress-group .portfolio-masonry-3 .p-wrapper .p-hover .p-content .progress-title:first-child,
+.portfolio-masonry .p-wrapper .p-hover .p-content .progress-group .progress-value:first-child,
+.progress-group .portfolio-masonry .p-wrapper .p-hover .p-content .progress-value:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .progress-group .progress-value:first-child,
+.progress-group .portfolio-masonry-2 .p-wrapper .p-hover .p-content .progress-value:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .progress-group .progress-value:first-child, .progress-group .portfolio-masonry-3 .p-wrapper .p-hover .p-content .progress-value:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .accordions-1 .panel .panel-heading .panel-title:first-child,
+.accordions-1 .panel .panel-heading .portfolio-masonry .p-wrapper .p-hover .p-content .panel-title:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .accordions-1 .panel .panel-heading .panel-title:first-child,
+.accordions-1 .panel .panel-heading .portfolio-masonry-2 .p-wrapper .p-hover .p-content .panel-title:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .accordions-1 .panel .panel-heading .panel-title:first-child, .accordions-1 .panel .panel-heading .portfolio-masonry-3 .p-wrapper .p-hover .p-content .panel-title:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .footer-social-links ul li:first-child,
+.footer-social-links ul .portfolio-masonry .p-wrapper .p-hover .p-content li:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .footer-social-links ul li:first-child,
+.footer-social-links ul .portfolio-masonry-2 .p-wrapper .p-hover .p-content li:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .footer-social-links ul li:first-child, .footer-social-links ul .portfolio-masonry-3 .p-wrapper .p-hover .p-content li:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .footer-contact .contact-info .show-info-link:first-child,
+.footer-contact .contact-info .portfolio-masonry .p-wrapper .p-hover .p-content .show-info-link:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .footer-contact .contact-info .show-info-link:first-child,
+.footer-contact .contact-info .portfolio-masonry-2 .p-wrapper .p-hover .p-content .show-info-link:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .footer-contact .contact-info .show-info-link:first-child, .footer-contact .contact-info .portfolio-masonry-3 .p-wrapper .p-hover .p-content .show-info-link:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .footer-contact .contact-info address ul li .adr-heading:first-child,
+.footer-contact .contact-info address ul li .portfolio-masonry .p-wrapper .p-hover .p-content .adr-heading:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .footer-contact .contact-info address ul li .adr-heading:first-child,
+.footer-contact .contact-info address ul li .portfolio-masonry-2 .p-wrapper .p-hover .p-content .adr-heading:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .footer-contact .contact-info address ul li .adr-heading:first-child, .footer-contact .contact-info address ul li .portfolio-masonry-3 .p-wrapper .p-hover .p-content .adr-heading:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .footer-contact .contact-info address .show-map:first-child,
+.footer-contact .contact-info address .portfolio-masonry .p-wrapper .p-hover .p-content .show-map:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .footer-contact .contact-info address .show-map:first-child,
+.footer-contact .contact-info address .portfolio-masonry-2 .p-wrapper .p-hover .p-content .show-map:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .footer-contact .contact-info address .show-map:first-child, .footer-contact .contact-info address .portfolio-masonry-3 .p-wrapper .p-hover .p-content .show-map:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .footer-litle address ul li .adr-group .adr-heading:first-child,
+.footer-litle address ul li .adr-group .portfolio-masonry .p-wrapper .p-hover .p-content .adr-heading:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .footer-litle address ul li .adr-group .adr-heading:first-child,
+.footer-litle address ul li .adr-group .portfolio-masonry-2 .p-wrapper .p-hover .p-content .adr-heading:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .footer-litle address ul li .adr-group .adr-heading:first-child, .footer-litle address ul li .adr-group .portfolio-masonry-3 .p-wrapper .p-hover .p-content .adr-heading:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .ft-cards .ft-item a:first-child,
+.ft-cards .ft-item .portfolio-masonry .p-wrapper .p-hover .p-content a:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .ft-cards .ft-item a:first-child,
+.ft-cards .ft-item .portfolio-masonry-2 .p-wrapper .p-hover .p-content a:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .ft-cards .ft-item a:first-child, .ft-cards .ft-item .portfolio-masonry-3 .p-wrapper .p-hover .p-content a:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .ft-cards-2 .ft-card-item .ft-content .link-btn:first-child,
+.ft-cards-2 .ft-card-item .ft-content .portfolio-masonry .p-wrapper .p-hover .p-content .link-btn:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .ft-cards-2 .ft-card-item .ft-content .link-btn:first-child,
+.ft-cards-2 .ft-card-item .ft-content .portfolio-masonry-2 .p-wrapper .p-hover .p-content .link-btn:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .ft-cards-2 .ft-card-item .ft-content .link-btn:first-child, .ft-cards-2 .ft-card-item .ft-content .portfolio-masonry-3 .p-wrapper .p-hover .p-content .link-btn:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .ft-boxed-hover ul li .hover-content a:first-child,
+.ft-boxed-hover ul li .hover-content .portfolio-masonry .p-wrapper .p-hover .p-content a:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .ft-boxed-hover ul li .hover-content a:first-child,
+.ft-boxed-hover ul li .hover-content .portfolio-masonry-2 .p-wrapper .p-hover .p-content a:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .ft-boxed-hover ul li .hover-content a:first-child, .ft-boxed-hover ul li .hover-content .portfolio-masonry-3 .p-wrapper .p-hover .p-content a:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .circles-counters .circle-item .circle-text:first-child,
+.circles-counters .circle-item .portfolio-masonry .p-wrapper .p-hover .p-content .circle-text:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .circles-counters .circle-item .circle-text:first-child,
+.circles-counters .circle-item .portfolio-masonry-2 .p-wrapper .p-hover .p-content .circle-text:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .circles-counters .circle-item .circle-text:first-child, .circles-counters .circle-item .portfolio-masonry-3 .p-wrapper .p-hover .p-content .circle-text:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .circles-counters-dark-bg .circle-item .circle-text:first-child,
+.circles-counters-dark-bg .circle-item .portfolio-masonry .p-wrapper .p-hover .p-content .circle-text:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .circles-counters-dark-bg .circle-item .circle-text:first-child,
+.circles-counters-dark-bg .circle-item .portfolio-masonry-2 .p-wrapper .p-hover .p-content .circle-text:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .circles-counters-dark-bg .circle-item .circle-text:first-child, .circles-counters-dark-bg .circle-item .portfolio-masonry-3 .p-wrapper .p-hover .p-content .circle-text:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .number-counters .count-wrapper .count-item .count-text:first-child,
+.number-counters .count-wrapper .count-item .portfolio-masonry .p-wrapper .p-hover .p-content .count-text:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .number-counters .count-wrapper .count-item .count-text:first-child,
+.number-counters .count-wrapper .count-item .portfolio-masonry-2 .p-wrapper .p-hover .p-content .count-text:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .number-counters .count-wrapper .count-item .count-text:first-child, .number-counters .count-wrapper .count-item .portfolio-masonry-3 .p-wrapper .p-hover .p-content .count-text:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .number-counters-dark-bg .count-wrapper .count-item .count-text:first-child,
+.number-counters-dark-bg .count-wrapper .count-item .portfolio-masonry .p-wrapper .p-hover .p-content .count-text:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .number-counters-dark-bg .count-wrapper .count-item .count-text:first-child,
+.number-counters-dark-bg .count-wrapper .count-item .portfolio-masonry-2 .p-wrapper .p-hover .p-content .count-text:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .number-counters-dark-bg .count-wrapper .count-item .count-text:first-child, .number-counters-dark-bg .count-wrapper .count-item .portfolio-masonry-3 .p-wrapper .p-hover .p-content .count-text:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .project-nav nav .nav-btns li a:first-child,
+.project-nav nav .nav-btns li .portfolio-masonry .p-wrapper .p-hover .p-content a:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .project-nav nav .nav-btns li a:first-child,
+.project-nav nav .nav-btns li .portfolio-masonry-2 .p-wrapper .p-hover .p-content a:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .project-nav nav .nav-btns li a:first-child, .project-nav nav .nav-btns li .portfolio-masonry-3 .p-wrapper .p-hover .p-content a:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .pricing-tables .p-table .desc:first-child,
+.pricing-tables .p-table .portfolio-masonry .p-wrapper .p-hover .p-content .desc:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .pricing-tables .p-table .desc:first-child,
+.pricing-tables .p-table .portfolio-masonry-2 .p-wrapper .p-hover .p-content .desc:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .pricing-tables .p-table .desc:first-child, .pricing-tables .p-table .portfolio-masonry-3 .p-wrapper .p-hover .p-content .desc:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .blog-post-nav .prev-btn:first-child,
+.blog-post-nav .portfolio-masonry .p-wrapper .p-hover .p-content .prev-btn:first-child,
+.portfolio-masonry-2 .p-wrapper .p-hover .p-content .blog-post-nav .prev-btn:first-child,
+.blog-post-nav .portfolio-masonry-2 .p-wrapper .p-hover .p-content .prev-btn:first-child,
+.portfolio-masonry-3 .p-wrapper .p-hover .p-content .blog-post-nav .prev-btn:first-child, .blog-post-nav .portfolio-masonry-3 .p-wrapper .p-hover .p-content .prev-btn:first-child,
+.portfolio-masonry .p-wrapper .p-hover .p-content .blog-post-nav .next-btn:first-child,
+.blog-post-nav .portfolio-masonry .p-wrapper .p-hover .p-content .next-btn:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .blog-post-nav .next-btn:first-child,
+.blog-post-nav .portfolio-masonry-2 .p-wrapper .p-hover .p-content .next-btn:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .blog-post-nav .next-btn:first-child, .blog-post-nav .portfolio-masonry-3 .p-wrapper .p-hover .p-content .next-btn:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .sidebar .tags-widget .tag-list li a:first-child,
+.sidebar .tags-widget .tag-list li .portfolio-masonry .p-wrapper .p-hover .p-content a:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .sidebar .tags-widget .tag-list li a:first-child,
+.sidebar .tags-widget .tag-list li .portfolio-masonry-2 .p-wrapper .p-hover .p-content a:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .sidebar .tags-widget .tag-list li a:first-child, .sidebar .tags-widget .tag-list li .portfolio-masonry-3 .p-wrapper .p-hover .p-content a:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .contact-1 .contact-wrapper .contact-info-wrapper address .address-group span:first-child,
+.contact-1 .contact-wrapper .contact-info-wrapper address .address-group .portfolio-masonry .p-wrapper .p-hover .p-content span:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .contact-1 .contact-wrapper .contact-info-wrapper address .address-group span:first-child,
+.contact-1 .contact-wrapper .contact-info-wrapper address .address-group .portfolio-masonry-2 .p-wrapper .p-hover .p-content span:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .contact-1 .contact-wrapper .contact-info-wrapper address .address-group span:first-child, .contact-1 .contact-wrapper .contact-info-wrapper address .address-group .portfolio-masonry-3 .p-wrapper .p-hover .p-content span:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .contact-1 .contact-wrapper .contact-info-wrapper address .address-group a:first-child,
+.contact-1 .contact-wrapper .contact-info-wrapper address .address-group .portfolio-masonry .p-wrapper .p-hover .p-content a:first-child,
+.portfolio-masonry-2 .p-wrapper .p-hover .p-content .contact-1 .contact-wrapper .contact-info-wrapper address .address-group a:first-child,
+.contact-1 .contact-wrapper .contact-info-wrapper address .address-group .portfolio-masonry-2 .p-wrapper .p-hover .p-content a:first-child,
+.portfolio-masonry-3 .p-wrapper .p-hover .p-content .contact-1 .contact-wrapper .contact-info-wrapper address .address-group a:first-child, .contact-1 .contact-wrapper .contact-info-wrapper address .address-group .portfolio-masonry-3 .p-wrapper .p-hover .p-content a:first-child,
+.portfolio-masonry .p-wrapper .p-hover .p-content .contact-1 .contact-wrapper .contact-info-wrapper address .address-group p:first-child,
+.contact-1 .contact-wrapper .contact-info-wrapper address .address-group .portfolio-masonry .p-wrapper .p-hover .p-content p:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .contact-1 .contact-wrapper .contact-info-wrapper address .address-group p:first-child,
+.contact-1 .contact-wrapper .contact-info-wrapper address .address-group .portfolio-masonry-2 .p-wrapper .p-hover .p-content p:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .contact-1 .contact-wrapper .contact-info-wrapper address .address-group p:first-child, .contact-1 .contact-wrapper .contact-info-wrapper address .address-group .portfolio-masonry-3 .p-wrapper .p-hover .p-content p:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .contact-1 .contact-wrapper .contact-info-wrapper address .show-map-link a:first-child,
+.contact-1 .contact-wrapper .contact-info-wrapper address .show-map-link .portfolio-masonry .p-wrapper .p-hover .p-content a:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .contact-1 .contact-wrapper .contact-info-wrapper address .show-map-link a:first-child,
+.contact-1 .contact-wrapper .contact-info-wrapper address .show-map-link .portfolio-masonry-2 .p-wrapper .p-hover .p-content a:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .contact-1 .contact-wrapper .contact-info-wrapper address .show-map-link a:first-child, .contact-1 .contact-wrapper .contact-info-wrapper address .show-map-link .portfolio-masonry-3 .p-wrapper .p-hover .p-content a:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content .landing-hero .heading-wrapper .cta-btn:first-child,
+.landing-hero .heading-wrapper .portfolio-masonry .p-wrapper .p-hover .p-content .cta-btn:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .landing-hero .heading-wrapper .cta-btn:first-child,
+.landing-hero .heading-wrapper .portfolio-masonry-2 .p-wrapper .p-hover .p-content .cta-btn:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .landing-hero .heading-wrapper .cta-btn:first-child, .landing-hero .heading-wrapper .portfolio-masonry-3 .p-wrapper .p-hover .p-content .cta-btn:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content p:first-child,
+.portfolio-masonry-2 .p-wrapper .p-hover .p-content p:first-child,
+.portfolio-masonry-3 .p-wrapper .p-hover .p-content p:first-child, .portfolio-masonry .p-wrapper .p-hover .p-content span:first-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content span:first-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content span:first-child {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #ececec;
+}
+
+.portfolio-masonry .p-wrapper .p-hover .p-content h2:last-child,
+.portfolio-masonry-2 .p-wrapper .p-hover .p-content h2:last-child,
+.portfolio-masonry-3 .p-wrapper .p-hover .p-content h2:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content h3:last-child,
+.portfolio-masonry-2 .p-wrapper .p-hover .p-content h3:last-child,
+.portfolio-masonry-3 .p-wrapper .p-hover .p-content h3:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .page-title .subheading:last-child,
+.page-title .portfolio-masonry .p-wrapper .p-hover .p-content .subheading:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .page-title .subheading:last-child,
+.page-title .portfolio-masonry-2 .p-wrapper .p-hover .p-content .subheading:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .page-title .subheading:last-child, .page-title .portfolio-masonry-3 .p-wrapper .p-hover .p-content .subheading:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content h4:last-child,
+.portfolio-masonry-2 .p-wrapper .p-hover .p-content h4:last-child,
+.portfolio-masonry-3 .p-wrapper .p-hover .p-content h4:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .ft-tabs .tabs-list li a .tab-group .tab-heading:last-child,
+.ft-tabs .tabs-list li a .tab-group .portfolio-masonry .p-wrapper .p-hover .p-content .tab-heading:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .ft-tabs .tabs-list li a .tab-group .tab-heading:last-child,
+.ft-tabs .tabs-list li a .tab-group .portfolio-masonry-2 .p-wrapper .p-hover .p-content .tab-heading:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .ft-tabs .tabs-list li a .tab-group .tab-heading:last-child, .ft-tabs .tabs-list li a .tab-group .portfolio-masonry-3 .p-wrapper .p-hover .p-content .tab-heading:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .testimonials-3col .t-item blockquote footer cite:last-child,
+.testimonials-3col .t-item blockquote footer .portfolio-masonry .p-wrapper .p-hover .p-content cite:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .testimonials-3col .t-item blockquote footer cite:last-child,
+.testimonials-3col .t-item blockquote footer .portfolio-masonry-2 .p-wrapper .p-hover .p-content cite:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .testimonials-3col .t-item blockquote footer cite:last-child, .testimonials-3col .t-item blockquote footer .portfolio-masonry-3 .p-wrapper .p-hover .p-content cite:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404 footer cite:last-child,
+.testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404 footer .portfolio-masonry .p-wrapper .p-hover .p-content cite:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404 footer cite:last-child,
+.testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404 footer .portfolio-masonry-2 .p-wrapper .p-hover .p-content cite:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404 footer cite:last-child, .testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404 footer .portfolio-masonry-3 .p-wrapper .p-hover .p-content cite:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer cite:last-child,
+.wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer .portfolio-masonry .p-wrapper .p-hover .p-content cite:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer cite:last-child,
+.wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer .portfolio-masonry-2 .p-wrapper .p-hover .p-content cite:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer cite:last-child, .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer .portfolio-masonry-3 .p-wrapper .p-hover .p-content cite:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p footer cite:last-child,
+.testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p footer .portfolio-masonry .p-wrapper .p-hover .p-content cite:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p footer cite:last-child,
+.testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p footer .portfolio-masonry-2 .p-wrapper .p-hover .p-content cite:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p footer cite:last-child, .testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p footer .portfolio-masonry-3 .p-wrapper .p-hover .p-content cite:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer cite:last-child,
+.bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer .portfolio-masonry .p-wrapper .p-hover .p-content cite:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer cite:last-child,
+.bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer .portfolio-masonry-2 .p-wrapper .p-hover .p-content cite:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer cite:last-child, .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer .portfolio-masonry-3 .p-wrapper .p-hover .p-content cite:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .team-3col .t-item .t-info .t-role:last-child,
+.team-3col .t-item .t-info .portfolio-masonry .p-wrapper .p-hover .p-content .t-role:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .team-3col .t-item .t-info .t-role:last-child,
+.team-3col .t-item .t-info .portfolio-masonry-2 .p-wrapper .p-hover .p-content .t-role:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .team-3col .t-item .t-info .t-role:last-child, .team-3col .t-item .t-info .portfolio-masonry-3 .p-wrapper .p-hover .p-content .t-role:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .team-4col .t-item .t-info .t-role:last-child,
+.team-4col .t-item .t-info .portfolio-masonry .p-wrapper .p-hover .p-content .t-role:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .team-4col .t-item .t-info .t-role:last-child,
+.team-4col .t-item .t-info .portfolio-masonry-2 .p-wrapper .p-hover .p-content .t-role:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .team-4col .t-item .t-info .t-role:last-child, .team-4col .t-item .t-info .portfolio-masonry-3 .p-wrapper .p-hover .p-content .t-role:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .freelancer-about .t-item .t-info .t-role:last-child,
+.freelancer-about .t-item .t-info .portfolio-masonry .p-wrapper .p-hover .p-content .t-role:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .freelancer-about .t-item .t-info .t-role:last-child,
+.freelancer-about .t-item .t-info .portfolio-masonry-2 .p-wrapper .p-hover .p-content .t-role:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .freelancer-about .t-item .t-info .t-role:last-child, .freelancer-about .t-item .t-info .portfolio-masonry-3 .p-wrapper .p-hover .p-content .t-role:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .t-join .t-info .t-role:last-child,
+.t-join .t-info .portfolio-masonry .p-wrapper .p-hover .p-content .t-role:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .t-join .t-info .t-role:last-child,
+
+.t-join .t-info .portfolio-masonry-2 .p-wrapper .p-hover .p-content .t-role:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .t-join .t-info .t-role:last-child, .t-join .t-info .portfolio-masonry-3 .p-wrapper .p-hover .p-content .t-role:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .login-2 .bg-overlay .form-wrapper .form-content .cards-header:last-child,
+.login-2 .bg-overlay .form-wrapper .form-content .portfolio-masonry .p-wrapper .p-hover .p-content .cards-header:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .login-2 .bg-overlay .form-wrapper .form-content .cards-header:last-child,
+.login-2 .bg-overlay .form-wrapper .form-content .portfolio-masonry-2 .p-wrapper .p-hover .p-content .cards-header:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .login-2 .bg-overlay .form-wrapper .form-content .cards-header:last-child, .login-2 .bg-overlay .form-wrapper .form-content .portfolio-masonry-3 .p-wrapper .p-hover .p-content .cards-header:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .login-2 .bg-overlay .form-wrapper .social-signup .social-card .sc-lead:last-child,
+.login-2 .bg-overlay .form-wrapper .social-signup .social-card .portfolio-masonry .p-wrapper .p-hover .p-content .sc-lead:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .login-2 .bg-overlay .form-wrapper .social-signup .social-card .sc-lead:last-child,
+.login-2 .bg-overlay .form-wrapper .social-signup .social-card .portfolio-masonry-2 .p-wrapper .p-hover .p-content .sc-lead:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .login-2 .bg-overlay .form-wrapper .social-signup .social-card .sc-lead:last-child, .login-2 .bg-overlay .form-wrapper .social-signup .social-card .portfolio-masonry-3 .p-wrapper .p-hover .p-content .sc-lead:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content h5:last-child,
+.portfolio-masonry-2 .p-wrapper .p-hover .p-content h5:last-child,
+.portfolio-masonry-3 .p-wrapper .p-hover .p-content h5:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .ft-boxed-hover ul li .hover-content .ft-heading:last-child,
+.ft-boxed-hover ul li .hover-content .portfolio-masonry .p-wrapper .p-hover .p-content .ft-heading:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .ft-boxed-hover ul li .hover-content .ft-heading:last-child,
+.ft-boxed-hover ul li .hover-content .portfolio-masonry-2 .p-wrapper .p-hover .p-content .ft-heading:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .ft-boxed-hover ul li .hover-content .ft-heading:last-child, .ft-boxed-hover ul li .hover-content .portfolio-masonry-3 .p-wrapper .p-hover .p-content .ft-heading:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .ft-tabs .tabs-list li a .tab-group .tab-info:last-child,
+.ft-tabs .tabs-list li a .tab-group .portfolio-masonry .p-wrapper .p-hover .p-content .tab-info:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .ft-tabs .tabs-list li a .tab-group .tab-info:last-child,
+.ft-tabs .tabs-list li a .tab-group .portfolio-masonry-2 .p-wrapper .p-hover .p-content .tab-info:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .ft-tabs .tabs-list li a .tab-group .tab-info:last-child, .ft-tabs .tabs-list li a .tab-group .portfolio-masonry-3 .p-wrapper .p-hover .p-content .tab-info:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .sidebar .comments-widget .widget-item span .widget-comm-title:last-child,
+.sidebar .comments-widget .widget-item span .portfolio-masonry .p-wrapper .p-hover .p-content .widget-comm-title:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .sidebar .comments-widget .widget-item span .widget-comm-title:last-child,
+.sidebar .comments-widget .widget-item span .portfolio-masonry-2 .p-wrapper .p-hover .p-content .widget-comm-title:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .sidebar .comments-widget .widget-item span .widget-comm-title:last-child, .sidebar .comments-widget .widget-item span .portfolio-masonry-3 .p-wrapper .p-hover .p-content .widget-comm-title:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .comingsoon .content-wrapper .content-inner .cs-timer .item .title-timer:last-child,
+.comingsoon .content-wrapper .content-inner .cs-timer .item .portfolio-masonry .p-wrapper .p-hover .p-content .title-timer:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .comingsoon .content-wrapper .content-inner .cs-timer .item .title-timer:last-child,
+.comingsoon .content-wrapper .content-inner .cs-timer .item .portfolio-masonry-2 .p-wrapper .p-hover .p-content .title-timer:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .comingsoon .content-wrapper .content-inner .cs-timer .item .title-timer:last-child, .comingsoon .content-wrapper .content-inner .cs-timer .item .portfolio-masonry-3 .p-wrapper .p-hover .p-content .title-timer:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content h6:last-child,
+.portfolio-masonry-2 .p-wrapper .p-hover .p-content h6:last-child,
+.portfolio-masonry-3 .p-wrapper .p-hover .p-content h6:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .progress-group .progress-title:last-child,
+.progress-group .portfolio-masonry .p-wrapper .p-hover .p-content .progress-title:last-child,
+.portfolio-masonry-2 .p-wrapper .p-hover .p-content .progress-group .progress-title:last-child,
+.progress-group .portfolio-masonry-2 .p-wrapper .p-hover .p-content .progress-title:last-child,
+.portfolio-masonry-3 .p-wrapper .p-hover .p-content .progress-group .progress-title:last-child, .progress-group .portfolio-masonry-3 .p-wrapper .p-hover .p-content .progress-title:last-child,
+.portfolio-masonry .p-wrapper .p-hover .p-content .progress-group .progress-value:last-child,
+.progress-group .portfolio-masonry .p-wrapper .p-hover .p-content .progress-value:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .progress-group .progress-value:last-child,
+.progress-group .portfolio-masonry-2 .p-wrapper .p-hover .p-content .progress-value:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .progress-group .progress-value:last-child, .progress-group .portfolio-masonry-3 .p-wrapper .p-hover .p-content .progress-value:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .accordions-1 .panel .panel-heading .panel-title:last-child,
+.accordions-1 .panel .panel-heading .portfolio-masonry .p-wrapper .p-hover .p-content .panel-title:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .accordions-1 .panel .panel-heading .panel-title:last-child,
+.accordions-1 .panel .panel-heading .portfolio-masonry-2 .p-wrapper .p-hover .p-content .panel-title:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .accordions-1 .panel .panel-heading .panel-title:last-child, .accordions-1 .panel .panel-heading .portfolio-masonry-3 .p-wrapper .p-hover .p-content .panel-title:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .footer-social-links ul li:last-child,
+.footer-social-links ul .portfolio-masonry .p-wrapper .p-hover .p-content li:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .footer-social-links ul li:last-child,
+.footer-social-links ul .portfolio-masonry-2 .p-wrapper .p-hover .p-content li:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .footer-social-links ul li:last-child, .footer-social-links ul .portfolio-masonry-3 .p-wrapper .p-hover .p-content li:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .footer-contact .contact-info .show-info-link:last-child,
+.footer-contact .contact-info .portfolio-masonry .p-wrapper .p-hover .p-content .show-info-link:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .footer-contact .contact-info .show-info-link:last-child,
+.footer-contact .contact-info .portfolio-masonry-2 .p-wrapper .p-hover .p-content .show-info-link:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .footer-contact .contact-info .show-info-link:last-child, .footer-contact .contact-info .portfolio-masonry-3 .p-wrapper .p-hover .p-content .show-info-link:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .footer-contact .contact-info address ul li .adr-heading:last-child,
+.footer-contact .contact-info address ul li .portfolio-masonry .p-wrapper .p-hover .p-content .adr-heading:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .footer-contact .contact-info address ul li .adr-heading:last-child,
+.footer-contact .contact-info address ul li .portfolio-masonry-2 .p-wrapper .p-hover .p-content .adr-heading:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .footer-contact .contact-info address ul li .adr-heading:last-child, .footer-contact .contact-info address ul li .portfolio-masonry-3 .p-wrapper .p-hover .p-content .adr-heading:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .footer-contact .contact-info address .show-map:last-child,
+.footer-contact .contact-info address .portfolio-masonry .p-wrapper .p-hover .p-content .show-map:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .footer-contact .contact-info address .show-map:last-child,
+.footer-contact .contact-info address .portfolio-masonry-2 .p-wrapper .p-hover .p-content .show-map:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .footer-contact .contact-info address .show-map:last-child, .footer-contact .contact-info address .portfolio-masonry-3 .p-wrapper .p-hover .p-content .show-map:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .footer-litle address ul li .adr-group .adr-heading:last-child,
+.footer-litle address ul li .adr-group .portfolio-masonry .p-wrapper .p-hover .p-content .adr-heading:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .footer-litle address ul li .adr-group .adr-heading:last-child,
+.footer-litle address ul li .adr-group .portfolio-masonry-2 .p-wrapper .p-hover .p-content .adr-heading:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .footer-litle address ul li .adr-group .adr-heading:last-child, .footer-litle address ul li .adr-group .portfolio-masonry-3 .p-wrapper .p-hover .p-content .adr-heading:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .ft-cards .ft-item a:last-child,
+.ft-cards .ft-item .portfolio-masonry .p-wrapper .p-hover .p-content a:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .ft-cards .ft-item a:last-child,
+.ft-cards .ft-item .portfolio-masonry-2 .p-wrapper .p-hover .p-content a:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .ft-cards .ft-item a:last-child, .ft-cards .ft-item .portfolio-masonry-3 .p-wrapper .p-hover .p-content a:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .ft-cards-2 .ft-card-item .ft-content .link-btn:last-child,
+.ft-cards-2 .ft-card-item .ft-content .portfolio-masonry .p-wrapper .p-hover .p-content .link-btn:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .ft-cards-2 .ft-card-item .ft-content .link-btn:last-child,
+.ft-cards-2 .ft-card-item .ft-content .portfolio-masonry-2 .p-wrapper .p-hover .p-content .link-btn:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .ft-cards-2 .ft-card-item .ft-content .link-btn:last-child, .ft-cards-2 .ft-card-item .ft-content .portfolio-masonry-3 .p-wrapper .p-hover .p-content .link-btn:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .ft-boxed-hover ul li .hover-content a:last-child,
+.ft-boxed-hover ul li .hover-content .portfolio-masonry .p-wrapper .p-hover .p-content a:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .ft-boxed-hover ul li .hover-content a:last-child,
+.ft-boxed-hover ul li .hover-content .portfolio-masonry-2 .p-wrapper .p-hover .p-content a:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .ft-boxed-hover ul li .hover-content a:last-child, .ft-boxed-hover ul li .hover-content .portfolio-masonry-3 .p-wrapper .p-hover .p-content a:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .circles-counters .circle-item .circle-text:last-child,
+.circles-counters .circle-item .portfolio-masonry .p-wrapper .p-hover .p-content .circle-text:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .circles-counters .circle-item .circle-text:last-child,
+.circles-counters .circle-item .portfolio-masonry-2 .p-wrapper .p-hover .p-content .circle-text:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .circles-counters .circle-item .circle-text:last-child, .circles-counters .circle-item .portfolio-masonry-3 .p-wrapper .p-hover .p-content .circle-text:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .circles-counters-dark-bg .circle-item .circle-text:last-child,
+.circles-counters-dark-bg .circle-item .portfolio-masonry .p-wrapper .p-hover .p-content .circle-text:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .circles-counters-dark-bg .circle-item .circle-text:last-child,
+.circles-counters-dark-bg .circle-item .portfolio-masonry-2 .p-wrapper .p-hover .p-content .circle-text:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .circles-counters-dark-bg .circle-item .circle-text:last-child, .circles-counters-dark-bg .circle-item .portfolio-masonry-3 .p-wrapper .p-hover .p-content .circle-text:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .number-counters .count-wrapper .count-item .count-text:last-child,
+.number-counters .count-wrapper .count-item .portfolio-masonry .p-wrapper .p-hover .p-content .count-text:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .number-counters .count-wrapper .count-item .count-text:last-child,
+.number-counters .count-wrapper .count-item .portfolio-masonry-2 .p-wrapper .p-hover .p-content .count-text:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .number-counters .count-wrapper .count-item .count-text:last-child, .number-counters .count-wrapper .count-item .portfolio-masonry-3 .p-wrapper .p-hover .p-content .count-text:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .number-counters-dark-bg .count-wrapper .count-item .count-text:last-child,
+.number-counters-dark-bg .count-wrapper .count-item .portfolio-masonry .p-wrapper .p-hover .p-content .count-text:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .number-counters-dark-bg .count-wrapper .count-item .count-text:last-child,
+.number-counters-dark-bg .count-wrapper .count-item .portfolio-masonry-2 .p-wrapper .p-hover .p-content .count-text:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .number-counters-dark-bg .count-wrapper .count-item .count-text:last-child, .number-counters-dark-bg .count-wrapper .count-item .portfolio-masonry-3 .p-wrapper .p-hover .p-content .count-text:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .project-nav nav .nav-btns li a:last-child,
+.project-nav nav .nav-btns li .portfolio-masonry .p-wrapper .p-hover .p-content a:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .project-nav nav .nav-btns li a:last-child,
+.project-nav nav .nav-btns li .portfolio-masonry-2 .p-wrapper .p-hover .p-content a:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .project-nav nav .nav-btns li a:last-child, .project-nav nav .nav-btns li .portfolio-masonry-3 .p-wrapper .p-hover .p-content a:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .pricing-tables .p-table .desc:last-child,
+.pricing-tables .p-table .portfolio-masonry .p-wrapper .p-hover .p-content .desc:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .pricing-tables .p-table .desc:last-child,
+.pricing-tables .p-table .portfolio-masonry-2 .p-wrapper .p-hover .p-content .desc:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .pricing-tables .p-table .desc:last-child, .pricing-tables .p-table .portfolio-masonry-3 .p-wrapper .p-hover .p-content .desc:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .blog-post-nav .prev-btn:last-child,
+.blog-post-nav .portfolio-masonry .p-wrapper .p-hover .p-content .prev-btn:last-child,
+.portfolio-masonry-2 .p-wrapper .p-hover .p-content .blog-post-nav .prev-btn:last-child,
+.blog-post-nav .portfolio-masonry-2 .p-wrapper .p-hover .p-content .prev-btn:last-child,
+.portfolio-masonry-3 .p-wrapper .p-hover .p-content .blog-post-nav .prev-btn:last-child, .blog-post-nav .portfolio-masonry-3 .p-wrapper .p-hover .p-content .prev-btn:last-child,
+.portfolio-masonry .p-wrapper .p-hover .p-content .blog-post-nav .next-btn:last-child,
+.blog-post-nav .portfolio-masonry .p-wrapper .p-hover .p-content .next-btn:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .blog-post-nav .next-btn:last-child,
+.blog-post-nav .portfolio-masonry-2 .p-wrapper .p-hover .p-content .next-btn:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .blog-post-nav .next-btn:last-child, .blog-post-nav .portfolio-masonry-3 .p-wrapper .p-hover .p-content .next-btn:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .sidebar .tags-widget .tag-list li a:last-child,
+.sidebar .tags-widget .tag-list li .portfolio-masonry .p-wrapper .p-hover .p-content a:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .sidebar .tags-widget .tag-list li a:last-child,
+.sidebar .tags-widget .tag-list li .portfolio-masonry-2 .p-wrapper .p-hover .p-content a:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .sidebar .tags-widget .tag-list li a:last-child, .sidebar .tags-widget .tag-list li .portfolio-masonry-3 .p-wrapper .p-hover .p-content a:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .contact-1 .contact-wrapper .contact-info-wrapper address .address-group span:last-child,
+.contact-1 .contact-wrapper .contact-info-wrapper address .address-group .portfolio-masonry .p-wrapper .p-hover .p-content span:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .contact-1 .contact-wrapper .contact-info-wrapper address .address-group span:last-child,
+.contact-1 .contact-wrapper .contact-info-wrapper address .address-group .portfolio-masonry-2 .p-wrapper .p-hover .p-content span:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .contact-1 .contact-wrapper .contact-info-wrapper address .address-group span:last-child, .contact-1 .contact-wrapper .contact-info-wrapper address .address-group .portfolio-masonry-3 .p-wrapper .p-hover .p-content span:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .contact-1 .contact-wrapper .contact-info-wrapper address .address-group a:last-child,
+.contact-1 .contact-wrapper .contact-info-wrapper address .address-group .portfolio-masonry .p-wrapper .p-hover .p-content a:last-child,
+.portfolio-masonry-2 .p-wrapper .p-hover .p-content .contact-1 .contact-wrapper .contact-info-wrapper address .address-group a:last-child,
+.contact-1 .contact-wrapper .contact-info-wrapper address .address-group .portfolio-masonry-2 .p-wrapper .p-hover .p-content a:last-child,
+.portfolio-masonry-3 .p-wrapper .p-hover .p-content .contact-1 .contact-wrapper .contact-info-wrapper address .address-group a:last-child, .contact-1 .contact-wrapper .contact-info-wrapper address .address-group .portfolio-masonry-3 .p-wrapper .p-hover .p-content a:last-child,
+.portfolio-masonry .p-wrapper .p-hover .p-content .contact-1 .contact-wrapper .contact-info-wrapper address .address-group p:last-child,
+.contact-1 .contact-wrapper .contact-info-wrapper address .address-group .portfolio-masonry .p-wrapper .p-hover .p-content p:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .contact-1 .contact-wrapper .contact-info-wrapper address .address-group p:last-child,
+.contact-1 .contact-wrapper .contact-info-wrapper address .address-group .portfolio-masonry-2 .p-wrapper .p-hover .p-content p:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .contact-1 .contact-wrapper .contact-info-wrapper address .address-group p:last-child, .contact-1 .contact-wrapper .contact-info-wrapper address .address-group .portfolio-masonry-3 .p-wrapper .p-hover .p-content p:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .contact-1 .contact-wrapper .contact-info-wrapper address .show-map-link a:last-child,
+.contact-1 .contact-wrapper .contact-info-wrapper address .show-map-link .portfolio-masonry .p-wrapper .p-hover .p-content a:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .contact-1 .contact-wrapper .contact-info-wrapper address .show-map-link a:last-child,
+.contact-1 .contact-wrapper .contact-info-wrapper address .show-map-link .portfolio-masonry-2 .p-wrapper .p-hover .p-content a:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .contact-1 .contact-wrapper .contact-info-wrapper address .show-map-link a:last-child, .contact-1 .contact-wrapper .contact-info-wrapper address .show-map-link .portfolio-masonry-3 .p-wrapper .p-hover .p-content a:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content .landing-hero .heading-wrapper .cta-btn:last-child,
+.landing-hero .heading-wrapper .portfolio-masonry .p-wrapper .p-hover .p-content .cta-btn:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content .landing-hero .heading-wrapper .cta-btn:last-child,
+.landing-hero .heading-wrapper .portfolio-masonry-2 .p-wrapper .p-hover .p-content .cta-btn:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content .landing-hero .heading-wrapper .cta-btn:last-child, .landing-hero .heading-wrapper .portfolio-masonry-3 .p-wrapper .p-hover .p-content .cta-btn:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content p:last-child,
+.portfolio-masonry-2 .p-wrapper .p-hover .p-content p:last-child,
+.portfolio-masonry-3 .p-wrapper .p-hover .p-content p:last-child, .portfolio-masonry .p-wrapper .p-hover .p-content span:last-child, .portfolio-masonry-2 .p-wrapper .p-hover .p-content span:last-child, .portfolio-masonry-3 .p-wrapper .p-hover .p-content span:last-child {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
+  letter-spacing: 2.5px;
+  color: #999;
+}
+
+.portfolio-masonry .p-wrapper .open-btn, .portfolio-masonry-2 .p-wrapper .open-btn, .portfolio-masonry-3 .p-wrapper .open-btn {
+  position: absolute;
+  padding-top: 22px;
+  width: 60px;
+  height: 60px;
+  right: 0;
+  top: -60px;
+  font-size: 15px;
+  text-align: center;
+  line-height: 0;
+  color: #111;
+  background: #ececec;
+  -webkit-transition: top .5;
+          transition: top .5;
+}
+
+.portfolio-masonry .p-wrapper .open-btn:focus,
+.portfolio-masonry-2 .p-wrapper .open-btn:focus,
+.portfolio-masonry-3 .p-wrapper .open-btn:focus, .portfolio-masonry .p-wrapper .open-btn:visited, .portfolio-masonry-2 .p-wrapper .open-btn:visited, .portfolio-masonry-3 .p-wrapper .open-btn:visited {
+  outline: none;
+}
+
+.portfolio-masonry .p-wrapper .open-btn:hover, .portfolio-masonry-2 .p-wrapper .open-btn:hover, .portfolio-masonry-3 .p-wrapper .open-btn:hover {
+  color: #ececec;
+  background: #111;
+}
+
+.portfolio-masonry .p-wrapper:hover, .portfolio-masonry-2 .p-wrapper:hover, .portfolio-masonry-3 .p-wrapper:hover {
+  opacity: 1;
+}
+
+.portfolio-masonry .p-wrapper:hover .p-content, .portfolio-masonry-2 .p-wrapper:hover .p-content, .portfolio-masonry-3 .p-wrapper:hover .p-content {
+  bottom: 45px;
+}
+
+.portfolio-masonry .p-wrapper:hover .open-btn, .portfolio-masonry-2 .p-wrapper:hover .open-btn, .portfolio-masonry-3 .p-wrapper:hover .open-btn {
+  top: 0;
+}
+
+.portfolio-masonry-2 .p-item,
+.portfolio-masonry-3 .p-item,
+.portfolio-masonry-2 .grid-sizer, .portfolio-masonry-3 .grid-sizer {
+  width: 33.33%;
+}
+
+.portfolio-masonry-3 .p-item,
+.portfolio-masonry-3 .grid-sizer {
+  width: 30.7%;
+  margin: 15px;
+}
+
+
+/*---- Header ----*/
+#header .navbar.navbar-default.navbar-fixed-top .container .navbar-header .navbar-brand {
+	font-family: 'Montserrat', sans-serif;
+}
+.bottom-header,
+.home-top-header {
+    margin-top: -70px;
+}
+.header-bottom {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+}
+.header-top .navbar-default {
+    position: fixed;
+	width: 100%;
+	left: 0;
+	text-align: center;
+	z-index: 4;
+	top:-100px;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+#home-slideshow {
+    top: -70px;
+}
+.main-nav { padding:0; /*position:absolute; bottom:15px; right:15px; */ }
+
+@media (min-width: 180px) {
+    .navbar-brand {
+        margin: auto;
+        width: 180px;
+    }
+}
+@media (min-width: 576px) {
+    .navbar-brand {
+        width: 220px;
+    }
+}
+
+.navbar-brand img {
+	width:100%;
+}
+.navbar-default .navbar-brand h3{
+	letter-spacing: -2px;
+	color: #121212;
+	font-size: 30px;
+	margin-bottom:0px;
+	margin-top:10px;
+	line-height: 20px;
+}
+.navbar {
+	min-height: 70px;
+    border: none;
+    margin-bottom:10px
+}
+.navbar-default {
+	border-color: none;
+	border-bottom: none;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 0;
+	z-index: 4;
+	background-color: #fff;
+    opacity: 1;
+
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.22);
+}
+.navbar-right {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	margin:56px 0 0 0;
+
+}
+
+.text-shadow { }
+/*
+.navbar-right:before {
+    font-family: "linea-icon-font" !important;
+	content: "\e07d";
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}*/
+
+.navbar-collapse {
+	margin-top:0px;
+	padding-right: 0;
+	padding-left: 0;
+	color: #121212;
+	border-top:2px solid #444;
+	border-bottom:1px solid #d5d5d5;
+}
+.navbar-toggle {
+  position: absolute;
+  top:0;
+  right:0;
+  padding: 9px 10px;
+  margin-top: 18px;
+  margin-right: 0px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  border-radius: none;
+}
+.navbar-toggle:focus {
+  outline: none;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #fff;
+}
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 24px;
+  height: 4px;
+  border-radius: 2px;
+  background:#555;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #121212;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border:none
+}
+
+/*
+.nav { text-align:center; float:none }
+.nav > li  {
+	float:none; display:inline-block
+}
+@media (max-width: 992px) {
+.nav > li  {
+	border-right:none;
+}
+.caso_chevron_menu { display:inline-block; }
+}*/
+@media (min-width: 993px) {
+.caso_chevron_menu { display:none!important; }
+}
+.navbar-nav > li.nav2 a  {
+	background:#fff; color:#222;
+}
+.navbar-nav > li.nav2 a:hover  {
+	color:#999;
+}
+.navbar-nav > li:last-child  {
+	/*border: none;*/
+}
+
+.navbar-nav > li > a {
+	position: relative;
+	display: block;
+	padding: 10px 6px;	
+	font-size:0.8em;
+	color:#222;
+	font-family: 'Roboto Slab', serif;
+	font-weight:400;
+}
+.navbar-nav > li > a:hover {
+	/*opacity:0.5;*/
+}
+
+.navbar-nav > li > a i {
+	margin-right:8px;
+	color:#999
+}
+
+.navicon { background:#444; color:#fff; width:32px; height:32px; text-align:center }
+.navicon i { line-height:32px;  }
+
+.grey { color:#666 }
+.violet { color:#b68eff }
+.blue { color:#3fa5eb }
+.blue2 { color:#337ab7 }
+.blue3 { color:#78c7fe }
+.orange { color:#f87e1c/*#f6ae37*/ }
+.yellow { color:#f9cc3a; }
+.green { color:#7eb326 }
+.red { color:#ff4d1d }
+
+.square {
+	width: 10px;
+    height: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+	border-radius:2px
+}
+
+.cultura-y-turismo.square { background:#f87e1c!important }
+.salud.square { background:#f42515!important }
+.internacional.square { background:#438a00!important }
+.informe-de-vias-en-ecuador.square { background:#f42515!important }
+.elecciones-ecuatorianas-2021.square { background:#f42515!important }
+.erosion-rio-coca.square { background:#44810e!important }
+.ciencia-y-tecnologia.square { background:#97e6f2!important }
+.actualidad.square { background:#44810e!important }
+.pueblos-indigenas.square { background:#b68eff!important }
+.deportes.square { background:#3fa5eb!important }
+.opinion.square { background:#3fa5eb!important }
+.caso-chevron-ecuador.square { background:#3fa5eb!important }
+.petroleo-y-minas.square { background:#999!important }
+.energia.square { background:#0d927a!important }
+.noticias-nacionales.square { background:#eacf1c!important }
+.ecuador.square { background:#065890!important }
+.cultura-y-turismo.square { background:#f87e1c!important }
+.medio-ambiente.square { background:#f9cc3a!important; }
+.politica-y-economia.square { background:#7eb326!important }
+.seguridad-y-fronteras.square { background:#ff4d1d!important }
+.multimedia.square { background:#333!important }
+.animales-del-oriente-ecuatoriano.square { background:#065890!important }
+.biodiversidad-del-oriente-ecuatoriano.square { background:#f87e1c!important }
+.guillermo-lasso.square { background:#f9cc3a!important; }
+.derrames-de-petroleo-en-ecuador.square { background:#7eb326!important }
+.cronicas.square { background:#ff4d1d!important }
+.mineria.square { background:#333!important }
+.mineria-en-ecuador.square { background:#333!important }
+.podcasts.square { background:#333!important }
+.petroecuador.square { background:#333!important }
+
+.provincia-de-zamora-chinchipe.square { background:#438a00!important }
+.provincia-de-sucumbios.square { background:#438a00!important }
+.provincia-de-napo.square { background:#438a00!important }
+.provincia-de-orellana.square { background:#438a00!important }
+.provincia-de-pastaza.square { background:#438a00!important }
+.provincia-de-morona-santiago.square { background:#438a00!important }
+
+.grey { color:#666 }
+.noticias-nacionales, .noticias-nacionales i { color:#eacf1c!important }
+.erosion-rio-coca, .erosion-rio-coca i { color:#44810e!important }
+.ciencia-y-tecnologia, .ciencia-y-tecnologia i { color:#97e6f2!important }
+.salud, .salud i { color:#f42515!important }
+.internacional, .internacional i { color:#438a00!important }
+.cultura-y-turismo, .cultura-y-turismo i { color:#f87e1c!important }
+.informe-de-vias-en-ecuador, .informe-de-vias-en-ecuador i { color:#f42515!important }
+.elecciones-ecuatorianas-2021, .elecciones-ecuatorianas-2021 i { color:#f42515!important }
+.actualidad, .actualidad i { color:#44810e!important }
+.pueblos-indigenas, .pueblos-indigenas i { color:#b68eff!important }
+.deportes, .deportes i { color:#3fa5eb!important }
+.opinion, .opinion i { color:#3fa5eb!important }
+.caso-chevron-ecuador, .caso-chevron-ecuador i { color:#3fa5eb!important }
+.petroleo-y-minas, .petroleo-y-minas i { color:#999!important }
+.energia, .energia i { color:#0d927a!important }
+.ecuador, .ecuador i { color:#065890!important }
+.cultura-y-turismo, .cultura-y-turismo i { color:#f87e1c!important/*#f6ae37*/ }
+.medio-ambiente, .medio-ambiente i { color:#f9cc3a!important; }
+.politica-y-economia, .politica-y-economia i { color:#7eb326!important }
+.seguridad-y-fronteras, .seguridad-y-fronteras i { color:#ff4d1d!important }
+.multimedia, .multimedia i { color:#333!important }
+.animales-del-oriente-ecuatoriano, .animales-del-oriente-ecuatoriano i { color:#065890!important }
+.biodiversidad-del-oriente-ecuatoriano, .biodiversidad-del-oriente-ecuatoriano i { color:#f87e1c!important/*#f6ae37*/ }
+.guillermo-lasso, .guillermo-lasso i { color:#f9cc3a!important; }
+.derrames-de-petroleo-en-ecuador, .derrames-de-petroleo-en-ecuador i { color:#7eb326!important }
+.cronicas, .cronicas i { color:#ff4d1d!important }
+.mineria, .mineria i { color:#333!important }
+.mineria-en-ecuador, .mineria-en-ecuador i { color:#333!important }
+.podcasts, .podcasts i { color:#333!important }
+.petroecuador, .petroecuador i { color:#333!important }
+
+.blue2 { color:#337ab7 }
+.blue3 { color:#78c7fe }
+
+.tag.salud { background:#f42515 }
+.tag.internacional { background:#438a00!important }
+.tag.informe-de-vias-en-ecuador { background:#f42515 }
+.tag.actualidad { background:#44810e }
+.tag.vias { background:#337ab7 }
+.tag.deportes { background:#3fa5eb }
+.tag.opinion { background:#3fa5eb }
+.tag.seguridad-y-fronteras { background:#ff4d1d }
+.tag.petroleo-y-minas { background:#999 }
+.tag.energia { background:#0d927a }
+.tag.politica-y-economia { background:#7eb326 }
+.tag.cultura-y-turismo { background:#f87e1c }
+.tag.ciencia { background:#f9cc3a }
+.tag.medio-ambiente { background:#f9cc3a }
+.tag.indigenas { background:#b68eff }
+.tag.pueblos-indigenas { background:#b68eff }
+.tag.imagenes { background:#333 }
+.tag.videos { background:#333 }
+.tag.multimedia { background:#333 }
+
+/*
+
+.nav > li > a:before {
+    font-family: "linea-icon-font" !important;
+	content: "\e07d";
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}*/
+/*
+.nav > li > a.grey { background:#999 }
+.nav > li > a.blue { background:#3fa5eb }
+.nav > li > a.orange { background:#f6ae37 }
+.nav > li > a.yellow { background:#f9cc3a; }
+.nav > li > a.green { background:#7eb326 }
+*/
+.nav > li > a:hover {
+	color:#222;
+	background:#fff;
+}
+.nav > li > span {
+	position: relative; 
+	display: block;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+@media (min-width: 992px) {
+    .navbar-default .navbar-nav > li > a {
+        color: #121212;
+    }
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+@media (max-width: 768px) {
+   .navbar-collapse {
+      max-height: none;
+      overflow-x: hidden;
+   }
+}
+.dropdown-menu {
+	font-size: 13px;
+	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow:0 1px 5px rgba(0, 0, 0, 0.15);
+	box-shadow:0 1px 5px rgba(0, 0, 0, 0.15);
+
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  text-decoration: none;
+  color:#fff
+}
+.menu-padding {
+    padding-top:70px;
+}
+.content {
+    margin-top:0px;
+}
+
+.navbar-header {
+    float: none!important;
+}
+
+.navbar-header-top { display:block; height:42px;  }
+
+@media (max-width: 992px) {
+.navbar-header-top { display:none; }
+}
+@media (min-width: 992px) {
+.navbar-header-top-mobile { display:none; }
+}
+
+
+/*Navbar Collapse*/
+@media (max-width: 1200px) {
+    .navbar-default .container {
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .navbar-default .navbar-collapse {
+        margin-top: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .navbar-default .navbar-nav > li > a {
+        color: #fff;
+    }
+    .navbar-default .navbar-collapse {
+        background-color: #1C1C1C;
+    }
+    .navbar-small .navbar-collapse {
+        margin-top: 0px;
+    }
+    .navbar-header {
+        float: none!important;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .nav > li > span {
+        color: #fff;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: none;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .container>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+		margin-top:20px;
+    }
+    .container>.navbar-header {
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .container>.navbar-header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+	.navbar .container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+	}
+    .navbar-nav>li {
+        border: 1px solid #ccc;
+        margin-bottom: 5px;
+        border-radius:3px;
+        display: inline-block;
+        float: none;
+    }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 0;
+        padding:15px 0;
+        display: initial!important;
+	}
+    .navbar-nav>li>a {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .collapse.show{
+  		display:block !important;
+	}
+    .navbar-default ul.nav li {
+		border-bottom: 1px dotted #2A2A2A;
+    }
+    .dropdown a.btn {
+        width:100%
+    }
+    .dropdown-menu {
+        position: relative;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        display: none;
+        float: none;
+        min-width: 160px;
+        padding: 5px 0;
+        margin: 2px 0 0;
+        font-size: 13px;
+        list-style: none;
+        background-color: transparent;
+        background-clip: padding-box;
+        border: none;
+        border: none;
+        border-radius: 4px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    .dropdown-menu.menu-galeria {
+        background-color: #fff!important;
+        -webkit-box-shadow: 0 1px 5px rgb(0 0 0 / 15%);
+        -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 1px 5px rgb(0 0 0 / 15%)!important;
+        border: 1px solid rgba(0,0,0,.15);
+    }
+    .dropdown-menu > li {
+        border-bottom: none!important;
+    }
+    .dropdown-menu > li > a {
+        color: #fff;
+    }
+    .dropdown-menu.menu-galeria > li > a {
+        color: #333!important;
+    }
+    .dropdown-menu > li > a:hover,
+    .dropdown-menu > li > a:focus {
+        text-decoration: none;
+        background-color: transparent!important;
+    }
+    .dropdown-menu.menu-galeria > li > a:hover {
+        color:#666!important
+    }
+}
+
+@media (min-width: 180px) {
+    .navbar-nav>li {
+        width: 48%;
+    }
+}
+@media (min-width: 768px) {
+    .navbar-nav>li {
+        width: 33%;
+    }
+}
+@media (min-width: 1200px) {
+    .navbar-nav>li {
+        width: auto;
+    }
+}
+.navbar .icon {
+    font-size: 18px;
+}
+.navbar .social-icon {
+    padding-left: 15px;
+    padding-right: 0;
+    margin-top: 2px;
+}
+@media (min-width: 992px) {
+    .navbar-right .dropdown-menu {
+        right: auto;
+        left: 10px;
+        top: -155px;
+    }
+	
+}
+@media (min-width: 992px) {
+    .rez .dropdown-menu {
+        right: auto;
+        left: 10px;
+        top: 36px!important;
+    }
+}
+@media (min-width: 992px) {
+    .rez-drop .dropdown-menu {
+        right: auto;
+        left: 10px;
+        top: 36px!important;
+    }
+}
+
+/*--- FOOTER ---*/
+.footer { background:#19262e; padding:30px 0 80px 0 }
+
+@media screen and (max-width: 819px) {
+.footer_logos { width:100%; margin:auto }
+}
+@media screen and (min-width: 820px) {
+.footer_logos { width:100%; margin:auto }
+}
+.footer_logos { margin:30px 0; overflow:auto; padding:0 30px }
+.footer_logos img { width:90%; height:auto }
+.footer_logos div.col { width:14.2%; text-align:center; float:left }
+@media only screen and (max-width: 480px) {
+.footer_logos div.col { width:50%; margin-bottom:10px }
+}
+@media only screen and (min-width: 481px) and (max-width: 720px) {
+.footer_logos div.col { width:33.3%; margin-bottom:10px }
+}
+@media only screen and (max-width: 720px) {
+.footer_logos { padding:0 20px; }
+}
+
+@media only screen and (max-width: 720px) {
+.copyright { font-size:85%; padding:0 20px; width:100%; clear:both }
+}
+
+@media screen and (max-width: 780px) {
+.section_links { display:block }
+}
+@media screen and (min-width: 781px) {
+.section_links { display:none }
+}
+
+.copyright { color:#CCCCCC; margin-top:30px; padding:0; line-height:1.5em;  }
+
+@media only screen and (max-width: 720px) {
+.copyright { text-align: left }
+}
+
+.tooltip.tooltipstered { color:#3fa5eb; cursor:pointer; border-bottom:1px dashed #000; opacity:1;   }
+.tooltip.tooltipstered:hover { color:#fff!important;  }
+
+.overline {
+    font-size: 1.4em;
+	padding-top:25px;
+	/*border-top: 1px solid #ccc;*/
+    margin: 0 auto 1.2em;
+    /*letter-spacing: -1px;*/
+    text-align: center;
+    clear: both;
+}
+.overline span {
+    padding: 0 0.3em;
+    color: #555;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.grid { padding:40px 0px 20px; }
+
+.img_holder { /*margin:-25px -30px 0 -30px;*/ position:relative }
+.img_holder div.ico_play{ position:absolute}
+.img_holder.hide { display:none }
+
+.item:hover { cursor: pointer; }
+.item img { 
+	margin-bottom: 16px;
+	width: 100%;
+	height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.item.index ul { margin:30px 0}
+.item.index ul li { margin-bottom:1em; padding-bottom:1em; border-bottom:1px dotted #eee}
+.item { overflow:hidden; position:relative; padding:0 15px }
+.item:after { border-right:1px solid #d5d5d5}
+.item h4 { font-family: 'Roboto Slab', serif; font-weight:400; line-height:1.4em; }
+.item h1 { margin-bottom:0.4em}
+
+
+@media screen and (max-width: 779px) {
+	.item h1 { font-size: 32px; letter-spacing:-0.4px; font-weight:300}
+	.item h2 { font-size: 24px; letter-spacing:-0.4px; }
+	.item h4 { font-size:16px;}
+    .item h4.larger { font-size:22px;}
+	}
+@media screen and (min-width: 780px) {
+	.item h1 { font-size: 40px; letter-spacing:-0.4px; font-weight:300}
+	.item h2 { font-size: 20px; letter-spacing:-0.4px; font-weight:700 }
+	.item h4 { font-size: 16px; letter-spacing:-0.4px}
+    .item h4.larger { font-size:22px;}
+	}
+
+.embed-container { position: relative; padding-bottom: 52%; height: 0; overflow: hidden; max-width: 100%; } 
+@media screen and (max-width: 780px) {
+.embed-container { width:100%; margin-bottom:30px } 
+}
+@media screen and (min-width: 781px) {
+.embed-container { width:100%; } 
+}
+.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.epigrafe { margin-top:0.6em }
+
+.owl-carousel.imagenes .owl-controls {
+    right: 0;
+    left: 0;
+    margin: auto;
+	position:initial;
+}
+
+.owl-carousel .item {
+    padding:0;
+}
+
+@media only screen and (max-width: 719px){
+    .owl-carousel.single.home .owl-item img {
+        display: block!important;
+    }
+}
+
+
+.owl-controls { 
+    position:absolute; bottom:0; right:0; left:0; 
+}
+
+#carusel_footer .owl-carousel .item {
+    padding: 15px 0 0!important;
+}
+#carusel_footer .item a .ft-item {
+    padding: 15px 0!important;
+}
+#carusel_footer .owl-controls { 
+    position:absolute; 
+    top:0;
+    z-index:-1;
+}
+#carusel_footer .owl-nav { 
+    position:absolute; 
+    top:50%; 
+    width:100%;
+}
+#carusel_footer .owl-controls .owl-dots {
+    margin: 0 auto!important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -40px;
+}
+.owl-dot.active {
+    background: #f9cc3a!important;
+}
+@media (min-width: 180px) {
+#carusel_single.owl-carousel .item {
+    min-height: 180px!important;
+}
+}
+@media (min-width: 780px) {
+#carusel_single.owl-carousel .item {
+    min-height: 280px!important;
+}
+}
+@media (min-width: 992px) {
+#carusel_single.owl-carousel .item {
+    min-height: 450px!important;
+}
+}
+
+#carusel_single.owl-carousel .owl-prev {
+    left: 15px!important;
+}
+#carusel_single.owl-carousel .owl-prev:before, #carusel_single.owl-carousel .owl-next:before {
+    font-family: FontAwesome;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    display: block;
+	text-indent:initial;
+}
+#carusel_single.owl-carousel .owl-next {
+    right: 15px!important;
+}
+#carusel_single.owl-carousel .owl-nav div[class^='owl-'], .owl-nav div[class*=' owl-'] {
+    text-align: center;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 100%;
+    cursor: pointer;
+	top:15px;
+	margin-top:0;
+}
+
+#carusel_single.owl-carousel .owl-prev:before {
+    content: "\f053";
+}
+#carusel_single.owl-carousel .owl-next:before {
+    content: "\f054";
+}
+
+.owl-theme .owl-controls .owl-nav [class*=owl-] {
+    font-size:0;
+}
+
+#carusel_galeria .item img {
+    margin-bottom: 0px!important;
+}
+#carusel_galeria.owl-carousel .owl-prev {
+    left: 0px!important;
+}
+#carusel_galeria.owl-carousel .owl-next {
+    right: 0px!important;
+}
+#carusel_galeria .owl-controls .owl-nav [class*=owl-] {
+    font-size:0;
+}
+#carusel_galeria .owl-controls {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    left: 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.6+100 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=0 ); /* IE6-9 */
+}
+#carusel_galeria .owl-dots {
+    display: table;
+    margin: 40px auto 15px;
+}
+
+.epigrafe { width:100%; padding:0; clear:both; background:none repeat scroll rgba(0, 0, 0, 0.6); bottom:0; position:absolute; }
+.epigrafe p { padding:6px 1em; color:#fff; margin:0!important; font-size:12px!important;  }
+
+.border_bottom { border-bottom:1px solid #d5d5d5; padding-bottom:15px; margin-bottom:15px; }
+
+.btn-primary {
+    color: #fff!important;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+.btn-primary:hover {
+    background-color: #337ab7!important;
+	opacity: 0.8
+}
+
+.headline1 { font-family: 'Roboto Slab', serif; font-weight:400; line-height:1.4em; margin-bottom:0.2em }
+.headline2 { font-family: 'Roboto Slab', serif; font-weight:400; line-height:1.4em; margin-bottom:0.2em }
+.headline3 { font-family: 'Roboto Slab', serif; font-weight:400; line-height:1.4em; margin-bottom:0.2em }
+
+@media screen and (min-width: 180px) {
+.headline1 { font-size: 26px }
+.headline2 { font-size: 20px }
+.headline3 { font-size: 16px }
+}
+@media screen and (min-width: 480px) {
+.headline1 { font-size: 30px }
+.headline2 { font-size: 24px }
+.headline3 { font-size: 20px }
+}
+@media screen and (min-width: 768px) {
+.headline1 { font-size: 36px }
+.headline2 { font-size: 24px }
+.headline3 { font-size: 20px }
+}
+
+.shade { text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); }
+.shade-lg { text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6); }
+	
+	
+@media screen and (min-width: 480px) {
+    .share_continuous { position:absolute; top:30px; left:-92px; }
+    }
+.section_link { color:#333!important; }
+
+.ico_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 26px;
+    right: 26px;
+    background: rgb(0,0,0,0.8);
+    border-radius: 100%;
+    width: 36px;
+    height: 36px;
+    z-index: 100;
+    opacity: 0;
+	}
+.ico_item img {
+    width:75%;
+	margin:0
+	}
+.ico_item.sm {
+    top: 12px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+}
+.ico_item.lg {
+    top: 30px;
+    right: 30px;
+    width: 70px;
+    height: 70px;
+}
+.item.picture .ico_item.picture {
+	opacity:1
+}
+.item.video .ico_item.video {
+	opacity:1
+}
+
+.item-noticias.video .ico_item.video {
+	opacity:1
+}
+.item-noticias.picture .ico_item.picture {
+	opacity:1
+}
+
+.banner_story:hover,
+.banner_story:focus,
+.banner_story:active,
+.banner_story:visited {
+text-decoration:none!important;
+color:#fff!important
+}
+
+.banner_story { 
+height:380px; color:#fff; padding:25px; text-align:center;
+display:block;
+background-repeat:no-repeat;
+background-position:center;
+background-size: cover;
+margin-bottom:15px;
+border-radius:5px;
+}
+.banner_story h1 { 
+font-size:30px!important;
+line-height:1.2em!important
+}
+.banner_story.kichwas { 
+background-image:url(/historias/tradiciones-kichwas-en-tamia-yura-ecuador/img/banner.jpg);
+}
+.banner_story.texaco { 
+background-image:url(/historias/texaco-un-gran-socio-para-ecuador/img/banner.jpg);
+}
+.banner_story.yasuni { 
+background-image:url(/historias/yasuni-joya-de-la-biodiversidad/img/banner.jpg);
+}
+.banner_story.cuyabeno { 
+background-image:url(/historias/reserva-cuyabeno/img/banner.jpg);
+}
+.banner_story.covid { 
+background-image:url(/historias/covid-19/img/banner.jpg);
+}
+.banner_story.sangay { 
+    background-image:url(/historias/volcan-sangay/img/banner.jpg);
+    }
+.banner_story.caso_chevron { 
+background-image:url(/historias/caso-chevron-ecuador/img/banner.jpg);
+}
+.banner_story.naturaleza { 
+    background-image:url(/historias/naturaleza-y-diversidad-cultural/img/banner.jpg);
+    }
+.banner_story.lostayos { 
+    background-image:url(/historias/cueva-de-los-tayos/img/banner.jpg);
+    }
+.banner_story.sentencia { 
+    background-image:url(/historias/sentencia-chevron/img/banner.jpg);
+    }
+.banner_story.hoteles { 
+    background-image:url(/historias/hoteles-amazonia/img/banner.jpg);
+    }
+.banner_story .btn-success {
+    color: #fff!important;
+    background-color: #7eb326;
+    border-color: #7eb326;
+}
+.banner_story .btn-success:hover,
+.banner_story .btn-success:focus,
+.banner_story .btn-success:active,
+.banner_story .btn-success:visited {
+    color: #fff!important;
+    background-color: #6b9a1d;
+    border-color: #6b9a1d;
+}
+.aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aligner.end {
+    align-items: end!important;
+}
+.aligner_wrap {
+    display: flex;
+    align-content: space-between!important;
+    justify-content: center;
+    flex-wrap: wrap!important;
+}
+
+.logo_row img { width:90%; max-width:180px }
+
+@media (min-width: 768px) {
+    .logo_row {
+        display:flex;
+      justify-content: center;
+    }
+}
+
+.logo_row div[class^='col-'] {
+    height:60px;
+    display:inline-flex;
+    align-items: center;
+  justify-content: center;
+  margin:0 -0.2%
+}
+
+.banner_covid {
+   border-bottom:1px solid #ccc;
+   overflow:auto;
+   line-height:1.4em
+}
+
+.banner_covid div[class^='col-'] {
+    display: inline-flex;
+    align-items: center;
+  justify-content: center;
+  min-height:80px;
+}
+
+@media (max-width: 768px) {
+.banner_covid div[class^='col-'] {
+    border-bottom:1px solid #ccc;
+	padding-bottom:15px;
+}
+.banner_covid div[class^='col-']:last-child {
+    border-bottom: none
+}
+}
+@media (min-width: 769px) {
+.banner_covid div[class^='col-'] {
+    border-right:1px solid #ccc;
+    padding-bottom:15px;
+}
+.banner_covid div[class^='col-']:last-child {
+    border-right: none
+}
+}
+.banner_covid a {
+   font-weight:600;
+   color:#5cb85c
+}
+.banner_covid .ico {
+    width:44px;
+	margin-right:15px
+}
+.banner_covid .ico img {
+    width:100%
+}
+
+/* Provincias */
+.banners_provincias div a:hover {
+    text-decoration:none;
+    opacity:0.7;
+}
+.banner_provincia { 
+height:180px; color:#fff; padding:25px; text-align:center;
+display:flex;
+align-items:center;
+justify-content:center;
+background-repeat:no-repeat;
+background-position:center;
+background-size: cover;
+margin-bottom:15px;
+border-radius:5px;
+}
+.banner_provincia h1 { 
+font-size:30px!important;
+line-height:1.2em!important
+}
+.banner_provincia .nro { 
+    position: absolute;
+    top: -20px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background: #444;
+    color: #fff;
+    border-radius: 100%;
+    border: 2px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600
+    }
+.banner_provincia.sucumbios { 
+background-image:url(/images/provincias/sucumbios.jpg);
+}
+.banner_provincia.napo { 
+background-image:url(/images/provincias/napo.jpg);
+}
+.banner_provincia.orellana { 
+background-image:url(/images/provincias/orellana.jpg);
+}
+.banner_provincia.pastaza { 
+background-image:url(/images/provincias/pastaza.jpg);
+}
+.banner_provincia.morona-santiago { 
+background-image:url(/images/provincias/morona-santiago.jpg);
+}
+.banner_provincia.zamora-chinchipe { 
+background-image:url(/images/provincias/zamora-chinchipe.jpg);
+}
+.banner_provincia .btn-success {
+    color: #fff!important;
+    background-color: #7eb326;
+    border-color: #7eb326;
+}
+.banner_provincia .btn-success:hover,
+.banner_provincia .btn-success:focus,
+.banner_provincia .btn-success:active,
+.banner_provincia .btn-success:visited {
+    color: #fff!important;
+    background-color: #6b9a1d;
+    border-color: #6b9a1d;
+}
+
+
+/*--- News Ticker ---*/
+.ticker-container {
+	height: 60px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	/*background-color: white;
+	color: black;*/
+}
+.ticker-container ul {
+	list-style: none;
+	padding: 0;
+	height: auto;
+	width:100%
+}
+.ticker-container ul li {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	color:#333;
+	width:100%;
+}
+.ticker-container ul li span.headline1,
+.ticker-container ul li span.headline2 {
+	color:#333;
+	margin-right:6px;
+}
+
+.video-thumb-container {
+width:25%;
+float:left;
+margin:0;
+padding:2px;
+cursor:pointer;
+position:relative
+}
+.video-thumb-container img {
+-webkit-transition-delay: 0s;
+transition-delay: 0s;
+-webkit-transition-duration: 0.35s;
+transition-duration: 0.35s;
+}
+.video-thumb-container:hover img {
+filter: brightness(50%);
+}
+
+.col_first_featured h4 { margin-bottom:0 }
+
+/*--- news ticker ---*/
+
+.bn-breaking-news{
+  display: block;
+  width: 100%;
+  border: solid 1px #ce2525;
+  background: #FFF;
+  height: 40px;
+  box-sizing: border-box;
+  position: relative;
+  line-height: 40px;
+  overflow: hidden;
+  border-radius: 2px;
+  text-align: auto;
+  font-size: 14px;
+}
+.bn-breaking-news *{
+  box-sizing: border-box;
+}
+.bn-breaking-news.bn-fixed-top{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.bn-breaking-news.bn-fixed-bottom{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+
+
+
+/*********************************/
+/*title styles start**************/
+.bn-label{
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  position: absolute;
+  background-color: #ce2525;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  z-index: 3;
+  padding: 0 15px;
+  white-space: nowrap;
+}
+/*title styles end****************/
+
+
+
+/*********************************/
+/*news item style start **********/
+.bn-news{
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  right: 0;
+  overflow: hidden;
+}
+.bn-news ul{
+  display: block;
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+}
+.bn-news ul li{
+  white-space: nowrap;
+  overflow:hidden !important;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  -webkit-transition: color .2s linear;
+  -moz-transition: color .2s linear;
+  -o-transition: color .2s linear;
+  transition: color .2s linear;
+  position: absolute;
+  width: 100%;
+  display: none;
+  color: #333;
+}
+.bn-news ul li a{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  padding: 0 10px;
+  color: #333;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.bn-news ul li a:hover{
+  color: #069;
+}
+.bn-loader-text{
+  padding: 0 10px;
+}
+.bn-seperator{
+  display: inline-block;
+  float: left;
+  margin-right: 15px;
+  width: 30px;
+  height: 40px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.bn-seperator.bn-news-dot{
+  margin-right: 0;
+}
+.bn-seperator.bn-news-dot:after{
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #333;
+  border-radius: 50%;
+  top: 50%;
+  margin-top: -4px;
+  left: 50%;
+  margin-left: -4px;
+}
+.bn-prefix{
+  color: #d65d7a;
+  margin-right: 15px;
+  padding-left: 10px;
+}
+.bn-positive{
+  color: #0b8457;
+  font-weight: bold;
+}
+.bn-negative{
+  color: #dc2f2f;
+  font-weight: bold;
+}
+/*news item style end ************/
+
+
+
+/*********************************/
+/*controls style start ***********/
+.bn-controls{
+  width: auto;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  position: absolute;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.bn-controls button{
+  width: 30px;
+  float: left;
+  height: 100%;
+  cursor: pointer;
+  border:none;
+  border-left: solid 1px #ccc;
+  text-align: center;
+  background-color: #ffffff;
+  outline: none;
+}
+.bn-controls button:hover{
+  background-color: #EEE;
+}
+
+.bn-arrow {
+  margin: 0;
+  display: inline-block;
+  height: 8px;
+  position: relative;
+  width: 8px;
+  top: 0;
+}
+.bn-arrow::after {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-right-style: solid;
+  border-right-width: 2px;
+  content: '';
+  display: inline-block;
+  height: 8px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 8px;
+}
+.bn-arrow.bn-next {
+  -moz-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
+  transform: rotate(315deg);
+  left:-3px;
+}
+.bn-arrow.bn-prev {
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  left: 3px;
+}
+.bn-arrow::after{
+  border-color: #999999;
+}
+.bn-arrow::before{
+  background-color: #999999;
+
+}
+.bn-play{
+  position: relative;
+  background: #999999;
+  width: 0;
+  height: 12px;
+  display: inline-block;
+  margin-left: -5px;
+}
+.bn-play::after {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-left-color: #999999;
+  border-width: 7px;
+  margin-top: -6px;
+}
+.bn-pause{
+  position: relative;
+  width: 0;
+  height: 14px;
+  display: inline-block;
+  top: 1px;
+  left:-1px;
+}
+.bn-pause::before{
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 100%;
+  left: 3px;
+  background-color: #999999;
+}
+.bn-pause::after{
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 100%;
+  left: -3px;
+  background-color: #999999;
+}
+/*controls style end *************/
+/*********************************/
+.bn-direction-rtl{
+  direction: rtl;
+}
+.bn-direction-rtl .bn-label{
+  left: auto;
+  right: 0;
+}
+.bn-direction-rtl .bn-controls{
+  right: auto;
+  left: 0;
+}
+.bn-direction-rtl .bn-seperator{
+  margin-left: 15px;
+  margin-right: 0;
+  float: right;
+}
+.bn-direction-rtl .bn-prefix{
+  margin-left: 15px;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 10px;
+}
+.bn-direction-rtl .bn-controls button{
+  border-left: none;
+  border-right: solid 1px #EEE;
+}
+
+.bn-effect-scroll .bn-news ul{
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.bn-effect-scroll .bn-news ul li{
+  display: list-item;
+  float: left;
+  position: relative;
+  width: auto;
+}
+.bn-effect-scroll.bn-direction-rtl .bn-news ul li{
+  float: right;
+}
+
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+}
+.alert-dismissable, .alert-dismissible {
+    padding-right: 35px;
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 0;
+}
+.close {
+    opacity: .9;
+}
+
+/*********************************/
+/*********************************/
+.bn-label {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    position: absolute;
+    background-color: #7eb326;
+    text-align: center;
+    color: #FFF;
+    font-weight: 700;
+    z-index: 3;
+    padding: 0 15px;
+    white-space: nowrap;
+}
+
+
+.bn-breaking-news {
+    display: block;
+    width: 100%;
+    border: solid 2px #7eb326;
+    background: #f8f8f8;
+    height: 40px;
+    box-sizing: border-box;
+    position: relative;
+    line-height: 40px;
+    overflow: hidden;
+    border-radius: 2px;
+    text-align: auto;
+    font-size: 14px;
+	-webkit-box-shadow: inset -1px 1px 3px 0px rgba(0,0,0,0.4);
+-moz-box-shadow: inset -1px 1px 3px 0px rgba(0,0,0,0.4);
+box-shadow: inset -1px 1px 3px 0px rgba(0,0,0,0.4);
+}
+
+#carusel_historias {
+    padding-bottom:40px;
+}
+#carusel_historias .item {
+    text-align:center
+}
+#carusel_historias .item p {
+    line-height:1.4em;
+    padding:0 10px;
+}
+#carusel_historias .owl-controls {
+    position: absolute;
+    width:100%;
+    top: 0;
+    right: initial;
+    z-index:-1;
+}
+#carusel_historias .owl-controls .owl-dots {
+    margin: 0 auto 5px auto;
+    position: absolute;
+    bottom:0;
+    width:100%;
+    text-align:center
+}
+#carusel_historias .owl-controls .owl-nav {
+    position: absolute;
+    width:100%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+#carusel_historias .item img {
+    margin-bottom:0!important
+}
+#carusel_historias .owl-controls .owl-nav [class*=owl-] { 
+    font-size:0;
+}
+#carusel_historias .item .rounded-circle {
+    border-radius: 50%;
+    width: 70%;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom:15px;
+   /* -webkit-box-shadow: 0px 4px 5px 2px rgba(0,0,0,0.25); 
+box-shadow: 0px 4px 5px 2px rgba(0,0,0,0.25);*/
+}
+
+/*--- Bootstrap 4 classes ---*/
+
+.border-right {
+    border-right: 1px solid #dee2e6!important;
+}
+
+.col-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+}
+@media (min-width: 992px) {
+.col-lg-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+}
+}
+@media (min-width: 992px) {
+.col-lg {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+}
+.col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.d-block {
+    display: block;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.rounded-circle {
+    border-radius: 50%!important;
+}
+
+.m-0 {  margin: 0!important; }
+.m-1 {  margin: .25rem!important; }
+.m-2 {  margin: .5rem!important; }
+.m-3 {  margin: 1rem!important; }
+.m-4 {  margin: 1.5rem!important; }
+.m-5 {  margin: 3rem!important; }
+
+.mt-0 {  margin-top: 0!important; }
+.mt-1 {  margin-top: .25rem!important; }
+.mt-2 {  margin-top: .5rem!important; }
+.mt-3 {  margin-top: 1rem!important; }
+.mt-4 {  margin-top: 1.5rem!important; }
+.mt-5 {  margin-top: 3rem!important; }
+
+.mr-0 {  margin-right: 0!important; }
+.mr-1 {  margin-right: .25rem!important; }
+.mr-2 {  margin-right: .5rem!important; }
+.mr-3 {  margin-right: 1rem!important; }
+.mr-4 {  margin-right: 1.5rem!important; }
+.mr-5 {  margin-right: 3rem!important; }
+
+.mb-0 {  margin-bottom: 0!important; }
+.mb-1 {  margin-bottom: .25rem!important; }
+.mb-2 {  margin-bottom: .5rem!important; }
+.mb-3 {  margin-bottom: 1rem!important; }
+.mb-4 {  margin-bottom: 1.5rem!important; }
+.mb-5 {  margin-bottom: 3rem!important; }
+
+.ml-0 {  margin-left: 0!important; }
+.ml-1 {  margin-left: .25rem!important; }
+.ml-2 {  margin-left: .5rem!important; }
+.ml-3 {  margin-left: 1rem!important; }
+.ml-4 {  margin-left: 1.5rem!important; }
+.ml-5 {  margin-left: 3rem!important; }
+
+.p-0 {  padding: 0!important; }
+.p-1 {  padding: .25rem!important; }
+.p-2 {  padding: .5rem!important; }
+.p-3 {  padding: 1rem!important; }
+.p-4 {  padding: 1.5rem!important; }
+.p-5 {  padding: 3rem!important; }
+
+.pt-0 {  padding-top: .0!important; }
+.pt-1 {  padding-top: .25rem!important; }
+.pt-2 {  padding-top: .5rem!important; }
+.pt-3 {  padding-top: 1rem!important; }
+.pt-4 {  padding-top: 1.5rem!important; }
+.pt-5 {  padding-top: 3rem!important; }
+
+.pr-0 {  padding-right: 0!important; }
+.pr-1 {  padding-right: .25rem!important; }
+.pr-2 {  padding-right: .5rem!important; }
+.pr-3 {  padding-right: 1rem!important; }
+.pr-4 {  padding-right: 1.5rem!important; }
+.pr-5 {  padding-right: 3rem!important; }
+
+.pb-0 {  padding-bottom: 0!important; }
+.pb-1 {  padding-bottom: .25rem!important; }
+.pb-2 {  padding-bottom: .5rem!important; }
+.pb-3 {  padding-bottom: 1rem!important; }
+.pb-4 {  padding-bottom: 1.5rem!important; }
+.pb-5 {  padding-bottom: 3rem!important; }
+
+.pl-0 {  padding-left: 0!important; }
+.pl-1 {  padding-left: .25rem!important; }
+.pl-2 {  padding-left: .5rem!important; }
+.pl-3 {  padding-left: 1rem!important; }
+.pl-4 {  padding-left: 1.5rem!important; }
+.pl-5 {  padding-left: 3rem!important; }
+
+@media (min-width: 992px){
+.mb-lg-0, .my-lg-0 {
+    margin-bottom: 0 !important;
+}
+}
+
+@media (min-width: 576px){
+.pb-sm-0, .py-sm-0 {
+    padding-bottom: 0 !important;
+}
+.mb-sm-0, .my-sm-0 {
+    margin-bottom: 0 !important;
+}
+.border-bottom-sm-none {
+    border-bottom: none!important;
+}
+}
+
+@media (min-width: 992px) {
+.p-lg-4 { padding: 1.5rem!important; }
+}
+
+.card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.d-flex {
+    display:flex;
+}
+@media (min-width: 768px) {
+    .d-md-flex {
+        display: -webkit-box!important;
+        display: -ms-flexbox!important;
+        display: flex!important;
+    }
+}
+@media (min-width: 992px){ 
+    .d-lg-flex {
+        display: -webkit-box!important;
+        display: -ms-flexbox!important;
+        display: flex!important;
+    }
+}
+.align-items-center {
+    align-items:center
+}
+.justify-content-center {
+    justify-content:center
+}
+.justify-content-end {
+    justify-content:end
+}
+.ficha_provincia p {
+    line-height:1.2em
+}
+
+.mapa_provincias {
+    border-radius: 6px;
+    height:100%
+}
+
+.mapa_provincias .ref {
+    position: absolute;
+    bottom:20px;
+    right:40px;
+    list-style:none
+}
+.mapa_provincias .ref ul li {
+    padding-bottom:0.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom:1px solid #eee;
+    font-weight:600;
+}
+
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.shadow-sm {
+    box-shadow: 0 .1rem .5rem rgba(0,0,0,.15)!important;
+}
+
+
+@media (max-width: 992px){
+    .btn-enviar {
+        width:100%;
+        margin-top: .5rem
+    }
+}
+
+
+
+
+/*--- masonry ---*/
+
+.gallery-wrapper {
+    overflow: hidden;
+  }
+
+.grid-item {
+padding: 6px;
+overflow: hidden
+}
+
+.grid-item img {
+max-width: 100%;
+width: 100%;
+height: auto;
+-webkit-transition: -webkit-transform 0.3s;
+        transition: transform 0.3s;
+}
+
+.grid-item:hover img {
+-webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+        transform: scale(1.1);
+}
+
+.grid_center {
+    position: relative;
+    clear: both;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+}
+.grid_center div[class^='col-'] {
+    display: inline-block;
+    float: none;
+    margin: 0 -0.2% 2em;
+}
+.h-100 {
+    height:100%
+}
+
+.suscribase {
+    position: fixed;
+    width:100%;
+    bottom:0;
+    margin:0;
+    z-index: 100
+}
+
+.hito_popup { display:none; background-color:#FFFFFF; position:relative; width:800px; padding:30px 0; font-size:14px; }
+.hito_popup a { color:#2da6e5; font-size:16px;}
+.hito_popup a.close{ display:block; position:absolute; right:2px; top:2px; background-color:#FFFF00; width:28px; height:28px; background-color:#333333; color:#FFFFFF; line-height:28px; text-align:center; font-size:18px; text-decoration:none; font-size:12px;}
+.hito_popup a.close:hover{ background-color: #999999; }
+.hito_popup p { margin:30px;  line-height:1.4em; color:#333333; font-size:16px;  }
+.hito_popup h3 { margin:0 30px; font-size: 18px; line-height: 1em; }
+.hito_popup ul li { border-bottom:1px dotted #999; padding:10px 0; }
+
+.video_module { display:none; background-color:#FFFFFF; position:relative; width:96%; max-width:1170px; padding:30px 0; font-size:14px; }
+.video_module a { color:#2da6e5; }
+.video_module p.headline {
+    font-family: 'Sintony', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.3em;
+    margin-bottom: 0.4em;
+}
+.video_module a.close{ display:block; position:absolute; right:2px; top:2px; background-color:#FFFF00; width:28px; height:28px; background-color:#333333; color:#FFFFFF; line-height:28px; text-align:center; font-size:18px; text-decoration:none; font-size:12px;}
+.video_module a.close:hover{ background-color: #999999; }
+.video_module p { margin:20px; line-height:1.4em; color:#333333; font-size:1em;  }
+.video_module h3 { margin:0 30px; font-size: 18px; line-height: 1em; }
+.video_module ul li { border-bottom:1px dotted #999; padding:10px 0; }
