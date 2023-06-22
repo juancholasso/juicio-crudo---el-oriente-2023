@@ -126,38 +126,38 @@
 
                             <h4 class="mb-3">Personas y Personajes</h4>
 
-                            <a href="section/Guillermo-Lasso" title="Guillermo Lasso" class="d-block mb-2">
+                            <a href="/section/Guillermo-Lasso" title="Guillermo Lasso" class="d-block mb-2">
                                 <div class="square bg-primary"></div> Guillermo Lasso
                             </a>
 
-                            <a href="section/Rafael-Correa" title="Rafael Correa" class="d-block mb-2">
+                            <a href="/section/Rafael-Correa" title="Rafael Correa" class="d-block mb-2">
                                 <div class="square bg-primary"></div> Rafael Correa
                             </a>
 
-                            <a href="section/Richard-Carapaz" title="Richard Carapaz" class="d-block mb-2">
+                            <a href="/section/Richard-Carapaz" title="Richard Carapaz" class="d-block mb-2">
                                 <div class="square bg-primary"></div> Richard Carapaz
                             </a>
 
-                            <a href="section/Deportistas-Ecuatorianos" title="Deportistas Ecuatorianos"
+                            <a href="/section/Deportistas-Ecuatorianos" title="Deportistas Ecuatorianos"
                                 class="d-block mb-2">
                                 <div class="square bg-primary"></div> Deportistas Ecuatorianos
                             </a>
 
-                            <a href="section/pueblos-indigenas" title="Pueblos Indígenas" class="d-block mb-2">
+                            <a href="/section/pueblos-indigenas" title="Pueblos Indígenas" class="d-block mb-2">
                                 <div class="square bg-primary"></div> Pueblos Indígenas
                             </a>
 
-                            <a href="section/Los-Cofanes-de-Ecuador" title="Los Cofanes de Ecuador"
+                            <a href="/section/Los-Cofanes-de-Ecuador" title="Los Cofanes de Ecuador"
                                 class="d-block mb-2">
                                 <div class="square bg-primary"></div> Los Cofanes de Ecuador
                             </a>
 
-                            <a href="section/Los-Shuaras-del-oriente-ecuatoriano"
+                            <a href="/section/Los-Shuaras-del-oriente-ecuatoriano"
                                 title="Los Shuaras del oriente ecuatoriano" class="d-block mb-2">
                                 <div class="square bg-primary"></div> Los Shuaras del oriente ecuatoriano
                             </a>
 
-                            <a href="section/gente-en-ecuador" title="" class="d-block mb-2">
+                            <a href="/section/gente-en-ecuador" title="" class="d-block mb-2">
                                 <div class="square bg-primary"></div> Gente en Ecuador
                             </a>
 
@@ -167,43 +167,43 @@
 
                             <h4 class="mb-3">Actualidad</h4>
 
-                            <a href="section/Informe-de-Vias-en-Ecuador" title="Informe de Vías en Ecuador"
+                            <a href="/section/Informe-de-Vias-en-Ecuador" title="Informe de Vías en Ecuador"
                                 class="d-block mb-2">
                                 <div class="square bg-primary"></div> Informe de Vías en Ecuador
                             </a>
 
-                            <a href="section/energia" title="Energía" class="d-block mb-2">
+                            <a href="/section/energia" title="Energía" class="d-block mb-2">
                                 <div class="square bg-primary"></div> Energía
                             </a>
 
-                            <a href="section/Ofertas-Laborales-en-la-Amazonia-de-Ecuador"
+                            <a href="/section/Ofertas-Laborales-en-la-Amazonia-de-Ecuador"
                                 title="Ofertas Laborales en la Amazonía de Ecuador" class="d-block mb-2">
                                 <div class="square bg-primary"></div> Ofertas Laborales en la Amazonía de Ecuador
                             </a>
 
-                            <a href="section/Corrupcion-en-Ecuador" title="Corrupción en Ecuador"
+                            <a href="/section/Corrupcion-en-Ecuador" title="Corrupción en Ecuador"
                                 class="d-block mb-2">
                                 <div class="square bg-primary"></div> Corrupción en Ecuador
                             </a>
 
-                            <a href="section/salud" title="Salud" class="d-block mb-2">
+                            <a href="/section/salud" title="Salud" class="d-block mb-2">
                                 <div class="square bg-primary"></div> Salud
                             </a>
 
-                            <a href="section/Ciencia-y-Tecnologia" title="Ciencia y Tecnología" class="d-block mb-2">
+                            <a href="/section/Ciencia-y-Tecnologia" title="Ciencia y Tecnología" class="d-block mb-2">
                                 <div class="square bg-primary"></div> Ciencia y Tecnología
                             </a>
 
-                            <a href="section/Derrames-de-Petroleo-en-Ecuador" title="Derrames de Petróleo en Ecuador"
+                            <a href="/section/Derrames-de-Petroleo-en-Ecuador" title="Derrames de Petróleo en Ecuador"
                                 class="d-block mb-2">
                                 <div class="square bg-primary"></div> Derrames de Petróleo en Ecuador
                             </a>
 
-                            <a href="section/Erosion-Rio-Coca" title="Erosión Río Coca" class="d-block mb-2">
+                            <a href="/section/Erosion-Rio-Coca" title="Erosión Río Coca" class="d-block mb-2">
                                 <div class="square bg-primary"></div> Erosión Río Coca
                             </a>
 
-                            <a href="section/Volcan-Sangay-en-erupcion" title="Volcán Sangay en erupción"
+                            <a href="/section/Volcan-Sangay-en-erupcion" title="Volcán Sangay en erupción"
                                 class="d-block mb-2">
                                 <div class="square bg-primary"></div> Volcán Sangay en erupción
                             </a>
@@ -214,34 +214,34 @@
 
                             <h4 class="mb-3">Cultura y Tradiciones</h4>
 
-                            <a href="section/Costumbres-y-Tradiciones-del-Oriente-Ecuatoriano"
+                            <a href="/section/Costumbres-y-Tradiciones-del-Oriente-Ecuatoriano"
                                 title="Costumbres y Tradiciones del Oriente Ecuatoriano" class="d-block mb-2">
                                 <div class="square bg-primary"></div> Costumbres y Tradiciones del Oriente Ecuatoriano
                             </a>
 
-                            <a href="section/Fiestas-Tradicionales-de-la-Amazonia-Ecuatoriana"
+                            <a href="/section/Fiestas-Tradicionales-de-la-Amazonia-Ecuatoriana"
                                 title="Fiestas Tradicionales de la Amazonía Ecuatoriana" class="d-block">
                                 <div class="square bg-primary"></div> Fiestas Tradicionales de la Amazonía Ecuatoriana
                             </a>
 
                             <h4 class="mb-4 pt-4">Naturaleza y Medio Ambiente</h4>
 
-                            <a href="section/Animales-del-Oriente-Ecuatoriano"
+                            <a href="/section/Animales-del-Oriente-Ecuatoriano"
                                 title="Animales del Oriente Ecuatoriano" class="d-block mb-2">
                                 <div class="square bg-primary"></div> Animales del Oriente Ecuatoriano
                             </a>
 
-                            <a href="section/Plantas-de-la-Amazonia-Ecuatoriana"
+                            <a href="/section/Plantas-de-la-Amazonia-Ecuatoriana"
                                 title="Plantas de la Amazonia Ecuatoriana" class="d-block mb-2">
                                 <div class="square bg-primary"></div> Plantas de la Amazonia Ecuatoriana
                             </a>
 
-                            <a href="section/Biodiversidad-del-Oriente-Ecuatoriano"
+                            <a href="/section/Biodiversidad-del-Oriente-Ecuatoriano"
                                 title="Biodiversidad del Oriente Ecuatoriano" class="d-block mb-2">
                                 <div class="square bg-primary"></div> Biodiversidad del Oriente Ecuatoriano
                             </a>
 
-                            <a href="section/lugares-turisticos-de-la-amazonia-ecuatoriana"
+                            <a href="/section/lugares-turisticos-de-la-amazonia-ecuatoriana"
                                 title="Lugares Turísticos de la Amazonía Ecuatoriana" class="d-block mb-2">
                                 <div class="square bg-primary"></div> Lugares Turísticos de la Amazonía Ecuatoriana
                             </a>
