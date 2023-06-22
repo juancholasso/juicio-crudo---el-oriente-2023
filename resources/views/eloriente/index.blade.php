@@ -197,7 +197,7 @@
                     <div class="row">
                         <div class="mb-3">
                             <span class="square podcasts"></span>
-                            <a class="section_link" href="https://www.eloriente.com/section/podcasts"
+                            <a class="section_link" href="/section/podcasts"
                                 title="Podcasts - El Oriente, Ecuador">Podcasts</a>
                         </div>
                     </div>
@@ -305,7 +305,7 @@
                 <div class="col-sm-6 col-md-4 item-noticias item article border-right mb-5 mb-0">
                     <div class="mb-3">
                         <span class="square medio-ambiente"></span>
-                        <a class="section_link" href="https://www.eloriente.com/section/medio-ambiente"
+                        <a class="section_link" href="/section/medio-ambiente"
                             title="Medio Ambiente - El Oriente, Ecuador">Medio Ambiente</a>
                     </div>
                     <a target="_top"
@@ -330,7 +330,7 @@
                 <div class="col-sm-6 col-md-4 item-noticias item article border-right mb-5 mb-0">
                     <div class="mb-3">
                         <span class="square energia"></span>
-                        <a class="section_link" href="https://www.eloriente.com/section/energia"
+                        <a class="section_link" href="/section/energia"
                             title="Energía - El Oriente, Ecuador">Energía</a>
                     </div>
                     <a target="_top" href="{{$articlesSlot4[0]->url_generated}}">
@@ -355,7 +355,7 @@
                     <div class="item_listing">
                         <div class="mb-3">
                             <span class="square politica-y-economia"></span>
-                            <a class="section_link" href="https://www.eloriente.com/section/politica-y-economia"
+                            <a class="section_link" href="/section/politica-y-economia"
                                 title="Politica y Economía - El Oriente, Ecuador">Politica y Economía</a>
                         </div>
                         @foreach($articlesSlot5 as $article)
@@ -391,7 +391,7 @@
         <div class="col-sm-12 ft-cards border_bottomx mb-4">
             <div class="mb-3">
                 <span class="square seguridad-y-fronteras"></span>
-                <a class="section_link" href="https://www.eloriente.com/section/seguridad-y-fronteras"
+                <a class="section_link" href="/section/seguridad-y-fronteras"
                     title="Seguridad y Fronteras - El Oriente, Ecuador">
                     Seguridad y Fronteras</a>
             </div>
@@ -578,7 +578,7 @@
                     <div class="row">
                         <div class="col-sm-12 mb-3">
                             <span class="square noticias-nacionales"></span>
-                            <a class="section_link" href="https://www.eloriente.com/section/noticias-nacionales"
+                            <a class="section_link" href="/section/noticias-nacionales"
                                 title="Noticias Nacionales - El Oriente, Ecuador">
                                 Noticias Nacionales</a>
                         </div>
@@ -606,7 +606,7 @@
                 <div class="col-lg-4">
                     <div class="mb-3">
                         <span class="square pueblos-indigenas"></span>
-                        <a class="section_link" href="https://www.eloriente.com/section/pueblos-indigenas"
+                        <a class="section_link" href="/section/pueblos-indigenas"
                             title="Pueblos Indígenas - El Oriente, Ecuador">
                             Pueblos Indígenas</a>
                     </div>
@@ -641,7 +641,7 @@
                 <div class="col-md-3 item-noticias item article border-right">
                     <div class="mb-3">
                         <span class="square actualidad"></span>
-                        <a class="section_link" href="https://www.eloriente.com/section/actualidad"
+                        <a class="section_link" href="/section/actualidad"
                             title="Actualidad - El Oriente, Ecuador">
                             Actualidad</a>
                     </div>
@@ -666,7 +666,7 @@
                 <div class="col-md-3 item-noticias item article border-right">
                     <div class="mb-3">
                         <span class="square opinion"></span>
-                        <a class="section_link" href="https://www.eloriente.com/section/opinion"
+                        <a class="section_link" href="/section/opinion"
                             title="Opinion - El Oriente, Ecuador">
                             Opinion</a>
                     </div>
@@ -691,7 +691,7 @@
                 <div class="col-md-6">
                     <div class="mb-3">
                         <span class="square cultura-y-turismo"></span>
-                        <a class="section_link" href="https://www.eloriente.com/section/cultura-y-turismo"
+                        <a class="section_link" href="/section/cultura-y-turismo"
                             title="Cultura y Turismo - El Oriente, Ecuador">Cultura y Turismo</a>
                     </div>
                     <div class="row">
@@ -727,7 +727,7 @@
                 <div class="col-sm-4 item-noticias item article border-right">
                     <div class="mb-3">
                         <span class="square salud"></span>
-                        <a class="section_link" href="https://www.eloriente.com/section/salud"
+                        <a class="section_link" href="/section/salud"
                             title="Salud - El Oriente, Ecuador">
                             Salud
                         </a>
@@ -755,7 +755,7 @@
                 <div class="col-sm-4 item-noticias item article" style="border-right:1px solid #d5d5d5">
                     <div class="mb-3">
                         <span class="square internacional"></span>
-                        <a class="section_link" href="https://www.eloriente.com/section/internacional"
+                        <a class="section_link" href="/section/internacional"
                             title="Internacional - El Oriente, Ecuador">Internacional</a>
                     </div>
                     <a target="_top"
@@ -781,7 +781,7 @@
                 <div class="col-sm-4 item-noticias item article">
                     <div class="mb-3">
                         <span class="square ciencia-y-tecnologia"></span>
-                        <a class="section_link" href="https://www.eloriente.com/section/ciencia-y-tecnologia"
+                        <a class="section_link" href="/section/ciencia-y-tecnologia"
                             title="Ciencia y Tecnología - El Oriente, Ecuador">
                             Ciencia y Tecnología
                         </a>
@@ -817,7 +817,7 @@
                     <div class="col-sm-12 col_first_featured border-right">
                         <div class="mb-0">
                             <span class="square deportes"></span>
-                            <a class="section_link" href="https://www.eloriente.com/section/deportes"
+                            <a class="section_link" href="/section/deportes"
                                 title="Deportes - El Oriente, Ecuador">
                                 Deportes
                             </a>
@@ -871,7 +871,7 @@
                     <div class="col-sm-12 col_first_featured border-right">
                         <div class="mb-0">
                             <span class="square deportes"></span>
-                            <a class="section_link" href="https://www.eloriente.com/section/deportes"
+                            <a class="section_link" href="/section/deportes"
                                 title="Deportes - El Oriente, Ecuador">
                                 Deportes
                             </a>
@@ -922,7 +922,7 @@
                     <div class="col-sm-12 col_first_featured border-right">
                         <div class="mb-0">
                             <span class="square deportes"></span>
-                            <a class="section_link" href="https://www.eloriente.com/section/deportes"
+                            <a class="section_link" href="/section/deportes"
                                 title="Deportes - El Oriente, Ecuador">
                                 Deportes
                             </a>
