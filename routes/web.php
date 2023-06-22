@@ -13,9 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/index','TestController@index');
+Route::get('/','TestController@index');
+Route::get('/articulo/{title}/{id}','ArticleController@index');
+Route::get('/section/{title}','MicrositeSectionController@index');
+Route::get('/section/{title}/more','MicrositeSectionController@getMoreArticles');
 

@@ -73,7 +73,7 @@ class Article extends Model
     ];
 
     public function getUrlGeneratedAttribute(){
-        return 'http://localhost:8000/'.urlencode($this->title).'/'.$this->id;
+        return 'http://localhost:8000/articulo/'.urlencode($this->title_seo).'/'.$this->id;
     }
 
     public function micrositeSection(): BelongsToMany

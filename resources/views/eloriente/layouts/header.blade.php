@@ -66,35 +66,35 @@
 
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav d-flex align-items-center w-100">
-                <li><a href="section.php"
+                <li><a href="/section/energia"
                         title="Noticias de interés sobre los sectores estratégicos en la Amazonía ecuatoriana.">
                         <div class="square energia"></div>Energía
                     </a></li>
-                <li><a href="section.php"
+                <li><a href="/section/mineria"
                         title="Noticias de sobre la minería en Ecuador: inversión en el sector de minería, el combate contra la minería ilegal, denuncias de poblaciones indígenas, recaudación tributaria por minería, etc">
                         <div class="square mineria"></div>Minería
                     </a></li>
-                <li><a href="section.php"
+                <li><a href="/section/cultura-y-turismo"
                         title="Actualidad de los destinos turísticos y vías en las provincias del Oriente Ecuatoriano">
                         <div class="square cultura-y-turismo"></div>Cultura y Turismo
                     </a></li>
-                <li><a href="section.php" title="Información actualizada de frontera colombo-ecuatoriana">
+                <li><a href="/section/seguridad-y-fronteras" title="Información actualizada de frontera colombo-ecuatoriana">
                         <div class="square seguridad-y-fronteras"></div>Seguridad y Fronteras
                     </a></li>
-                <li><a href="section.php"
+                <li><a href="/section/politica-y-economia"
                         title="Información sobre el acontecer político y económico del Oriente ecuatoriano">
                         <div class="square politica-y-economia"></div>Política y Economía
                     </a></li>
-                <li><a href="section.php" title="Noticias sobre la situación ambiental de la Amazonía Ecuatoriana">
+                <li><a href="/section/medio-ambiente" title="Noticias sobre la situación ambiental de la Amazonía Ecuatoriana">
                         <div class="square medio-ambiente"></div>Medio Ambiente
                     </a></li>
-                <li><a href="section.php" title="Noticias sobre las nacionalidades indígenas del Oriente Ecuatoriano">
+                <li><a href="/section/pueblos-indigenas" title="Noticias sobre las nacionalidades indígenas del Oriente Ecuatoriano">
                         <div class="square pueblos-indigenas"></div>Pueblos Indígenas
                     </a></li>
-                <li><a href="section.php" title="Noticias de deporte del Ecuador">
+                <li><a href="/section/deportes" title="Noticias de deporte del Ecuador">
                         <div class="square deportes"></div>Deportes
                     </a></li>
-                <li><a href="section.php" class="grey"
+                <li><a href="/section/multimedia" class="grey"
                         title="Resúmen semanal de noticias de la región de la Amazonía de Ecuador">
                         <div class="square"><img src="/assets/eloriente/images/icons/multimedia.svg" style="width:100%" />
                         </div>Multimedia

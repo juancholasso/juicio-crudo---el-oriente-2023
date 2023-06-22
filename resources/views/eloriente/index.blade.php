@@ -167,7 +167,7 @@
                     </a>
                 </div>
                 <div class="row">
-                    @foreach($articlesSlotOne as $article)
+                    @foreach($articlesSlot1 as $article)
                     <div class="col-md-4 item-noticias item article">
                         <a target="_top"
                             href="{{$article->url_generated}}">
@@ -180,7 +180,7 @@
                                         class="coverimage lazyloaded"
                                         src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$article->cover_image}}">
                                 </div> <!-- /img_holder -->
-                                <p class="date"><span>15/05/2023</span></p>
+                                <p class="date"><span>{{date('d/m/Y', strtotime($article->date))}}</span></p>
                                 <h4 style="font-size:1.4em">{{$article->title_seo}}
                                 </h4>
                             </div>
@@ -202,66 +202,27 @@
                         </div>
                     </div>
                     <div class="item_listing">
+                        @foreach($articlesSlot2 as $article)
                         <div class="row item-noticias mb-3 item article">
                             <a target="_top"
-                                href="https://www.eloriente.com/articulo/podcast-el-dinero-del-petroleo-del-yasuni-casi-equivale-al-presupuesto-de-las-universidades/39988">
+                                href="{{$article->url_generated}}">
                                 <div class="ft-item" style="min-height:initial">
                                     <div class="row">
                                         <div class="img_holder col-4 pl-0">
-                                            <img data-src="https://www.juiciocrudo.com/pics/nocrop/120x100/498ceebc103be434f489a381f6e518acb63dd60e.jpg"
+                                            <img data-src="https://www.juiciocrudo.com/pics/nocrop/120x100/{{$article->cover_image}}"
                                                 alt="" width="120" height="100" title=""
                                                 class="coverimage ls-is-cached lazyloaded"
-                                                src="https://www.juiciocrudo.com/pics/nocrop/120x100/498ceebc103be434f489a381f6e518acb63dd60e.jpg">
+                                                src="https://www.juiciocrudo.com/pics/nocrop/120x100/{{$article->cover_image}}">
                                         </div> <!-- /img_holder -->
                                         <div class="col-8 pl-0">
-                                            <p class="date mt-0"><span>15/05/2023</span></p>
-                                            <h4 style="font-size:1em">Podcast: El dinero del petróleo del Yasuní casi
-                                                equivale al presupuesto de las universidades</h4>
+                                            <p class="date mt-0"><span>{{date('d/m/Y', strtotime($article->date))}}</span></p>
+                                            <h4 style="font-size:1em">{{$article->title_seo}}</h4>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="row item-noticias mb-3 item article">
-                            <a target="_top"
-                                href="https://www.eloriente.com/articulo/podcast-sacha-lodge-salio-en-national-geographic/39969">
-                                <div class="ft-item" style="min-height:initial">
-                                    <div class="row">
-                                        <div class="img_holder col-4 pl-0">
-                                            <img data-src="https://www.juiciocrudo.com/pics/nocrop/120x100/3aae63e7dcecbc9f43d9d90f6392f132b8365fa8.jpg"
-                                                alt="" width="120" height="100" title=""
-                                                class="coverimage ls-is-cached lazyloaded"
-                                                src="https://www.juiciocrudo.com/pics/nocrop/120x100/3aae63e7dcecbc9f43d9d90f6392f132b8365fa8.jpg">
-                                        </div> <!-- /img_holder -->
-                                        <div class="col-8 pl-0">
-                                            <p class="date mt-0"><span>12/05/2023</span></p>
-                                            <h4 style="font-size:1em">Podcast: Sacha Lodge salió en National Geographic
-                                            </h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="row item-noticias mb-3 item article">
-                            <a target="_top"
-                                href="https://www.eloriente.com/articulo/podcast-ecuador-acomete-con-galapagos-la-mayor-conversion-de-deuda-por-naturaleza-de-la-historia/39933">
-                                <div class="ft-item" style="min-height:initial">
-                                    <div class="row">
-                                        <div class="img_holder col-4 pl-0">
-                                            <img data-src="https://www.juiciocrudo.com/pics/nocrop/120x100/3ba1d1675af3559e2d676479edcc170475f31196.jpg"
-                                                alt="" width="120" height="100" title=""
-                                                class="coverimage lazyloaded"
-                                                src="https://www.juiciocrudo.com/pics/nocrop/120x100/3ba1d1675af3559e2d676479edcc170475f31196.jpg">
-                                        </div> <!-- /img_holder -->
-                                        <div class="col-8 pl-0">
-                                            <p class="date mt-0"><span>10/05/2023</span></p>
-                                            <h4 style="font-size:1em">Podcast: Ecuador acomete con Galápagos la mayor
-                                                conversión de deuda por naturaleza de la historia</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div><!-- / BLOQUE 2 -->
@@ -275,7 +236,7 @@
             <div class="row">
 
                 <div class="col-sm-3 text-center">
-                    <img src="/images/provincias/provincias-del-oriente.svg" class="mb-4"
+                    <img src="/eloriente/images/provincias/provincias-del-oriente.svg" class="mb-4"
                         style="width:65%; max-width:250px">
                     <img src="/images/mapa_provincias.png" class="w-100">
                 </div>
@@ -348,21 +309,19 @@
                             title="Medio Ambiente - El Oriente, Ecuador">Medio Ambiente</a>
                     </div>
                     <a target="_top"
-                        href="https://www.eloriente.com/articulo/ecuador-integra-la-reserva-ponce-paluguillo-a-su-sistema-de-areas-protegidas/39998">
+                        href="{{$articlesSlot3[0]->url_generated}}">
                         <div class="ft-item">
                             <div class="img_holder">
-                                <img data-src="https://www.juiciocrudo.com/pics/nocrop/540x303/565c8f0c6140b6f1ed6e86178a727dbcee1fa572.jpg"
-                                    alt="Ese espacio es el área protegida número 75 de Ecuador y es también una zona conocida como Refugio de Vida Silvestre / Foto: cortesía Ministerio de Ambiente"
+                                <img data-src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot3[0]->cover_image}}"
+                                    alt="{{$articlesSlot3[0]->description_seo}}"
                                     width="540" height="303"
-                                    title="Ese espacio es el área protegida número 75 de Ecuador y es también una zona conocida como Refugio de Vida Silvestre / Foto: cortesía Ministerio de Ambiente"
+                                    title="{{$articlesSlot3[0]->description_seo}}"
                                     class="coverimage lazyloaded"
-                                    src="https://www.juiciocrudo.com/pics/nocrop/540x303/565c8f0c6140b6f1ed6e86178a727dbcee1fa572.jpg">
+                                    src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot3[0]->cover_image}}">
                             </div> <!-- /img_holder -->
-                            <p class="date"><span>16/05/2023</span></p>
-                            <h4 style="font-size:1.6em">Ecuador integra la reserva Ponce Paluguillo a su sistema de áreas
-                                protegidas</h4>
-                            <p class="intro">Ese espacio es el área protegida número 75 de Ecuador y es también una zona
-                                conocida como Refugio de Vida Silvestre</p>
+                            <p class="date"><span>{{date('d/m/Y', strtotime($articlesSlot3[0]->date))}}</span></p>
+                            <h4 style="font-size:1.6em">{{$articlesSlot3[0]->title_seo}}</h4>
+                            <p class="intro">{{$articlesSlot3[0]->description_seo}}</p>
                         </div>
                     </a>
                 </div><!-- /BLOQUE 3 -->
@@ -374,21 +333,19 @@
                         <a class="section_link" href="https://www.eloriente.com/section/energia"
                             title="Energía - El Oriente, Ecuador">Energía</a>
                     </div>
-                    <a target="_top"
-                        href="https://www.eloriente.com/articulo/ecuador-fue-invitado-a-formar-parte-nuevamente-de-la-opep/40003">
-                        <div class="ft-item" data-wow-duration="1s">
+                    <a target="_top" href="{{$articlesSlot4[0]->url_generated}}">
+                        <div class="ft-item">
                             <div class="img_holder">
-                                <img data-src="https://www.juiciocrudo.com/pics/nocrop/540x303/23c78ac15db0f6c9f9f82c1b734c0df16ba59e2e.jpg"
-                                    alt="El secretario general de la organización, Haitham Al Ghais, se reunió con Fernando Santos, ministro de Energía y Mina / Foto: EFE"
+                                <img data-src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot4[0]->cover_image}}"
+                                    alt="{{$articlesSlot3[0]->description_seo}}"
                                     width="540" height="303"
-                                    title="El secretario general de la organización, Haitham Al Ghais, se reunió con Fernando Santos, ministro de Energía y Mina / Foto: EFE"
+                                    title="{{$articlesSlot3[0]->description_seo}}"
                                     class="coverimage lazyloaded"
-                                    src="https://www.juiciocrudo.com/pics/nocrop/540x303/23c78ac15db0f6c9f9f82c1b734c0df16ba59e2e.jpg">
+                                    src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot4[0]->cover_image}}">
                             </div> <!-- /img_holder -->
-                            <p class="date"><span>16/05/2023</span></p>
-                            <h4 style="font-size:1.6em">Ecuador fue invitado a formar parte nuevamente de la OPEP</h4>
-                            <p class="intro">El secretario general de la organización, Haitham Al Ghais, se reunió con
-                                Fernando Santos, ministro de Energía y Minas</p>
+                            <p class="date"><span>{{date('d/m/Y', strtotime($articlesSlot4[0]->date))}}</span></p>
+                            <h4 style="font-size:1.6em">{{$articlesSlot4[0]->title_seo}}</h4>
+                            <p class="intro">{{$articlesSlot4[0]->description_seo}}</p>
                         </div>
                     </a>
                 </div><!-- /BLOQUE 4 -->
@@ -401,93 +358,29 @@
                             <a class="section_link" href="https://www.eloriente.com/section/politica-y-economia"
                                 title="Politica y Economía - El Oriente, Ecuador">Politica y Economía</a>
                         </div>
+                        @foreach($articlesSlot5 as $article)
                         <div class="col-sm-12 item-noticias article">
                             <a target="_top"
-                                href="https://www.eloriente.com/articulo/la-oea-pide-todas-las-garantias-en-el-juicio-politico-contra-lasso/39999">
+                                href="{{$article->url_generated}}">
                                 <div class="ft-item" style="min-height:initial">
                                     <div class="row">
                                         <div class="img_holder col-4 pl-0">
-                                            <img data-src="https://www.juiciocrudo.com/pics/nocrop/120x100/c1507df2f65c96b0386296792f89d92385ac68bd.jpg"
-                                                alt="Subrayó que los términos y plazos presidenciales deben cumplirse sin presiones ni amenazas / Foto: cortesía Presidencia "
+                                            <img data-src="https://www.juiciocrudo.com/pics/nocrop/120x100/{{$article->cover_image}}"
+                                                alt="{{$article->description_seo}}"
                                                 width="120" height="100"
-                                                title="Subrayó que los términos y plazos presidenciales deben cumplirse sin presiones ni amenazas / Foto: cortesía Presidencia "
+                                                title="{{$article->description_seo}}"
                                                 class="coverimage lazyloaded"
-                                                src="https://www.juiciocrudo.com/pics/nocrop/120x100/c1507df2f65c96b0386296792f89d92385ac68bd.jpg">
+                                                src="https://www.juiciocrudo.com/pics/nocrop/120x100/{{$article->cover_image}}">
                                         </div> <!-- /img_holder -->
                                         <div class="col-8 pl-0">
-                                            <p class="date" style="margin-top:0"><span>16/05/2023</span></p>
-                                            <h4 style="font-size:1em">La OEA pide "todas las garantías" en el juicio
-                                                político contra Lasso</h4>
+                                            <p class="date" style="margin-top:0"><span>{{date('d/m/Y', strtotime($article->date))}}</span></p>
+                                            <h4 style="font-size:1em">{{$article->title_seo}}</h4>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-12 item-noticias article">
-                            <a target="_top"
-                                href="https://www.eloriente.com/articulo/xavier-vera-exministro-de-energia-fue-detenido/39997">
-                                <div class="ft-item" style="min-height:initial">
-                                    <div class="row">
-                                        <div class="img_holder col-4 pl-0">
-                                            <img data-src="https://www.juiciocrudo.com/pics/nocrop/120x100/c44928f25a83a3a0ffcb724685ca13ba77ae2832.jpg"
-                                                alt="La Fiscalía realizó registros a varios inmuebles relacionados con Vera, en el marco de la investigación por presunto cohecho / Foto: cortesía Fiscalía"
-                                                width="120" height="100"
-                                                title="La Fiscalía realizó registros a varios inmuebles relacionados con Vera, en el marco de la investigación por presunto cohecho / Foto: cortesía Fiscalía"
-                                                class="coverimage lazyloaded"
-                                                src="https://www.juiciocrudo.com/pics/nocrop/120x100/c44928f25a83a3a0ffcb724685ca13ba77ae2832.jpg">
-                                        </div> <!-- /img_holder -->
-                                        <div class="col-8 pl-0">
-                                            <p class="date" style="margin-top:0"><span>16/05/2023</span></p>
-                                            <h4 style="font-size:1em">Xavier Vera, exministro de Energía, fue detenido</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-12 item-noticias article">
-                            <a target="_top"
-                                href="https://www.eloriente.com/articulo/tribunal-ordena-prision-preventiva-contra-asambleista-peter-calo/39994">
-                                <div class="ft-item" style="min-height:initial">
-                                    <div class="row">
-                                        <div class="img_holder col-4 pl-0">
-                                            <img data-src="https://www.juiciocrudo.com/pics/nocrop/120x100/78e72e659eb4f3ae319544703337de7719ebcd8c.jpg"
-                                                alt="Sobre Calo pesaban medidas sustitutivas a la prisión preventiva como el uso de grillete electrónico, presentación periódica y prohibición de salida del país/ Foto: cortesía"
-                                                width="120" height="100"
-                                                title="Sobre Calo pesaban medidas sustitutivas a la prisión preventiva como el uso de grillete electrónico, presentación periódica y prohibición de salida del país/ Foto: cortesía"
-                                                class="coverimage ls-is-cached lazyloaded"
-                                                src="https://www.juiciocrudo.com/pics/nocrop/120x100/78e72e659eb4f3ae319544703337de7719ebcd8c.jpg">
-                                        </div> <!-- /img_holder -->
-                                        <div class="col-8 pl-0">
-                                            <p class="date" style="margin-top:0"><span>15/05/2023</span></p>
-                                            <h4 style="font-size:1em">Tribunal ordena prisión preventiva contra asambleísta
-                                                Peter Calo</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-12 item-noticias article">
-                            <a target="_top"
-                                href="https://www.eloriente.com/articulo/el-consejo-de-la-judicatura-otra-vez-en-el-ojo-del-huracan/39990">
-                                <div class="ft-item" style="min-height:initial">
-                                    <div class="row">
-                                        <div class="img_holder col-4 pl-0">
-                                            <img data-src="https://www.juiciocrudo.com/pics/nocrop/120x100/33ca4aa2f90cb08688a9d167244f135d57f14f77.jpg"
-                                                alt="En 2011, el presidente del CJ apoyó al juez que emitió la fraudulenta sentencia contra Chevron/ Foto: cortesía Fiscalía General"
-                                                width="120" height="100"
-                                                title="En 2011, el presidente del CJ apoyó al juez que emitió la fraudulenta sentencia contra Chevron/ Foto: cortesía Fiscalía General"
-                                                class="coverimage ls-is-cached lazyloaded"
-                                                src="https://www.juiciocrudo.com/pics/nocrop/120x100/33ca4aa2f90cb08688a9d167244f135d57f14f77.jpg">
-                                        </div> <!-- /img_holder -->
-                                        <div class="col-8 pl-0">
-                                            <p class="date" style="margin-top:0"><span>15/05/2023</span></p>
-                                            <h4 style="font-size:1em">El Consejo de la Judicatura, otra vez en el ojo del
-                                                huracán</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                        @endforeach
                     </div>
                 </div><!-- / BLOQUE 5 -->
 
@@ -503,86 +396,27 @@
                     Seguridad y Fronteras</a>
             </div>
             <div class="row">
+                @foreach($articlesSlot6 as $article)
                 <!-- ITEM -->
                 <div class="col-sm-6 col-md-3 item-noticias item article">
                     <a target="_top"
-                        href="https://www.eloriente.com/articulo/2-734-kilos-de-cocaina-procedentes-de-ecuador-fueron-incautados-en-italia/40001">
+                        href="{{$article->url_generated}}">
                         <div class="ft-item">
                             <div class="img_holder">
-                                <img data-src="https://www.juiciocrudo.com/pics/nocrop/500x400/ab7f69cd354909c4ac9ebc70848fde2dfd4e7813.jpg"
-                                    alt="La cocaína resultó ser de calidad muy pura y estar en perfecto estado por lo que podría haber reportado a los traficantes unos ingresos de más de 800 millones de euros / Foto: cortesía  Guardia de Finanza"
+                                <img data-src="https://www.juiciocrudo.com/pics/nocrop/500x400/{{$article->cover_image}}"
+                                    alt="{{$article->description_seo}}"
                                     width="540" height="303"
-                                    title="La cocaína resultó ser de calidad muy pura y estar en perfecto estado por lo que podría haber reportado a los traficantes unos ingresos de más de 800 millones de euros / Foto: cortesía  Guardia de Finanza"
+                                    title="{{$article->description_seo}}"
                                     class="coverimage lazyloaded"
-                                    src="https://www.juiciocrudo.com/pics/nocrop/500x400/ab7f69cd354909c4ac9ebc70848fde2dfd4e7813.jpg">
+                                    src="https://www.juiciocrudo.com/pics/nocrop/500x400/{{$article->cover_image}}">
                             </div> <!-- /img_holder -->
-                            <p class="date"><span>16/05/2023</span></p>
-                            <h4>2.734 kilos de cocaína procedentes de Ecuador fueron incautados en Italia</h4>
-                            <p class="intro">La cocaína resultó ser de calidad muy pura y estar en perfecto estado por lo
-                                que podría haber...</p>
+                            <p class="date"><span>{{date('d/m/Y', strtotime($article->date))}}</span></p>
+                            <h4>{{$article->title_seo}}</h4>
+                            <p class="intro">{{$article->description_seo}}</p>
                         </div>
                     </a>
                 </div>
-                <!-- ITEM -->
-                <div class="col-sm-6 col-md-3 item-noticias item article">
-                    <a target="_top"
-                        href="https://www.eloriente.com/articulo/atentado-en-contra-del-alcalde-de-duran-dejo-5-heridos/40000">
-                        <div class="ft-item">
-                            <div class="img_holder">
-                                <img data-src="https://www.juiciocrudo.com/pics/nocrop/500x400/446887781eb995b1b3a369ed49521a694d105a49.jpg"
-                                    alt="La Policía informó que se registró un atentado criminal contra el vehículo en el que circulaba Chonillo / Foto: cortesía Policía Nacional "
-                                    width="540" height="303"
-                                    title="La Policía informó que se registró un atentado criminal contra el vehículo en el que circulaba Chonillo / Foto: cortesía Policía Nacional "
-                                    class="coverimage lazyloaded"
-                                    src="https://www.juiciocrudo.com/pics/nocrop/500x400/446887781eb995b1b3a369ed49521a694d105a49.jpg">
-                            </div> <!-- /img_holder -->
-                            <p class="date"><span>16/05/2023</span></p>
-                            <h4>Atentado en contra del alcalde de Durán dejó 5 heridos</h4>
-                            <p class="intro">La Policía informó que se registró "un atentado criminal contra el vehículo
-                                en el que circulaba"...</p>
-                        </div>
-                    </a>
-                </div>
-                <!-- ITEM -->
-                <div class="col-sm-6 col-md-3 item-noticias item article">
-                    <a target="_top"
-                        href="https://www.eloriente.com/articulo/como-evitar-ser-victima-de-un-secuestro/39992">
-                        <div class="ft-item">
-                            <div class="img_holder">
-                                <img data-src="https://www.juiciocrudo.com/pics/nocrop/500x400/b63c2dca63350e69620a3cd32a0ca624debc6e30.jpg"
-                                    alt="Durante los últimos años, Ecuador ha visto cómo la delincuencia organizada gana espacios. Uno de los crímenes que se realiza con frecuencia son los secuestros/ Foto: cortesía"
-                                    width="540" height="303"
-                                    title="Durante los últimos años, Ecuador ha visto cómo la delincuencia organizada gana espacios. Uno de los crímenes que se realiza con frecuencia son los secuestros/ Foto: cortesía"
-                                    class="coverimage ls-is-cached lazyloaded"
-                                    src="https://www.juiciocrudo.com/pics/nocrop/500x400/b63c2dca63350e69620a3cd32a0ca624debc6e30.jpg">
-                            </div> <!-- /img_holder -->
-                            <p class="date"><span>15/05/2023</span></p>
-                            <h4>¿Cómo evitar ser víctima de un secuestro?</h4>
-                            <p class="intro">Durante los últimos años, Ecuador ha visto cómo la delincuencia organizada
-                                gana espacios. Uno de los...</p>
-                        </div>
-                    </a>
-                </div>
-                <!-- ITEM -->
-                <div class="col-sm-6 col-md-3 item-noticias item article">
-                    <a target="_top"
-                        href="https://www.eloriente.com/articulo/la-policia-decomiso-mas-de-1-5-toneladas-de-cocaina-que-iban-a-espana/39976">
-                        <div class="ft-item">
-                            <div class="img_holder">
-                                <img data-src="https://www.juiciocrudo.com/pics/nocrop/500x400/03e2bdbb42eacd4df3074b2341e113cf1ff11931.jpg"
-                                    alt="Según la Policía, se pretendía enviar la cocaína en un contenedor que contenía harina de banano de exportación/ Foto: cortesía Policía Nacional"
-                                    width="540" height="303"
-                                    title="Según la Policía, se pretendía enviar la cocaína en un contenedor que contenía harina de banano de exportación/ Foto: cortesía Policía Nacional"
-                                    class="coverimage ls-is-cached lazyloaded"
-                                    src="https://www.juiciocrudo.com/pics/nocrop/500x400/03e2bdbb42eacd4df3074b2341e113cf1ff11931.jpg">
-                            </div> <!-- /img_holder -->
-                            <p class="date"><span>12/05/2023</span></p>
-                            <h4>La Policía decomisó más de 1,5 toneladas de cocaína que iban a España</h4>
-                            <p class="intro">Según la Policía, se pretendía enviar la cocaína en un contenedor que
-                                contenía harina de banano de...</p>
-                        </div>
-                    </a>
-                </div>
+                @endforeach
             </div>
         </div><!-- / BLOQUE 6 -->
 
@@ -748,67 +582,23 @@
                                 title="Noticias Nacionales - El Oriente, Ecuador">
                                 Noticias Nacionales</a>
                         </div>
+                        @foreach($articlesSlot7 as $article)
                         <div class="col-sm-6 col-lg-3 item-noticias item article">
                             <a class="ft-item" target="_top"
-                                href="https://www.eloriente.com/articulo/petroecuador-avanza-con-la-remediacion-ambiental-en-sucumbios-y-orellana/39752">
+                                href="{{$article->url_generated}}">
                                 <div class="img_holder">
-                                    <img data-src="https://www.juiciocrudo.com/pics/nocrop/500x400/7ba6e3b4ba7faf1d218a5e54f2fdec6021c59257.jpg"
-                                        alt="En enero, Fernando Santos, ministro de Energía, anunció que la empresa estatal va a remediar las piscinas de crudo que aún siguen abiertas en las 2 provincias/ Foto: Cortesía Petroecuador"
+                                    <img data-src="https://www.juiciocrudo.com/pics/nocrop/500x400/{{$article->cover_image}}"
+                                        alt="{{$article->description_seo}}"
                                         width="540" height="303"
-                                        title="En enero, Fernando Santos, ministro de Energía, anunció que la empresa estatal va a remediar las piscinas de crudo que aún siguen abiertas en las 2 provincias/ Foto: Cortesía Petroecuador"
+                                        title="{{$article->description_seo}}"
                                         class="coverimage ls-is-cached lazyloaded"
-                                        src="https://www.juiciocrudo.com/pics/nocrop/500x400/7ba6e3b4ba7faf1d218a5e54f2fdec6021c59257.jpg">
+                                        src="https://www.juiciocrudo.com/pics/nocrop/500x400/{{$article->cover_image}}">
                                 </div> <!-- /img_holder -->
-                                <p class="date"><span>25/04/2023</span></p>
-                                <h4>Petroecuador avanza con la remediación ambiental en Sucumbíos y Orellana</h4>
+                                <p class="date"><span>{{date('d/m/Y', strtotime($article->date))}}</span></p>
+                                <h4>{{$article->title_seo}}</h4>
                             </a>
                         </div>
-                        <div class="col-sm-6 col-lg-3 item-noticias item article">
-                            <a class="ft-item" target="_top"
-                                href="https://www.eloriente.com/articulo/ecuador-cierra-el-primer-trimestre-con-16-3-millones-de-barriles-refinados/39745">
-                                <div class="img_holder">
-                                    <img data-src="https://www.juiciocrudo.com/pics/nocrop/500x400/8926c902842e892332cb9f7b9212e055c0482741.jpg"
-                                        alt="La refinería de Esmeraldas, refinó 10,7 millones de barriles de crudo, mientras que La Libertad procesó cerca de 3,4 millones de barriles y la de Shushufindi hizo con 2,2 millones de barriles / Foto: cortesía Petroecuador"
-                                        width="540" height="303"
-                                        title="La refinería de Esmeraldas, refinó 10,7 millones de barriles de crudo, mientras que La Libertad procesó cerca de 3,4 millones de barriles y la de Shushufindi hizo con 2,2 millones de barriles / Foto: cortesía Petroecuador"
-                                        class="coverimage ls-is-cached lazyloaded"
-                                        src="https://www.juiciocrudo.com/pics/nocrop/500x400/8926c902842e892332cb9f7b9212e055c0482741.jpg">
-                                </div> <!-- /img_holder -->
-                                <p class="date"><span>25/04/2023</span></p>
-                                <h4>Ecuador cierra el primer trimestre con 16,3 millones de barriles refinados</h4>
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-lg-3 item-noticias item article">
-                            <a class="ft-item" target="_top"
-                                href="https://www.eloriente.com/articulo/santiago-gangotena-sera-recordado-por-haber-fundado-la-primera-universidad-privada-del-ecuador/39732">
-                                <div class="img_holder">
-                                    <img data-src="https://www.juiciocrudo.com/pics/nocrop/500x400/cf826f0e94acfcf556de2d9d78ccaf25ca83c4b3.jpg"
-                                        alt="La noche del 21 de abril falleció atropellado por un bus a pocos metros de la Universidad San Francisco de Quito / Foto: cortesía USFQ"
-                                        width="540" height="303"
-                                        title="La noche del 21 de abril falleció atropellado por un bus a pocos metros de la Universidad San Francisco de Quito / Foto: cortesía USFQ"
-                                        class="coverimage ls-is-cached lazyloaded"
-                                        src="https://www.juiciocrudo.com/pics/nocrop/500x400/cf826f0e94acfcf556de2d9d78ccaf25ca83c4b3.jpg">
-                                </div> <!-- /img_holder -->
-                                <p class="date"><span>24/04/2023</span></p>
-                                <h4>Santiago Gangotena será recordado por haber fundado la primera universidad privada del
-                                    Ecuador</h4>
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-lg-3 item-noticias item article">
-                            <a class="ft-item" target="_top"
-                                href="https://www.eloriente.com/articulo/consejo-de-la-judicatura-pide-a-cidh-constatar-problemas-en-ecuador/39714">
-                                <div class="img_holder">
-                                    <img data-src="https://www.juiciocrudo.com/pics/nocrop/500x400/d7db74aa2e9c193b338e6b7194421366c9faedcc.jpg"
-                                        alt=" Los problemas en el sistema judicial ponen en riesgo los derechos al trabajo, a la protección judicial, a las garantías judiciales y a la igualdad ante la ley / Foto: EFE"
-                                        width="540" height="303"
-                                        title=" Los problemas en el sistema judicial ponen en riesgo los derechos al trabajo, a la protección judicial, a las garantías judiciales y a la igualdad ante la ley / Foto: EFE"
-                                        class="coverimage lazyloaded"
-                                        src="https://www.juiciocrudo.com/pics/nocrop/500x400/d7db74aa2e9c193b338e6b7194421366c9faedcc.jpg">
-                                </div> <!-- /img_holder -->
-                                <p class="date"><span>21/04/2023</span></p>
-                                <h4>Consejo de la Judicatura pide a CIDH constatar problemas en Ecuador</h4>
-                            </a>
-                        </div>
+                        @endforeach
                     </div>
                 </div><!-- / BLOQUE 7 -->
 
@@ -823,18 +613,18 @@
                     <div class="row">
                         <div class="col-sm-12 item-noticias item article">
                             <a target="_top"
-                                href="https://www.eloriente.com/articulo/6-400-achuar-viven-en-84-comunidades-a-lo-largo-del-rio-pastaza/39936">
+                                href="{{$articlesSlot8[0]->url_generated}}">
                                 <div class="ft-item">
                                     <div class="img_holder">
-                                        <img data-src="https://www.juiciocrudo.com/pics/nocrop/540x303/e57af8682da9184aaf51d84952aa0330f229171d.jpg"
-                                            alt="Habitan en un territorio de 679,000 hectáreas en las provincias de Pastaza y Morona Santiago/ Foto: cortesía"
+                                        <img data-src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot8[0]->cover_image}}"
+                                            alt="{{$articlesSlot8[0]->description_seo}}"
                                             width="540" height="303"
-                                            title="Habitan en un territorio de 679,000 hectáreas en las provincias de Pastaza y Morona Santiago/ Foto: cortesía"
+                                            title="{{$articlesSlot8[0]->description_seo}}"
                                             class="coverimage lazyloaded"
-                                            src="https://www.juiciocrudo.com/pics/nocrop/540x303/e57af8682da9184aaf51d84952aa0330f229171d.jpg">
+                                            src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot8[0]->cover_image}}">
                                     </div> <!-- /img_holder -->
-                                    <p class="date"><span>10/05/2023</span></p>
-                                    <h4>6.400 achuar viven en 84 comunidades a lo largo del río Pastaza</h4>
+                                    <p class="date"><span>{{date('d/m/Y', strtotime($articlesSlot8[0]->date))}}</span></p>
+                                    <h4>{{$articlesSlot8[0]->title_seo}}</h4>
                                 </div>
                             </a>
                         </div>
@@ -856,18 +646,18 @@
                             Actualidad</a>
                     </div>
                     <a target="_top"
-                        href="https://www.eloriente.com/articulo/noticias-del-ecuador-medios-nacionales-16-de-mayo-de-2023/39996">
+                        href="{{$articlesSlot9[0]->url_generated}}">
                         <div class="ft-item">
                             <div class="img_holder">
-                                <img data-src="https://www.juiciocrudo.com/pics/nocrop/500x400/d69043f05cde852538e4f0f1b20578281ee6520d.jpg"
-                                    alt="Noticias del Ecuador Medios Nacionales - 16 de Mayo de 2023 / Foto: cortesía Asamblea Nacional "
+                                <img data-src="https://www.juiciocrudo.com/pics/nocrop/500x400/{{$articlesSlot9[0]->cover_image}}"
+                                    alt="{{$articlesSlot9[0]->description_seo}}"
                                     width="540" height="303"
-                                    title="Noticias del Ecuador Medios Nacionales - 16 de Mayo de 2023 / Foto: cortesía Asamblea Nacional "
+                                    title="{{$articlesSlot9[0]->description_seo}}"
                                     class="coverimage lazyloaded"
-                                    src="https://www.juiciocrudo.com/pics/nocrop/500x400/d69043f05cde852538e4f0f1b20578281ee6520d.jpg">
+                                    src="https://www.juiciocrudo.com/pics/nocrop/500x400/{{$articlesSlot9[0]->cover_image}}">
                             </div> <!-- /img_holder -->
-                            <p class="date"><span>16/05/2023</span></p>
-                            <h4>Noticias del Ecuador Medios Nacionales - 16 de Mayo de 2023</h4>
+                            <p class="date"><span>{{date('d/m/Y', strtotime($articlesSlot9[0]->date))}}</span></p>
+                            <h4>{{$articlesSlot9[0]->title_seo}}</h4>
                         </div>
                     </a>
                 </div> <!-- / BLOQUE 9 -->
@@ -880,19 +670,20 @@
                             title="Opinion - El Oriente, Ecuador">
                             Opinion</a>
                     </div>
-                    <a target="_top" href="https://www.eloriente.com/articulo/juicio-politico-semana-crucial/39913">
+                    <a target="_top"
+                        href="{{$articlesSlot10[0]->url_generated}}">
                         <div class="ft-item">
                             <div class="img_holder">
-                                <img data-src="https://www.juiciocrudo.com/pics/nocrop/500x400/a6d1b0b105678cb65366598e92d15dc134e08c66.jpg"
-                                    alt="Actualmente, los 70 votos para que el Pleno apruebe el juicio político es un número posible de conseguir para la oposición/ Foto: cortesía Cristian Bravo Gallardo"
+                                <img data-src="https://www.juiciocrudo.com/pics/nocrop/500x400/{{$articlesSlot10[0]->cover_image}}"
+                                    alt="{{$articlesSlot10[0]->description_seo}}"
                                     width="540" height="303"
-                                    title="Actualmente, los 70 votos para que el Pleno apruebe el juicio político es un número posible de conseguir para la oposición/ Foto: cortesía Cristian Bravo Gallardo"
-                                    class="coverimage ls-is-cached lazyloaded"
-                                    src="https://www.juiciocrudo.com/pics/nocrop/500x400/a6d1b0b105678cb65366598e92d15dc134e08c66.jpg">
+                                    title="{{$articlesSlot10[0]->description_seo}}"
+                                    class="coverimage lazyloaded"
+                                    src="https://www.juiciocrudo.com/pics/nocrop/500x400/{{$articlesSlot10[0]->cover_image}}">
                             </div> <!-- /img_holder -->
-                            <p class="date"><span>09/05/2023</span></p>
-                            <h4>Juicio Político: Semana Crucial</h4>
-                        </div> <!-- /ft-item -->
+                            <p class="date"><span>{{date('d/m/Y', strtotime($articlesSlot10[0]->date))}}</span></p>
+                            <h4>{{$articlesSlot10[0]->title_seo}}</h4>
+                        </div>
                     </a>
                 </div> <!-- / BLOQUE 10 -->
 
@@ -904,40 +695,25 @@
                             title="Cultura y Turismo - El Oriente, Ecuador">Cultura y Turismo</a>
                     </div>
                     <div class="row">
+                        @foreach($articlesSlot11 as $article)
                         <div class="col-sm-6 item-noticias item article">
                             <a target="_top"
-                                href="https://www.eloriente.com/articulo/el-director-ecuatoriano-alvarez-munoz-dirigira-carmina-burana-en-madrid/40002">
+                            href="{{$article->url_generated}}">
                                 <div class="ft-item">
                                     <div class="img_holder">
-                                        <img data-src="https://www.juiciocrudo.com/pics/nocrop/500x400/3e1a416e723ebace8aeaedffb9a847a3dce9bfdc.jpg"
-                                            alt="Álvarez Muñoz es profesor Superior de Dirección de Orquesta, Coro y Ópera por el Conservatorio Superior Tchaikovsky de Moscú  / Foto: cortesía Universidad Autónoma de Madrid"
+                                        <img data-src="https://www.juiciocrudo.com/pics/nocrop/500x400/{{$article->cover_image}}"
+                                            alt="{{$article->description_seo}}"
                                             width="540" height="303"
-                                            title="Álvarez Muñoz es profesor Superior de Dirección de Orquesta, Coro y Ópera por el Conservatorio Superior Tchaikovsky de Moscú  / Foto: cortesía Universidad Autónoma de Madrid"
+                                            title="{{$article->description_seo}}"
                                             class="coverimage lazyloaded"
-                                            src="https://www.juiciocrudo.com/pics/nocrop/500x400/3e1a416e723ebace8aeaedffb9a847a3dce9bfdc.jpg">
+                                            src="https://www.juiciocrudo.com/pics/nocrop/500x400/{{$article->cover_image}}">
                                     </div> <!-- /img_holder -->
-                                    <p class="date"><span>16/05/2023</span></p>
-                                    <h4>El director ecuatoriano Álvarez Muñoz dirigirá "Carmina Burana" en Madrid</h4>
+                                    <p class="date"><span>{{date('d/m/Y', strtotime($article->date))}}</span></p>
+                                    <h4>{{$article->title_seo}}</h4>
                                 </div>
                             </a>
                         </div> <!-- /item -->
-                        <div class="col-sm-6 item-noticias item article">
-                            <a target="_top"
-                                href="https://www.eloriente.com/articulo/la-utpl-creo-una-serie-documental-sobre-el-cafe-de-loja/39983">
-                                <div class="ft-item">
-                                    <div class="img_holder">
-                                        <img data-src="https://www.juiciocrudo.com/pics/nocrop/500x400/3d5966d99afb0037e2bd8e94b710a1462a3e2e6a.jpg"
-                                            alt="El café es parte esencial de la identidad e historia de Ecuador y desde hace 200 años, este producto ha permitido el desarrollo económico y productivo del país / Foto: cortesía UTPL"
-                                            width="540" height="303"
-                                            title="El café es parte esencial de la identidad e historia de Ecuador y desde hace 200 años, este producto ha permitido el desarrollo económico y productivo del país / Foto: cortesía UTPL"
-                                            class="coverimage ls-is-cached lazyloaded"
-                                            src="https://www.juiciocrudo.com/pics/nocrop/500x400/3d5966d99afb0037e2bd8e94b710a1462a3e2e6a.jpg">
-                                    </div> <!-- /img_holder -->
-                                    <p class="date"><span>15/05/2023</span></p>
-                                    <h4>La UTPL creó una serie documental sobre el café de Loja</h4>
-                                </div>
-                            </a>
-                        </div> <!-- /item -->
+                        @endforeach
                     </div>
                 </div> <!-- / BLOQUE 11 -->
 
@@ -957,21 +733,19 @@
                         </a>
                     </div>
                     <a target="_top"
-                        href="https://www.eloriente.com/articulo/la-oms-dice-que-los-edulcorantes-no-ayudan-a-bajar-de-peso-y-pueden-aumentar-la-mortalidad/39984">
+                        href="{{$articlesSlot12[0]->url_generated}}">
                         <div class="ft-item">
                             <div class="img_holder">
-                                <img data-src="https://www.juiciocrudo.com/pics/nocrop/540x303/5b97798f18685da83b9a880bfbbfee609df867b0.jpg"
-                                    alt="Reemplazar los azúcares libres por edulcorantes no ofrece ningún beneficio a largo plazo en términos de reducción de grasa en el cuerpo en adultos o niños / Foto: EFE"
+                                <img data-src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot12[0]->cover_image}}"
+                                    alt="{{$articlesSlot12[0]->description_seo}}"
                                     width="540" height="303"
-                                    title="Reemplazar los azúcares libres por edulcorantes no ofrece ningún beneficio a largo plazo en términos de reducción de grasa en el cuerpo en adultos o niños / Foto: EFE"
+                                    title="{{$articlesSlot12[0]->description_seo}}"
                                     class="coverimage ls-is-cached lazyloaded"
-                                    src="https://www.juiciocrudo.com/pics/nocrop/540x303/5b97798f18685da83b9a880bfbbfee609df867b0.jpg">
+                                    src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot12[0]->cover_image}}">
                             </div> <!-- /img_holder -->
-                            <p class="date"><span>15/05/2023</span></p>
-                            <h4 style="font-size:1.6em">La OMS dice que los edulcorantes no ayudan a bajar de peso y pueden
-                                aumentar la mortalidad</h4>
-                            <p class="intro">Reemplazar los azúcares libres por edulcorantes no ofrece ningún beneficio a
-                                largo plazo en términos de reducción de grasa en el cuerpo en adultos o niños</p>
+                            <p class="date"><span>{{date('d/m/Y', strtotime($articlesSlot12[0]->date))}}</span></p>
+                            <h4 style="font-size:1.6em">{{$articlesSlot12[0]->title_seo}}</h4>
+                            <p class="intro">{{$articlesSlot12[0]->description_seo}}</p>
                         </div>
                     </a>
                 </div>
@@ -985,21 +759,19 @@
                             title="Internacional - El Oriente, Ecuador">Internacional</a>
                     </div>
                     <a target="_top"
-                        href="https://www.eloriente.com/articulo/el-aumento-de-casos-de-covid-hace-retomar-las-medidas-en-el-sudeste-asiatico/39858">
+                        href="{{$articlesSlot13[0]->url_generated}}">
                         <div class="ft-item">
                             <div class="img_holder">
-                                <img data-src="https://www.juiciocrudo.com/pics/nocrop/540x303/2dfd966b620e5c6ac2c46913409c39c263d6328e.jpg"
-                                    alt="La situación más preocupante parece darse en Malasia, donde se registraron casi 5.000 nuevos casos el pasado sábado / Foto: EFE"
+                                <img data-src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot13[0]->cover_image}}"
+                                    alt="{{$articlesSlot13[0]->description_seo}}"
                                     width="540" height="303"
-                                    title="La situación más preocupante parece darse en Malasia, donde se registraron casi 5.000 nuevos casos el pasado sábado / Foto: EFE"
-                                    class="coverimage lazyloaded"
-                                    src="https://www.juiciocrudo.com/pics/nocrop/540x303/2dfd966b620e5c6ac2c46913409c39c263d6328e.jpg">
+                                    title="{{$articlesSlot13[0]->description_seo}}"
+                                    class="coverimage ls-is-cached lazyloaded"
+                                    src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot13[0]->cover_image}}">
                             </div> <!-- /img_holder -->
-                            <p class="date"><span>04/05/2023</span></p>
-                            <h4 style="font-size:1.6em">El aumento de casos de covid hace retomar las medidas en el Sudeste
-                                Asiático</h4>
-                            <p class="intro">La situación más preocupante parece darse en Malasia, donde se registraron
-                                casi 5.000 nuevos casos el pasado sábado</p>
+                            <p class="date"><span>{{date('d/m/Y', strtotime($articlesSlot13[0]->date))}}</span></p>
+                            <h4 style="font-size:1.6em">{{$articlesSlot13[0]->title_seo}}</h4>
+                            <p class="intro">{{$articlesSlot13[0]->description_seo}}</p>
                         </div>
                     </a>
                 </div>
@@ -1015,21 +787,19 @@
                         </a>
                     </div>
                     <a target="_top"
-                        href="https://www.eloriente.com/articulo/automatizacion-de-sistemas-de-secado-solar-en-comunidades-agricolas-del-ecuador/39968">
+                        href="{{$articlesSlot14[0]->url_generated}}">
                         <div class="ft-item">
                             <div class="img_holder">
-                                <img data-src="https://www.juiciocrudo.com/pics/nocrop/540x303/bfb956da5998e8524dd64f4588d2c266c61ee97d.jpg"
-                                    alt="El uso de energía térmica para secar granos es ineficiente y se puede mejorar utilizando colectores solares o acumuladores solares / Foto: IIGE"
+                                <img data-src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot14[0]->cover_image}}"
+                                    alt="{{$articlesSlot14[0]->description_seo}}"
                                     width="540" height="303"
-                                    title="El uso de energía térmica para secar granos es ineficiente y se puede mejorar utilizando colectores solares o acumuladores solares / Foto: IIGE"
-                                    class="coverimage lazyloaded"
-                                    src="https://www.juiciocrudo.com/pics/nocrop/540x303/bfb956da5998e8524dd64f4588d2c266c61ee97d.jpg">
+                                    title="{{$articlesSlot14[0]->description_seo}}"
+                                    class="coverimage ls-is-cached lazyloaded"
+                                    src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot14[0]->cover_image}}">
                             </div> <!-- /img_holder -->
-                            <p class="date"><span>12/05/2023</span></p>
-                            <h4 style="font-size:1.6em">Automatización de sistemas de secado solar, en comunidades
-                                agrícolas del Ecuador</h4>
-                            <p class="intro">El uso de energía térmica para secar granos es ineficiente y se puede mejorar
-                                utilizando colectores solares o acumuladores solares</p>
+                            <p class="date"><span>{{date('d/m/Y', strtotime($articlesSlot14[0]->date))}}</span></p>
+                            <h4 style="font-size:1.6em">{{$articlesSlot14[0]->title_seo}}</h4>
+                            <p class="intro">{{$articlesSlot14[0]->description_seo}}</p>
                         </div>
                     </a>
                 </div>
