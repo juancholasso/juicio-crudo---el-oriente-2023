@@ -20,7 +20,7 @@ class TestController extends Controller
     public $ID_MICROSITE_SECTION_SLUG_8 = 35; //Pueblos Indigenas
     public $ID_MICROSITE_SECTION_SLUG_9 = 66; //Actualidad
     public $ID_MICROSITE_SECTION_SLUG_10 = 112; //Opinion
-    public $ID_MICROSITE_SECTION_SLUG_11 = 66; //Cultura y Turismo
+    public $ID_MICROSITE_SECTION_SLUG_11 = 33; //Cultura y Turismo
     public $ID_MICROSITE_SECTION_SLUG_12 = 124; //Salud
     public $ID_MICROSITE_SECTION_SLUG_13 = 129; //Internacional
     public $ID_MICROSITE_SECTION_SLUG_14 = 71; //Ciencia y Tecnología
