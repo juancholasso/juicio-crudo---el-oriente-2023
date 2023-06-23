@@ -37,46 +37,46 @@ class TestController extends Controller
         $idsArticles = array_map(function($slide){ return $slide->id; }, $slides);
         $articles = Article::with(['micrositeSection'])->whereIn('id', $idsArticles)->get();
 
-        $articlesSlot1 = MicrositeSectionArticle::with(['article.micrositeSection'])->where('microsite_section_id', $this->ID_MICROSITE_SECTION_SLUG_1)->orderBy('position', 'desc')->limit(3)->get(); 
+        $articlesSlot1 = MicrositeSectionArticle::with(['article.micrositeSection'])->where('microsite_section_id', $this->ID_MICROSITE_SECTION_SLUG_1)->orderBy('date', 'desc')->limit(3)->get(); 
         $articlesSlot1 = $articlesSlot1->map(function($item){ return $item->article; });
 
-        $articlesSlot2 = MicrositeSectionArticle::with(['article.micrositeSection'])->where('microsite_section_id', $this->ID_MICROSITE_SECTION_SLUG_2)->orderBy('position', 'desc')->limit(3)->get(); 
+        $articlesSlot2 = MicrositeSectionArticle::with(['article.micrositeSection'])->where('microsite_section_id', $this->ID_MICROSITE_SECTION_SLUG_2)->orderBy('date', 'desc')->limit(3)->get(); 
         $articlesSlot2 = $articlesSlot2->map(function($item){ return $item->article; });
 
-        $articlesSlot3 = MicrositeSectionArticle::with(['article.micrositeSection'])->where('microsite_section_id', $this->ID_MICROSITE_SECTION_SLUG_3)->orderBy('position', 'desc')->limit(1)->get(); 
+        $articlesSlot3 = MicrositeSectionArticle::with(['article.micrositeSection'])->where('microsite_section_id', $this->ID_MICROSITE_SECTION_SLUG_3)->orderBy('date', 'desc')->limit(1)->get(); 
         $articlesSlot3 = $articlesSlot3->map(function($item){ return $item->article; });
 
-        $articlesSlot4 = MicrositeSectionArticle::with(['article.micrositeSection'])->where('microsite_section_id', $this->ID_MICROSITE_SECTION_SLUG_4)->orderBy('position', 'desc')->limit(1)->get(); 
+        $articlesSlot4 = MicrositeSectionArticle::with(['article.micrositeSection'])->where('microsite_section_id', $this->ID_MICROSITE_SECTION_SLUG_4)->orderBy('date', 'desc')->limit(1)->get(); 
         $articlesSlot4 = $articlesSlot4->map(function($item){ return $item->article; });
 
-        $articlesSlot5 = MicrositeSectionArticle::with(['article.micrositeSection'])->where('microsite_section_id', $this->ID_MICROSITE_SECTION_SLUG_5)->orderBy('position', 'desc')->limit(4)->get(); 
+        $articlesSlot5 = MicrositeSectionArticle::with(['article.micrositeSection'])->where('microsite_section_id', $this->ID_MICROSITE_SECTION_SLUG_5)->orderBy('date', 'desc')->limit(4)->get(); 
         $articlesSlot5 = $articlesSlot5->map(function($item){ return $item->article; });
 
-        $articlesSlot6 = MicrositeSectionArticle::with(['article.micrositeSection'])->where('microsite_section_id', $this->ID_MICROSITE_SECTION_SLUG_6)->orderBy('position', 'desc')->limit(4)->get(); 
+        $articlesSlot6 = MicrositeSectionArticle::with(['article.micrositeSection'])->where('microsite_section_id', $this->ID_MICROSITE_SECTION_SLUG_6)->orderBy('date', 'desc')->limit(4)->get(); 
         $articlesSlot6 = $articlesSlot6->map(function($item){ return $item->article; });
 
-        $articlesSlot7 = MicrositeSectionArticle::with(['article.micrositeSection'])->where('microsite_section_id', $this->ID_MICROSITE_SECTION_SLUG_7)->orderBy('position', 'desc')->limit(4)->get(); 
+        $articlesSlot7 = MicrositeSectionArticle::with(['article.micrositeSection'])->where('microsite_section_id', $this->ID_MICROSITE_SECTION_SLUG_7)->orderBy('date', 'desc')->limit(4)->get(); 
         $articlesSlot7 = $articlesSlot7->map(function($item){ return $item->article; });
 
-        $articlesSlot8 = MicrositeSectionArticle::with(['article.micrositeSection'])->where('microsite_section_id', $this->ID_MICROSITE_SECTION_SLUG_8)->orderBy('position', 'desc')->limit(1)->get(); 
+        $articlesSlot8 = MicrositeSectionArticle::with(['article.micrositeSection'])->where('microsite_section_id', $this->ID_MICROSITE_SECTION_SLUG_8)->orderBy('date', 'desc')->limit(1)->get(); 
         $articlesSlot8 = $articlesSlot8->map(function($item){ return $item->article; });
 
-        $articlesSlot9 = MicrositeSectionArticle::with(['article.micrositeSection'])->where('microsite_section_id', $this->ID_MICROSITE_SECTION_SLUG_9)->orderBy('position', 'desc')->limit(1)->get(); 
+        $articlesSlot9 = MicrositeSectionArticle::with(['article.micrositeSection'])->where('microsite_section_id', $this->ID_MICROSITE_SECTION_SLUG_9)->orderBy('date', 'desc')->limit(1)->get(); 
         $articlesSlot9 = $articlesSlot9->map(function($item){ return $item->article; });
 
-        $articlesSlot10 = MicrositeSectionArticle::with(['article.micrositeSection'])->where('microsite_section_id', $this->ID_MICROSITE_SECTION_SLUG_10)->orderBy('position', 'desc')->limit(1)->get(); 
+        $articlesSlot10 = MicrositeSectionArticle::with(['article.micrositeSection'])->where('microsite_section_id', $this->ID_MICROSITE_SECTION_SLUG_10)->orderBy('date', 'desc')->limit(1)->get(); 
         $articlesSlot10 = $articlesSlot10->map(function($item){ return $item->article; });
 
-        $articlesSlot11 = MicrositeSectionArticle::with(['article.micrositeSection'])->where('microsite_section_id', $this->ID_MICROSITE_SECTION_SLUG_11)->orderBy('position', 'desc')->limit(2)->get(); 
+        $articlesSlot11 = MicrositeSectionArticle::with(['article.micrositeSection'])->where('microsite_section_id', $this->ID_MICROSITE_SECTION_SLUG_11)->orderBy('date', 'desc')->limit(2)->get(); 
         $articlesSlot11 = $articlesSlot11->map(function($item){ return $item->article; });
 
-        $articlesSlot12 = MicrositeSectionArticle::with(['article.micrositeSection'])->where('microsite_section_id', $this->ID_MICROSITE_SECTION_SLUG_12)->orderBy('position', 'desc')->limit(1)->get(); 
+        $articlesSlot12 = MicrositeSectionArticle::with(['article.micrositeSection'])->where('microsite_section_id', $this->ID_MICROSITE_SECTION_SLUG_12)->orderBy('date', 'desc')->limit(1)->get(); 
         $articlesSlot12 = $articlesSlot12->map(function($item){ return $item->article; });
 
-        $articlesSlot13 = MicrositeSectionArticle::with(['article.micrositeSection'])->where('microsite_section_id', $this->ID_MICROSITE_SECTION_SLUG_13)->orderBy('position', 'desc')->limit(1)->get(); 
+        $articlesSlot13 = MicrositeSectionArticle::with(['article.micrositeSection'])->where('microsite_section_id', $this->ID_MICROSITE_SECTION_SLUG_13)->orderBy('date', 'desc')->limit(1)->get(); 
         $articlesSlot13 = $articlesSlot13->map(function($item){ return $item->article; });
 
-        $articlesSlot14 = MicrositeSectionArticle::with(['article.micrositeSection'])->where('microsite_section_id', $this->ID_MICROSITE_SECTION_SLUG_14)->orderBy('position', 'desc')->limit(1)->get(); 
+        $articlesSlot14 = MicrositeSectionArticle::with(['article.micrositeSection'])->where('microsite_section_id', $this->ID_MICROSITE_SECTION_SLUG_14)->orderBy('date', 'desc')->limit(1)->get(); 
         $articlesSlot14 = $articlesSlot14->map(function($item){ return $item->article; });
         // dd($articlesSlot1);
 

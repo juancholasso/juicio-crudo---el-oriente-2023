@@ -17,7 +17,7 @@ class MicrositeSectionController extends Controller
 
     public function index($title, Request $request){
         $section = MicrositeSection::where('slug', $title)->first();
-        $articles = MicrositeSectionArticle::with(['article'])->where('microsite_section_id', $section->id)->orderBy('position', 'desc')->limit(11)->get(); 
+        $articles = MicrositeSectionArticle::with(['article'])->where('microsite_section_id', $section->id)->orderBy('date', 'desc')->limit(11)->get(); 
         $articles = $articles->map(function($item){ return $item->article; });
         return view('eloriente.section')->with(['section' => $section, 'articles' => $articles]);
     }
@@ -26,7 +26,7 @@ class MicrositeSectionController extends Controller
         $itemsPerPage = 8;
         $section = MicrositeSection::where('slug', $title)->first();
         $articles = MicrositeSectionArticle::with(['article'])
-        ->where('microsite_section_id', $section->id)->orderBy('position', 'desc')
+        ->where('microsite_section_id', $section->id)->orderBy('date', 'desc')
         ->skip(11+($itemsPerPage*$request->query('p')))->take($itemsPerPage)->get(); 
         $articles = $articles->map(function($item){ return $item->article; });
 
