@@ -170,7 +170,7 @@
                     @foreach($articlesSlot1 as $article)
                     <div class="col-md-4 item-noticias item article">
                         <a target="_top"
-                            href="{{$article->url_generated}}">
+                            href="/articulo/{{urlencode($article->title_seo)}}/{{$article->article_id}}">
                             <div class="ft-item" data-wow-duration="1s">
                                 <div class="img_holder">
                                     <img data-src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$article->cover_image}}"
@@ -205,7 +205,7 @@
                         @foreach($articlesSlot2 as $article)
                         <div class="row item-noticias mb-3 item article">
                             <a target="_top"
-                                href="{{$article->url_generated}}">
+                                href="/articulo/{{urlencode($article->title_seo)}}/{{$article->article_id}}">
                                 <div class="ft-item" style="min-height:initial">
                                     <div class="row">
                                         <div class="img_holder col-4 pl-0">
@@ -309,7 +309,7 @@
                             title="Medio Ambiente - El Oriente, Ecuador">Medio Ambiente</a>
                     </div>
                     <a target="_top"
-                        href="{{$articlesSlot3[0]->url_generated}}">
+                        href="/articulo/{{urlencode($articlesSlot3[0]->title_seo)}}/{{$articlesSlot3[0]->article_id}}">
                         <div class="ft-item">
                             <div class="img_holder">
                                 <img data-src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot3[0]->cover_image}}"
@@ -333,13 +333,13 @@
                         <a class="section_link" href="/section/energia"
                             title="Energía - El Oriente, Ecuador">Energía</a>
                     </div>
-                    <a target="_top" href="{{$articlesSlot4[0]->url_generated}}">
+                    <a target="_top" href="/articulo/{{urlencode($articlesSlot4[0]->title_seo)}}/{{$articlesSlot4[0]->article_id}}">
                         <div class="ft-item">
                             <div class="img_holder">
                                 <img data-src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot4[0]->cover_image}}"
-                                    alt="{{$articlesSlot3[0]->description_seo}}"
+                                    alt="{{$articlesSlot4[0]->description_seo}}"
                                     width="540" height="303"
-                                    title="{{$articlesSlot3[0]->description_seo}}"
+                                    title="{{$articlesSlot4[0]->description_seo}}"
                                     class="coverimage lazyloaded"
                                     src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot4[0]->cover_image}}">
                             </div> <!-- /img_holder -->
@@ -361,7 +361,7 @@
                         @foreach($articlesSlot5 as $article)
                         <div class="col-sm-12 item-noticias article">
                             <a target="_top"
-                                href="{{$article->url_generated}}">
+                                href="/articulo/{{urlencode($article->title_seo)}}/{{$article->article_id}}">
                                 <div class="ft-item" style="min-height:initial">
                                     <div class="row">
                                         <div class="img_holder col-4 pl-0">
@@ -400,7 +400,7 @@
                 <!-- ITEM -->
                 <div class="col-sm-6 col-md-3 item-noticias item article">
                     <a target="_top"
-                        href="{{$article->url_generated}}">
+                        href="/articulo/{{urlencode($article->title_seo)}}/{{$article->article_id}}">
                         <div class="ft-item">
                             <div class="img_holder">
                                 <img data-src="https://www.juiciocrudo.com/pics/nocrop/500x400/{{$article->cover_image}}"
@@ -585,7 +585,7 @@
                         @foreach($articlesSlot7 as $article)
                         <div class="col-sm-6 col-lg-3 item-noticias item article">
                             <a class="ft-item" target="_top"
-                                href="{{$article->url_generated}}">
+                                href="/articulo/{{urlencode($article->title_seo)}}/{{$article->article_id}}">
                                 <div class="img_holder">
                                     <img data-src="https://www.juiciocrudo.com/pics/nocrop/500x400/{{$article->cover_image}}"
                                         alt="{{$article->description_seo}}"
@@ -613,7 +613,7 @@
                     <div class="row">
                         <div class="col-sm-12 item-noticias item article">
                             <a target="_top"
-                                href="{{$articlesSlot8[0]->url_generated}}">
+                                href="/articulo/{{urlencode($articlesSlot8[0]->title_seo)}}/{{$articlesSlot8[0]->article_id}}">
                                 <div class="ft-item">
                                     <div class="img_holder">
                                         <img data-src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot8[0]->cover_image}}"
@@ -646,7 +646,7 @@
                             Actualidad</a>
                     </div>
                     <a target="_top"
-                        href="{{$articlesSlot9[0]->url_generated}}">
+                        href="/articulo/{{urlencode($articlesSlot9[0]->title_seo)}}/{{$articlesSlot9[0]->article_id}}">
                         <div class="ft-item">
                             <div class="img_holder">
                                 <img data-src="https://www.juiciocrudo.com/pics/nocrop/500x400/{{$articlesSlot9[0]->cover_image}}"
@@ -671,7 +671,7 @@
                             Opinion</a>
                     </div>
                     <a target="_top"
-                        href="{{$articlesSlot10[0]->url_generated}}">
+                        href="/articulo/{{urlencode($articlesSlot10[0]->title_seo)}}/{{$articlesSlot10[0]->article_id}}">
                         <div class="ft-item">
                             <div class="img_holder">
                                 <img data-src="https://www.juiciocrudo.com/pics/nocrop/500x400/{{$articlesSlot10[0]->cover_image}}"
@@ -698,7 +698,7 @@
                         @foreach($articlesSlot11 as $article)
                         <div class="col-sm-6 item-noticias item article">
                             <a target="_top"
-                            href="{{$article->url_generated}}">
+                            href="/articulo/{{urlencode($article->title_seo)}}/{{$article->article_id}}">
                                 <div class="ft-item">
                                     <div class="img_holder">
                                         <img data-src="https://www.juiciocrudo.com/pics/nocrop/500x400/{{$article->cover_image}}"
@@ -733,7 +733,7 @@
                         </a>
                     </div>
                     <a target="_top"
-                        href="{{$articlesSlot12[0]->url_generated}}">
+                        href="/articulo/{{urlencode($articlesSlot12[0]->title_seo)}}/{{$articlesSlot12[0]->article_id}}">
                         <div class="ft-item">
                             <div class="img_holder">
                                 <img data-src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot12[0]->cover_image}}"
@@ -759,7 +759,7 @@
                             title="Internacional - El Oriente, Ecuador">Internacional</a>
                     </div>
                     <a target="_top"
-                        href="{{$articlesSlot13[0]->url_generated}}">
+                        href="/articulo/{{urlencode($articlesSlot13[0]->title_seo)}}/{{$articlesSlot13[0]->article_id}}">
                         <div class="ft-item">
                             <div class="img_holder">
                                 <img data-src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot13[0]->cover_image}}"
@@ -787,7 +787,7 @@
                         </a>
                     </div>
                     <a target="_top"
-                        href="{{$articlesSlot14[0]->url_generated}}">
+                        href="/articulo/{{urlencode($articlesSlot14[0]->title_seo)}}/{{$articlesSlot14[0]->article_id}}">
                         <div class="ft-item">
                             <div class="img_holder">
                                 <img data-src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot14[0]->cover_image}}"

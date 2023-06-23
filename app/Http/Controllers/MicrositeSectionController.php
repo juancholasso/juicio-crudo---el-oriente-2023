@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\MicrositeSectionArticle;
 use App\Models\MicrositeSection;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class MicrositeSectionController extends Controller
 {
@@ -17,18 +18,26 @@ class MicrositeSectionController extends Controller
 
     public function index($title, Request $request){
         $section = MicrositeSection::where('slug', $title)->first();
-        $articles = MicrositeSectionArticle::with(['article'])->where('microsite_section_id', $section->id)->orderBy('date', 'desc')->limit(11)->get(); 
-        $articles = $articles->map(function($item){ return $item->article; });
+        $articles =  DB::table('microsite_section_article')
+        ->leftJoin('article', 'microsite_section_article.article_id', '=', 'article.id')
+        ->where('microsite_section_article.microsite_section_id', '=', $section->id)
+        ->orderBy('date', 'desc')
+        ->limit(11)
+        ->get();
+
         return view('eloriente.section')->with(['section' => $section, 'articles' => $articles]);
     }
     
     public function getMoreArticles($title, Request $request){
         $itemsPerPage = 8;
         $section = MicrositeSection::where('slug', $title)->first();
-        $articles = MicrositeSectionArticle::with(['article'])
-        ->where('microsite_section_id', $section->id)->orderBy('date', 'desc')
-        ->skip(11+($itemsPerPage*$request->query('p')))->take($itemsPerPage)->get(); 
-        $articles = $articles->map(function($item){ return $item->article; });
+        $articles =  DB::table('microsite_section_article')
+        ->leftJoin('article', 'microsite_section_article.article_id', '=', 'article.id')
+        ->where('microsite_section_article.microsite_section_id', '=', $section->id)
+        ->orderBy('date', 'desc')
+        ->skip(11+($itemsPerPage*$request->query('p')))
+        ->take($itemsPerPage)
+        ->get();
 
         return $articles;
     }

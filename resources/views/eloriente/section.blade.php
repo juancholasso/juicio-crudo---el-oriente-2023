@@ -28,7 +28,7 @@
                                                                                                     
                     <!-- PRIMER ITEM -->
                     <div class="col-sm-6 item-noticias item article mb-4">
-                        <a target="_top" href="{{$articles[0]->url_generated}}" title="{{$articles[0]->title_seo}}">
+                        <a target="_top" href="/articulo/{{urlencode($articles[0]->title_seo)}}/{{$articles[0]->article_id}}" title="{{$articles[0]->title_seo}}">
                             <div class="ft-item section_item article" style="background-image:url(https://www.juiciocrudo.com/pics/nocrop/800x440/{{$articles[0]->cover_image}}); background-size:cover">
                                 <div class="txt_holder">
                                     <p class="date">
@@ -45,7 +45,7 @@
                     @for($i = 1; $i<11; $i++)
                     <!-- COLUMNA ITEM-NOTICIA -->
                     <div class="col-sm-3 item-noticias item article mb-4">
-                        <a target="_top" href="{{$articles[$i]->url_generated}}" title="{{$articles[$i]->title_seo}}">
+                        <a target="_top" href="/articulo/{{urlencode($articles[$i]->title_seo)}}/{{$articles[$i]->article_id}}" title="{{$articles[$i]->title_seo}}">
 			                <div class="ft-item section_item article">
                                 <div class="img_holder">
                                     <img src="https://www.juiciocrudo.com/pics/nocrop/440x220/{{$articles[$i]->cover_image}}" alt="{{$articles[$i]->title_seo}}" title="{{$articles[$i]->title_seo}}" class="coverimage" style="width:100%; margin-bottom:20px ">
@@ -82,12 +82,10 @@
             };
 
             $.ajax(settings).done(function (articles) {
-                console.log(articles);
-
                 for(let article of articles){
                     $('.section_listing').append(`
                         <div class="col-sm-3 item-noticias item article mb-4">
-                            <a target="_top" href="${article.url_generated}" title="${article.title_seo}">
+                            <a target="_top" href="/articulo/${encodeURIComponent(article.title_seo)}/${article.article_id}" title="${article.title_seo}">
                                 <div class="ft-item section_item article">
                                     <div class="img_holder">
                                         <img src="https://www.juiciocrudo.com/pics/nocrop/440x220/${article.cover_image}" alt="${article.title_seo}" title="${article.title_seo}" class="coverimage" style="width:100%; margin-bottom:20px ">
