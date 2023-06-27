@@ -23,7 +23,11 @@ class TestController extends Controller
     public $ID_MICROSITE_SECTION_SLUG_11 = 33; //Cultura y Turismo
     public $ID_MICROSITE_SECTION_SLUG_12 = 124; //Salud
     public $ID_MICROSITE_SECTION_SLUG_13 = 129; //Internacional
-    public $ID_MICROSITE_SECTION_SLUG_14 = 71; //Ciencia y Tecnología
+    public $ID_MICROSITE_SECTION_SLUG_14 = 72; //Ciencia y Tecnología
+    public $ID_MICROSITE_SECTION_SLUG_15 = 73; //Ciencia y Tecnología
+    public $ID_MICROSITE_SECTION_SLUG_16 = 74; //Ciencia y Tecnología
+    public $ID_MICROSITE_SECTION_SLUG_17 = 75; //Ciencia y Tecnología
+    public $ID_MICROSITE_SECTION_SLUG_18 = 76; //Ciencia y Tecnología
 
     public function __construct()
     {
@@ -136,6 +140,33 @@ class TestController extends Controller
         ->limit(1)
         ->get();
 
+        $articlesSlot15 =  DB::table('microsite_section_article')
+        ->leftJoin('article', 'microsite_section_article.article_id', '=', 'article.id')
+        ->where('microsite_section_article.microsite_section_id', '=', $this->ID_MICROSITE_SECTION_SLUG_15)
+        ->orderBy('date', 'desc')
+        ->limit(4)
+        ->get();
+
+        $articlesSlot16 =  DB::table('microsite_section_article')
+        ->leftJoin('article', 'microsite_section_article.article_id', '=', 'article.id')
+        ->where('microsite_section_article.microsite_section_id', '=', $this->ID_MICROSITE_SECTION_SLUG_16)
+        ->orderBy('date', 'desc')
+        ->limit(4)
+        ->get();
+
+        $articlesSlot17 =  DB::table('microsite_section_article')
+        ->leftJoin('article', 'microsite_section_article.article_id', '=', 'article.id')
+        ->where('microsite_section_article.microsite_section_id', '=', $this->ID_MICROSITE_SECTION_SLUG_17)
+        ->orderBy('date', 'desc')
+        ->limit(4)
+        ->get();
+
+        $articlesSlot18 =  DB::table('microsite_section_article')
+        ->leftJoin('article', 'microsite_section_article.article_id', '=', 'article.id')
+        ->where('microsite_section_article.microsite_section_id', '=', $this->ID_MICROSITE_SECTION_SLUG_18)
+        ->orderBy('date', 'desc')
+        ->limit(4)
+        ->get();
         return view('eloriente.index')->with([
             'articles' => $articles, 
             'articlesSlot1' => $articlesSlot1,
@@ -151,7 +182,11 @@ class TestController extends Controller
             'articlesSlot11' => $articlesSlot11,
             'articlesSlot12' => $articlesSlot12,
             'articlesSlot13' => $articlesSlot13,
-            'articlesSlot14' => $articlesSlot14
+            'articlesSlot14' => $articlesSlot14,
+            'articlesSlot15' => $articlesSlot15,
+            'articlesSlot16' => $articlesSlot16,
+            'articlesSlot17' => $articlesSlot17,
+            'articlesSlot18' => $articlesSlot18
         ]);
     }
     

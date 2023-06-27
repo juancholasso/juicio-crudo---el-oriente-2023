@@ -812,316 +812,242 @@
         <div class="col-sm-12 mb-5">
             <div class="row">
                 <div id="carusel_footer" class="owl-carousel row mb-3 pt-3 bg-light">
-
+    
                     <!-- BLOQUE 15 -->
-                    <div class="col-sm-12 col_first_featured border-right">
+                    <div class="col-sm-12 col_first_featured border-right">                  
                         <div class="mb-0">
-                            <span class="square deportes"></span>
-                            <a class="section_link" href="/section/deportes"
-                                title="Deportes - El Oriente, Ecuador">
-                                Deportes
+                            <span class="square cronicas"></span>
+                            <a class="section_link" href="/section/cronicas" title="Cronicas - El Oriente, Ecuador">
+                                Cronicas
                             </a>
                         </div>
                         <!-- PRIMER NOTICIA -->
                         <div class="col-sm-12 item-noticias item">
-                            <a target="" href="#">
+                            <a target="" href="/articulo/{{urlencode($articlesSlot15[0]->title_seo)}}/{{$articlesSlot15[0]->article_id}}">
                                 <div class="ft-item" style="min-height:auto">
                                     <div class="img_holder">
-                                        <!-- Si articulo contiene video -->
-                                        <div class="icon_type_grid linea-music-play-button"><i class="fas fa-play"></i>
-                                        </div>
-                                        <img src="https://www.juiciocrudo.com/pics/nocrop/500x400/c3ab20908d86e7d14ed036c9996ae714515d74b1.jpg"
-                                            alt="IMAGE CAPTION" width="540" height="303" title="IMAGE CAPTION"
+                                        <!-- Si articulo contiene video --> 
+                                        <div class="icon_type_grid linea-music-play-button"><i class="fas fa-play"></i></div>
+                                        <img src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot15[0]->cover_image}}"
+                                            alt="IMAGE CAPTION"
+                                            width="540" height="303"
+                                            title="IMAGE CAPTION"
                                             class="coverimage lazyload">
                                     </div>
-                                    <p class="date">00/00/00</p>
-                                    <h4>Laila Gordillo conquistó 1 medalla de oro en Estados Unidos</h4>
+                                    <p class="date">{{date('d/m/Y', strtotime($articlesSlot15[0]->date))}}</p>
+                                    <h4>{{$articlesSlot15[0]->title_seo}}</h4>
                                 </div>
                             </a>
                         </div>
                         <!-- RESTO DE NOTICAS -->
+                        @for($i = 1; $i < 4; $i++)
                         <div class="col-sm-12 item-noticias item">
-                            <a target="" href="#">
+                            <a target="" href="/articulo/{{urlencode($articlesSlot15[$i]->title_seo)}}/{{$articlesSlot15[$i]->article_id}}">
                                 <div class="ft-item border-top pt-3">
-                                    <p class="date">00/00/00</p>
-                                    <h4>El Barcelona se coronó campeón de España</h4>
+                                    <p class="date">{{date('d/m/Y', strtotime($articlesSlot15[$i]->date))}}</p>
+                                    <h4>{{$articlesSlot15[$i]->title_seo}}</h4>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-12 item-noticias item">
-                            <a target="" href="#">
-                                <div class="ft-item border-top pt-3">
-                                    <p class="date">00/00/00</p>
-                                    <h4>El Barcelona se coronó campeón de España</h4>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-12 item-noticias item">
-                            <a target="" href="#">
-                                <div class="ft-item border-top pt-3">
-                                    <p class="date">00/00/00</p>
-                                    <h4>El Barcelona se coronó campeón de España</h4>
-                                </div>
-                            </a>
-                        </div>
+                        @endfor
                     </div>
                     <!-- / BLOQUE 15 -->
-
+    
                     <!-- BLOQUE 16 -->
-                    <div class="col-sm-12 col_first_featured border-right">
+                    <div class="col-sm-12 col_first_featured border-right">                  
                         <div class="mb-0">
-                            <span class="square deportes"></span>
-                            <a class="section_link" href="/section/deportes"
-                                title="Deportes - El Oriente, Ecuador">
-                                Deportes
+                            <span class="square informe-de-vias-en-ecuador"></span>
+                            <a class="section_link" href="/section/informe-de-vias-en-ecuador" title="Informe de vías en Ecuador - El Oriente, Ecuador">
+                                Informe de Vías en Ecuador
                             </a>
                         </div>
                         <!-- PRIMER NOTICIA -->
                         <div class="col-sm-12 item-noticias item">
-                            <a target="" href="#">
+                            <a target="" href="/articulo/{{urlencode($articlesSlot16[0]->title_seo)}}/{{$articlesSlot16[0]->article_id}}">
                                 <div class="ft-item" style="min-height:auto">
                                     <div class="img_holder">
-                                        <!-- Si articulo contiene video >> <div class="icon_type_grid linea-music-play-button"><i class="fas fa-play"></i></div> -->
-                                        <img src="https://www.juiciocrudo.com/pics/nocrop/500x400/c3ab20908d86e7d14ed036c9996ae714515d74b1.jpg"
-                                            alt="IMAGE CAPTION" width="540" height="303" title="IMAGE CAPTION"
+                                        <!-- Si articulo contiene video --> 
+                                        <div class="icon_type_grid linea-music-play-button"><i class="fas fa-play"></i></div>
+                                        <img src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot16[0]->cover_image}}"
+                                            alt="IMAGE CAPTION"
+                                            width="540" height="303"
+                                            title="IMAGE CAPTION"
                                             class="coverimage lazyload">
                                     </div>
-                                    <p class="date">00/00/00</p>
-                                    <h4>Laila Gordillo conquistó 1 medalla de oro en Estados Unidos</h4>
+                                    <p class="date">{{date('d/m/Y', strtotime($articlesSlot16[0]->date))}}</p>
+                                    <h4>{{$articlesSlot16[0]->title_seo}}</h4>
                                 </div>
                             </a>
                         </div>
                         <!-- RESTO DE NOTICAS -->
+                        @for($i = 1; $i < 4; $i++)
                         <div class="col-sm-12 item-noticias item">
-                            <a target="" href="#">
+                            <a target="" href="/articulo/{{urlencode($articlesSlot16[$i]->title_seo)}}/{{$articlesSlot16[$i]->article_id}}">
                                 <div class="ft-item border-top pt-3">
-                                    <p class="date">00/00/00</p>
-                                    <h4>El Barcelona se coronó campeón de España</h4>
+                                    <p class="date">{{date('d/m/Y', strtotime($articlesSlot16[$i]->date))}}</p>
+                                    <h4>{{$articlesSlot16[$i]->title_seo}}</h4>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-12 item-noticias item">
-                            <a target="" href="#">
-                                <div class="ft-item border-top pt-3">
-                                    <p class="date">00/00/00</p>
-                                    <h4>El Barcelona se coronó campeón de España</h4>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-12 item-noticias item">
-                            <a target="" href="#">
-                                <div class="ft-item border-top pt-3">
-                                    <p class="date">00/00/00</p>
-                                    <h4>El Barcelona se coronó campeón de España</h4>
-                                </div>
-                            </a>
-                        </div>
+                        @endfor
                     </div>
-
+    
                     <!-- BLOQUE 17 -->
-                    <div class="col-sm-12 col_first_featured border-right">
+                    <div class="col-sm-12 col_first_featured border-right">                  
                         <div class="mb-0">
-                            <span class="square deportes"></span>
-                            <a class="section_link" href="/section/deportes"
-                                title="Deportes - El Oriente, Ecuador">
-                                Deportes
+                            <span class="square animales-del-oriente-ecuatoriano"></span>
+                            <a class="section_link" href="/section/animales-del-oriente-ecuatoriano" title="Animales del Oriente Ecuatoriano - El Oriente, Ecuador">
+                                Animales del Oriente Ecuatoriano
                             </a>
                         </div>
                         <!-- PRIMER NOTICIA -->
                         <div class="col-sm-12 item-noticias item">
-                            <a target="" href="#">
+                            <a target="" href="/articulo/{{urlencode($articlesSlot17[0]->title_seo)}}/{{$articlesSlot17[0]->article_id}}">
                                 <div class="ft-item" style="min-height:auto">
                                     <div class="img_holder">
-                                        <!-- Si articulo contiene video >> <div class="icon_type_grid linea-music-play-button"><i class="fas fa-play"></i></div> -->
-                                        <img src="https://www.juiciocrudo.com/pics/nocrop/500x400/c3ab20908d86e7d14ed036c9996ae714515d74b1.jpg"
-                                            alt="IMAGE CAPTION" width="540" height="303" title="IMAGE CAPTION"
+                                        <!-- Si articulo contiene video --> 
+                                        <div class="icon_type_grid linea-music-play-button"><i class="fas fa-play"></i></div>
+                                        <img src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot17[0]->cover_image}}"
+                                            alt="IMAGE CAPTION"
+                                            width="540" height="303"
+                                            title="IMAGE CAPTION"
                                             class="coverimage lazyload">
                                     </div>
-                                    <p class="date">00/00/00</p>
-                                    <h4>Laila Gordillo conquistó 1 medalla de oro en Estados Unidos</h4>
+                                    <p class="date">{{date('d/m/Y', strtotime($articlesSlot17[0]->date))}}</p>
+                                    <h4>{{$articlesSlot17[0]->title_seo}}</h4>
                                 </div>
                             </a>
                         </div>
                         <!-- RESTO DE NOTICAS -->
+                        @for($i = 1; $i < 4; $i++)
                         <div class="col-sm-12 item-noticias item">
-                            <a target="" href="#">
+                            <a target="" href="/articulo/{{urlencode($articlesSlot17[$i]->title_seo)}}/{{$articlesSlot17[$i]->article_id}}">
                                 <div class="ft-item border-top pt-3">
-                                    <p class="date">00/00/00</p>
-                                    <h4>El Barcelona se coronó campeón de España</h4>
+                                    <p class="date">{{date('d/m/Y', strtotime($articlesSlot17[$i]->date))}}</p>
+                                    <h4>{{$articlesSlot17[$i]->title_seo}}</h4>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-12 item-noticias item">
-                            <a target="" href="#">
-                                <div class="ft-item border-top pt-3">
-                                    <p class="date">00/00/00</p>
-                                    <h4>El Barcelona se coronó campeón de España</h4>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-12 item-noticias item">
-                            <a target="" href="#">
-                                <div class="ft-item border-top pt-3">
-                                    <p class="date">00/00/00</p>
-                                    <h4>El Barcelona se coronó campeón de España</h4>
-                                </div>
-                            </a>
-                        </div>
+                        @endfor
                     </div>
-
+    
                     <!-- BLOQUE 18 -->
-                    <div class="col-sm-12 col_first_featured border-right">
+                    <div class="col-sm-12 col_first_featured border-right">                  
                         <div class="mb-0">
-                            <span class="square deportes"></span>
-                            <a class="section_link" href="https://www.eloriente.com/section/deportes"
-                                title="Deportes - El Oriente, Ecuador">
-                                Deportes
+                            <span class="square elecciones-ecuador-2023"></span>
+                            <a class="section_link" href="/section/elecciones-ecuador-2023" title="Elecciones Ecuador 2023 - El Oriente, Ecuador">
+                                Elecciones Ecuador 2023
                             </a>
                         </div>
                         <!-- PRIMER NOTICIA -->
                         <div class="col-sm-12 item-noticias item">
-                            <a target="" href="#">
+                            <a target="" href="/articulo/{{urlencode($articlesSlot18[0]->title_seo)}}/{{$articlesSlot18[0]->article_id}}">
                                 <div class="ft-item" style="min-height:auto">
                                     <div class="img_holder">
-                                        <!-- Si articulo contiene video >> <div class="icon_type_grid linea-music-play-button"><i class="fas fa-play"></i></div> -->
-                                        <img src="https://www.juiciocrudo.com/pics/nocrop/500x400/c3ab20908d86e7d14ed036c9996ae714515d74b1.jpg"
-                                            alt="IMAGE CAPTION" width="540" height="303" title="IMAGE CAPTION"
+                                        <!-- Si articulo contiene video --> 
+                                        <div class="icon_type_grid linea-music-play-button"><i class="fas fa-play"></i></div>
+                                        <img src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot18[0]->cover_image}}"
+                                            alt="IMAGE CAPTION"
+                                            width="540" height="303"
+                                            title="IMAGE CAPTION"
                                             class="coverimage lazyload">
                                     </div>
-                                    <p class="date">00/00/00</p>
-                                    <h4>Laila Gordillo conquistó 1 medalla de oro en Estados Unidos</h4>
+                                    <p class="date">{{date('d/m/Y', strtotime($articlesSlot18[0]->date))}}</p>
+                                    <h4>{{$articlesSlot18[0]->title_seo}}</h4>
                                 </div>
                             </a>
                         </div>
                         <!-- RESTO DE NOTICAS -->
+                        @for($i = 1; $i < 4; $i++)
                         <div class="col-sm-12 item-noticias item">
-                            <a target="" href="#">
+                            <a target="" href="/articulo/{{urlencode($articlesSlot15[$i]->title_seo)}}/{{$articlesSlot15[$i]->article_id}}">
                                 <div class="ft-item border-top pt-3">
-                                    <p class="date">00/00/00</p>
-                                    <h4>El Barcelona se coronó campeón de España</h4>
+                                    <p class="date">{{date('d/m/Y', strtotime($articlesSlot15[$i]->date))}}</p>
+                                    <h4>{{$articlesSlot15[$i]->title_seo}}</h4>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-12 item-noticias item">
-                            <a target="" href="#">
-                                <div class="ft-item border-top pt-3">
-                                    <p class="date">00/00/00</p>
-                                    <h4>El Barcelona se coronó campeón de España</h4>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-12 item-noticias item">
-                            <a target="" href="#">
-                                <div class="ft-item border-top pt-3">
-                                    <p class="date">00/00/00</p>
-                                    <h4>El Barcelona se coronó campeón de España</h4>
-                                </div>
-                            </a>
-                        </div>
+                        @endfor
                     </div>
-
+    
                     <!-- BLOQUE 19 -->
-                    <div class="col-sm-12 col_first_featured border-right">
+                    <div class="col-sm-12 col_first_featured border-right">                  
                         <div class="mb-0">
                             <span class="square deportes"></span>
-                            <a class="section_link" href="https://www.eloriente.com/section/deportes"
-                                title="Deportes - El Oriente, Ecuador">
+                            <a class="section_link" href="/section/deportes" title="Deportes - El Oriente, Ecuador">
                                 Deportes
                             </a>
                         </div>
                         <!-- PRIMER NOTICIA -->
                         <div class="col-sm-12 item-noticias item">
-                            <a target="" href="#">
+                            <a target="" href="/articulo/{{urlencode($articlesSlot15[0]->title_seo)}}/{{$articlesSlot15[0]->article_id}}">
                                 <div class="ft-item" style="min-height:auto">
                                     <div class="img_holder">
-                                        <!-- Si articulo contiene video >> <div class="icon_type_grid linea-music-play-button"><i class="fas fa-play"></i></div> -->
-                                        <img src="https://www.juiciocrudo.com/pics/nocrop/500x400/c3ab20908d86e7d14ed036c9996ae714515d74b1.jpg"
-                                            alt="IMAGE CAPTION" width="540" height="303" title="IMAGE CAPTION"
+                                        <!-- Si articulo contiene video --> 
+                                        <div class="icon_type_grid linea-music-play-button"><i class="fas fa-play"></i></div>
+                                        <img src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot15[0]->cover_image}}"
+                                            alt="IMAGE CAPTION"
+                                            width="540" height="303"
+                                            title="IMAGE CAPTION"
                                             class="coverimage lazyload">
                                     </div>
-                                    <p class="date">00/00/00</p>
-                                    <h4>Laila Gordillo conquistó 1 medalla de oro en Estados Unidos</h4>
+                                    <p class="date">{{date('d/m/Y', strtotime($articlesSlot15[0]->date))}}</p>
+                                    <h4>{{$articlesSlot15[0]->title_seo}}</h4>
                                 </div>
                             </a>
                         </div>
                         <!-- RESTO DE NOTICAS -->
+                        @for($i = 1; $i < 4; $i++)
                         <div class="col-sm-12 item-noticias item">
-                            <a target="" href="#">
+                            <a target="" href="/articulo/{{urlencode($articlesSlot15[$i]->title_seo)}}/{{$articlesSlot15[$i]->article_id}}">
                                 <div class="ft-item border-top pt-3">
-                                    <p class="date">00/00/00</p>
-                                    <h4>El Barcelona se coronó campeón de España</h4>
+                                    <p class="date">{{date('d/m/Y', strtotime($articlesSlot15[$i]->date))}}</p>
+                                    <h4>{{$articlesSlot15[$i]->title_seo}}</h4>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-12 item-noticias item">
-                            <a target="" href="#">
-                                <div class="ft-item border-top pt-3">
-                                    <p class="date">00/00/00</p>
-                                    <h4>El Barcelona se coronó campeón de España</h4>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-12 item-noticias item">
-                            <a target="" href="#">
-                                <div class="ft-item border-top pt-3">
-                                    <p class="date">00/00/00</p>
-                                    <h4>El Barcelona se coronó campeón de España</h4>
-                                </div>
-                            </a>
-                        </div>
+                        @endfor
                     </div>
-
+    
                     <!-- BLOQUE 20 -->
-                    <div class="col-sm-12 col_first_featured border-right">
+                    <div class="col-sm-12 col_first_featured border-right">                  
                         <div class="mb-0">
-                            <span class="square deportes"></span>
-                            <a class="section_link" href="https://www.eloriente.com/section/deportes"
-                                title="Deportes - El Oriente, Ecuador">
-                                Deportes
+                            <span class="square guillermo-lasso"></span>
+                            <a class="section_link" href="/section/guillermo-lasso" title="Guillermo Lasso - El Oriente, Ecuador">
+                                Guillermo Lasso
                             </a>
                         </div>
                         <!-- PRIMER NOTICIA -->
                         <div class="col-sm-12 item-noticias item">
-                            <a target="" href="#">
+                            <a target="" href="/articulo/{{urlencode($articlesSlot15[0]->title_seo)}}/{{$articlesSlot15[0]->article_id}}">
                                 <div class="ft-item" style="min-height:auto">
                                     <div class="img_holder">
-                                        <!-- Si articulo contiene video >> <div class="icon_type_grid linea-music-play-button"><i class="fas fa-play"></i></div> -->
-                                        <img src="https://www.juiciocrudo.com/pics/nocrop/500x400/c3ab20908d86e7d14ed036c9996ae714515d74b1.jpg"
-                                            alt="IMAGE CAPTION" width="540" height="303" title="IMAGE CAPTION"
+                                        <!-- Si articulo contiene video --> 
+                                        <div class="icon_type_grid linea-music-play-button"><i class="fas fa-play"></i></div>
+                                        <img src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot15[0]->cover_image}}"
+                                            alt="IMAGE CAPTION"
+                                            width="540" height="303"
+                                            title="IMAGE CAPTION"
                                             class="coverimage lazyload">
                                     </div>
-                                    <p class="date">00/00/00</p>
-                                    <h4>Laila Gordillo conquistó 1 medalla de oro en Estados Unidos</h4>
+                                    <p class="date">{{date('d/m/Y', strtotime($articlesSlot15[0]->date))}}</p>
+                                    <h4>{{$articlesSlot15[0]->title_seo}}</h4>
                                 </div>
                             </a>
                         </div>
                         <!-- RESTO DE NOTICAS -->
+                        @for($i = 1; $i < 4; $i++)
                         <div class="col-sm-12 item-noticias item">
-                            <a target="" href="#">
+                            <a target="" href="/articulo/{{urlencode($articlesSlot15[$i]->title_seo)}}/{{$articlesSlot15[$i]->article_id}}">
                                 <div class="ft-item border-top pt-3">
-                                    <p class="date">00/00/00</p>
-                                    <h4>El Barcelona se coronó campeón de España</h4>
+                                    <p class="date">{{date('d/m/Y', strtotime($articlesSlot15[$i]->date))}}</p>
+                                    <h4>{{$articlesSlot15[$i]->title_seo}}</h4>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-12 item-noticias item">
-                            <a target="" href="#">
-                                <div class="ft-item border-top pt-3">
-                                    <p class="date">00/00/00</p>
-                                    <h4>El Barcelona se coronó campeón de España</h4>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-12 item-noticias item">
-                            <a target="" href="#">
-                                <div class="ft-item border-top pt-3">
-                                    <p class="date">00/00/00</p>
-                                    <h4>El Barcelona se coronó campeón de España</h4>
-                                </div>
-                            </a>
-                        </div>
+                        @endfor
                     </div>
-
+    
                 </div>
             </div> <!-- /.row -->
         </div>

@@ -24,7 +24,7 @@
     <!-- CSS -->
     <link href="/assets/eloriente/css/lib.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/assets/eloriente/css/main.css"> 
-    <link rel="stylesheet" href="/assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="/assets/eloriente/css/owl.carousel.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 

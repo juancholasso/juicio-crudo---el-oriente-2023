@@ -242,7 +242,7 @@
 <script src="/assets/eloriente/js/scripts.js"></script>
 
 
-<script src="/assets/js/owl.carousel.min.js"></script>
+<script src="/assets/eloriente/js/owl.carousel.min.js"></script>
 <!--
   <script src="/dist/js/jquery.sticky.js" type="text/javascript"></script>
   <script src="/dist/js/jquery.counterup.min.js" type="text/javascript"></script>
