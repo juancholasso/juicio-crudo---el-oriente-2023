@@ -20,6 +20,7 @@
             </div>
         </div>
 
+        @if(str_contains(url()->current(), "multimedia"))
         <div class="row p-4">
             <div style="display:table; margin:auto; width:100%; max-width:240px">
                 <form id="multimedia_f" action="/section/multimedia?type=videos" method="GET">
@@ -30,7 +31,8 @@
                   </select>
                 </form>
             </div>
-          </div>
+        </div>
+        @endif
 
         <div class="ft-cards">
             <div class="col-12">

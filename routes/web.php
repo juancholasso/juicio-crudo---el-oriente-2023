@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/','TestController@index');
 Route::get('/articulo/{title}/{id}','ArticleController@index');
-Route::get('/section/{title}','MicrositeSectionController@index');
-Route::get('/section/{title}/more','MicrositeSectionController@getMoreArticles');
+Route::get('/section/{title}','SectionController@index');
+Route::get('/section/{title}/more','SectionController@getMoreArticles');
+Route::get('/buscar/resultados','SearchController@index');
 
