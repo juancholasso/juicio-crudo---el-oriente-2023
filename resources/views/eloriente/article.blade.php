@@ -19,18 +19,26 @@
 
         <div class="col-lg-7 article">
             <!--SECCIONES RELACIONADAS-->
-            <a class="breadcrums tag deportes" href="/section/deportes" title="Deportes">
-                <p style="color:#fff">Deportes</p>
-            </a>
+            @foreach ($article->micrositeSection as $section)
+                <a class="breadcrums tag {{$section->slug}}" href="/section/{{$section->slug}}" title="{{$section->name}}">
+                    <p style="color:#fff">{{$section->name}}</p>
+                </a>
+            @endforeach
+           
             <!--TITULO-->
             <h1>{{$article->title_seo}}</h1>
             <div class="date_source" style="margin:1em 0">
-                <span class="mr-2">15/05/2023</span>
-                <span class="text-muted">El Oriente</span>
-                <span class="author"> - Redacción</span>
+                <span class="mr-2">{{date('d/m/Y', strtotime($article->date))}}</span>
+                <span class="text-muted">{{$article->source}}</span>
+                <span class="author"> - {{$article->author}}</span>
             </div>
             <!--TITULO-->
             <h2>{{$article->description_seo}}</h2>
+            @if(!empty($article->video_url))
+                <div class="image_holder w-100 mb-3 embed-container" style="display:table">
+                    <iframe id="iframe" class="iframe_video" width="540" height="480" src="//www.youtube.com/embed/{{$article->video_code}}?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+            @else
             <div class="image_holder w-100 mb-3 d-table">
                 <a title="{{$article->cover_image_caption}}" class="fancybox" target="_blank" href="https://www.juiciocrudo.com/pics/nocrop/1280x960/db52d3c6bd4201ab6551a5ba6167ee86b26c04d3.jpg">
                     <!-- IMAGEN RESAMPLEADA -->
@@ -38,7 +46,7 @@
                 </a>
                 <div class="epigrafe"><p>{{$article->cover_image_caption}}</p></div>
             </div>
-
+            @endif
             <!-- BODY TEXT -->
             {!! $article->body !!}
             

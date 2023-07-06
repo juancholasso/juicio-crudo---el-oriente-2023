@@ -11,7 +11,7 @@
                     href="{{$articles[0]->url_generated}}">
                     <div class="ft-item" data-wow-duration="1s">
                         <div class="img_holder">
-                            <span class="tag {{$articles[0]->micrositeSection[0]?->slug}} mt-3 ml-3 position-absolute">{{$articles[0]->micrositeSection[0]?->name}}</span>
+                            <span class="tag {{$articles[0]->micrositeSection[1]?->slug}} mt-3 ml-3 position-absolute">{{$articles[0]->micrositeSection[1]?->name}}</span>
                             <!-- BTN PLAY SI ARTICULO TIENE VIDEO -->
                             <img data-src="https://www.juiciocrudo.com/pics/nocrop/829x465/{{$articles[0]->cover_image}}"
                                 alt="El secretario general de la organización, Haitham Al Ghais, se reunió con Fernando Santos, ministro de Energía y Mina / Foto: EFE"
@@ -20,7 +20,7 @@
                                 class="coverimage lazyloaded"
                                 src="https://www.juiciocrudo.com/pics/nocrop/829x465/{{$articles[0]->cover_image}}">
                         </div>
-                        <p class="date d-none"><span>16/05/2023</span></p>
+                        <p class="date d-none"><span>{{date('d/m/Y', strtotime($articles[0]->date))}}</span></p>
                         <h1 style="font-size:32px">{{$articles[0]->title_seo}}</h1>
                     </div>
                 </a>
@@ -34,7 +34,7 @@
                     <div class="ft-item">
                         <div class="img_holder">
                             <!-- CATEGORIA DE ARTICULO / SIMPLE -->
-                            <span class="tag {{$articles[1]->micrositeSection[0]?->slug}} mt-3 ml-3 position-absolute">{{$articles[1]->micrositeSection[0]?->name}}</span>
+                            <span class="tag {{$articles[1]->micrositeSection[1]?->slug}} mt-3 ml-3 position-absolute">{{$articles[1]->micrositeSection[1]?->name}}</span>
                             <img data-src="https://www.juiciocrudo.com/pics/nocrop/500x400/{{$articles[1]->cover_image}}"
                                 alt="Subrayó que los términos y plazos presidenciales deben cumplirse sin presiones ni amenazas / Foto: cortesía Presidencia "
                                 width="540" height="303"
@@ -42,7 +42,7 @@
                                 class="coverimage lazyloaded"
                                 src="https://www.juiciocrudo.com/pics/nocrop/500x400/{{$articles[1]->cover_image}}">
                         </div>
-                        <p class="date d-none"><span>16/05/2023</span></p>
+                        <p class="date d-none"><span>{{date('d/m/Y', strtotime($articles[1]->date))}}</span></p>
                         <h4 class="larger">{{$articles[1]->title_seo}}</h4>
                         <p>{{$articles[1]->description_seo}}</p>
                     </div>
@@ -55,10 +55,10 @@
                     <div class="ft-cards item-noticias item article pb-3 mb-3 border-bottom">
                         <div class="mb-2">
                             <!-- CATEGORIA DE ARTICULO / SIMPLE -->
-                            <span class="square {{$articles[2]->micrositeSection[0]?->slug}}"></span>
-                            <a class="section_link" href="/section/{{$articles[2]->micrositeSection[0]?->slug}}"
+                            <span class="square {{$articles[2]->micrositeSection[1]?->slug}}"></span>
+                            <a class="section_link" href="/section/{{$articles[2]->micrositeSection[1]?->slug}}"
                                 title="Medio Ambiente - El Oriente, Ecuador">
-                                {{$articles[2]->micrositeSection[0]?->name}}
+                                {{$articles[2]->micrositeSection[1]?->name}}
                             </a>
                         </div>
                         <a target="_top"
@@ -90,10 +90,10 @@
                     <div class="ft-cards item-noticias item article">
                         <div class="mb-2">
                             <!-- CATEGORIA DE ARTICULO / SIMPLE -->
-                            <span class="square {{$articles[3]->micrositeSection[0]?->slug}}"></span>
-                            <a class="section_link" href="/section/{{$articles[3]->micrositeSection[0]?->slug}}"
+                            <span class="square {{$articles[3]->micrositeSection[1]?->slug}}"></span>
+                            <a class="section_link" href="/section/{{$articles[3]->micrositeSection[1]?->slug}}"
                                 title="Medio Ambiente - El Oriente, Ecuador">
-                                {{$articles[3]->micrositeSection[0]?->name}}
+                                {{$articles[3]->micrositeSection[1]?->name}}
                             </a>
                         </div>
                         <a target="_top"
@@ -160,10 +160,10 @@
             <!-- BLOQUE 1 -->
             <div class="col-md-8 ft-cards">
                 <div class="mb-3">
-                    <span class="square caso-chevron-ecuador"></span>
-                    <a class="section_link" href="https://www.eloriente.com/section/caso-chevron-ecuador"
-                        title="Caso Chevron Ecuador - El Oriente, Ecuador">
-                        Caso Chevron ecuador
+                    <span class="square {{$slots['slot1']->slug}}"></span>
+                    <a class="section_link" href="/section/{{$slots['slot1']->slug}}"
+                        title="{{$slots['slot1']->name}}">
+                        {{$slots['slot1']->name}}
                     </a>
                 </div>
                 <div class="row">
@@ -196,9 +196,9 @@
                 <div class="col-sm-12">
                     <div class="row">
                         <div class="mb-3">
-                            <span class="square podcasts"></span>
-                            <a class="section_link" href="/section/podcasts"
-                                title="Podcasts - El Oriente, Ecuador">Podcasts</a>
+                            <span class="square {{$slots['slot2']->slug}}"></span>
+                            <a class="section_link" href="/section/{{$slots['slot2']->slug}}"
+                                title="{{$slots['slot2']->name}}"> {{$slots['slot2']->name}}</a>
                         </div>
                     </div>
                     <div class="item_listing">
@@ -304,9 +304,9 @@
                 <!-- BLOQUE 3 -->
                 <div class="col-sm-6 col-md-4 item-noticias item article border-right mb-5 mb-0">
                     <div class="mb-3">
-                        <span class="square medio-ambiente"></span>
-                        <a class="section_link" href="/section/medio-ambiente"
-                            title="Medio Ambiente - El Oriente, Ecuador">Medio Ambiente</a>
+                        <span class="square {{$slots['slot3']->slug}}"></span>
+                        <a class="section_link" href="/section/{{$slots['slot3']->slug}}"
+                            title="{{$slots['slot3']->name}}">{{$slots['slot3']->name}}</a>
                     </div>
                     <a target="_top"
                         href="/articulo/{{urlencode($articlesSlot3[0]->title_seo)}}/{{$articlesSlot3[0]->article_id}}">
@@ -329,9 +329,9 @@
                 <!-- BLOQUE 4 -->
                 <div class="col-sm-6 col-md-4 item-noticias item article border-right mb-5 mb-0">
                     <div class="mb-3">
-                        <span class="square energia"></span>
-                        <a class="section_link" href="/section/energia"
-                            title="Energía - El Oriente, Ecuador">Energía</a>
+                        <span class="square {{$slots['slot4']->slug}}"></span>
+                        <a class="section_link" href="/section/{{$slots['slot4']->slug}}"
+                            title="{{$slots['slot4']->name}}">{{$slots['slot4']->name}}</a>
                     </div>
                     <a target="_top" href="/articulo/{{urlencode($articlesSlot4[0]->title_seo)}}/{{$articlesSlot4[0]->article_id}}">
                         <div class="ft-item">
@@ -354,9 +354,9 @@
                 <div class="col-md-4 item">
                     <div class="item_listing">
                         <div class="mb-3">
-                            <span class="square politica-y-economia"></span>
-                            <a class="section_link" href="/section/politica-y-economia"
-                                title="Politica y Economía - El Oriente, Ecuador">Politica y Economía</a>
+                            <span class="square {{$slots['slot5']->slug}}"></span>
+                            <a class="section_link" href="/section/{{$slots['slot5']->slug}}"
+                                title="{{$slots['slot5']->name}}">{{$slots['slot5']->name}}</a>
                         </div>
                         @foreach($articlesSlot5 as $article)
                         <div class="col-sm-12 item-noticias article">
@@ -390,10 +390,9 @@
         <!-- BLOQUE 6 -->
         <div class="col-sm-12 ft-cards border_bottomx mb-4">
             <div class="mb-3">
-                <span class="square seguridad-y-fronteras"></span>
-                <a class="section_link" href="/section/seguridad-y-fronteras"
-                    title="Seguridad y Fronteras - El Oriente, Ecuador">
-                    Seguridad y Fronteras</a>
+                <span class="square {{$slots['slot6']->slug}}"></span>
+                <a class="section_link" href="/section/{{$slots['slot6']->slug}}"
+                    title="{{$slots['slot6']->name}}">{{$slots['slot6']->name}}</a>
             </div>
             <div class="row">
                 @foreach($articlesSlot6 as $article)
@@ -577,10 +576,9 @@
                 <div class="col-lg-8 border-right">
                     <div class="row">
                         <div class="col-sm-12 mb-3">
-                            <span class="square noticias-nacionales"></span>
-                            <a class="section_link" href="/section/noticias-nacionales"
-                                title="Noticias Nacionales - El Oriente, Ecuador">
-                                Noticias Nacionales</a>
+                            <span class="square {{$slots['slot7']->slug}}"></span>
+                            <a class="section_link" href="/section/{{$slots['slot7']->slug}}"
+                                title="N{{$slots['slot7']->name}}">{{$slots['slot7']->name}}</a>
                         </div>
                         @foreach($articlesSlot7 as $article)
                         <div class="col-sm-6 col-lg-3 item-noticias item article">
@@ -605,10 +603,9 @@
                 <!-- BLOQUE 8 -->
                 <div class="col-lg-4">
                     <div class="mb-3">
-                        <span class="square pueblos-indigenas"></span>
-                        <a class="section_link" href="/section/pueblos-indigenas"
-                            title="Pueblos Indígenas - El Oriente, Ecuador">
-                            Pueblos Indígenas</a>
+                        <span class="square {{$slots['slot8']->slug}}"></span>
+                        <a class="section_link" href="/section/{{$slots['slot8']->slug}}"
+                            title="{{$slots['slot8']->name}}">{{$slots['slot8']->name}}</a>
                     </div>
                     <div class="row">
                         <div class="col-sm-12 item-noticias item article">
@@ -640,10 +637,9 @@
                 <!-- BLOQUE 9 -->
                 <div class="col-md-3 item-noticias item article border-right">
                     <div class="mb-3">
-                        <span class="square actualidad"></span>
-                        <a class="section_link" href="/section/actualidad"
-                            title="Actualidad - El Oriente, Ecuador">
-                            Actualidad</a>
+                        <span class="square {{$slots['slot9']->slug}}"></span>
+                        <a class="section_link" href="/section/{{$slots['slot9']->slug}}"
+                            title="{{$slots['slot9']->name}}">{{$slots['slot9']->name}}</a>
                     </div>
                     <a target="_top"
                         href="/articulo/{{urlencode($articlesSlot9[0]->title_seo)}}/{{$articlesSlot9[0]->article_id}}">
@@ -665,10 +661,9 @@
                 <!-- BLOQUE 10 -->
                 <div class="col-md-3 item-noticias item article border-right">
                     <div class="mb-3">
-                        <span class="square opinion"></span>
-                        <a class="section_link" href="/section/opinion"
-                            title="Opinion - El Oriente, Ecuador">
-                            Opinion</a>
+                        <span class="square {{$slots['slot10']->slug}}"></span>
+                        <a class="section_link" href="/section/{{$slots['slot10']->slug}}"
+                            title="{{$slots['slot10']->name}}">{{$slots['slot10']->name}}</a>
                     </div>
                     <a target="_top"
                         href="/articulo/{{urlencode($articlesSlot10[0]->title_seo)}}/{{$articlesSlot10[0]->article_id}}">
@@ -690,9 +685,9 @@
                 <!-- BLOQUE 11 -->
                 <div class="col-md-6">
                     <div class="mb-3">
-                        <span class="square cultura-y-turismo"></span>
-                        <a class="section_link" href="/section/cultura-y-turismo"
-                            title="Cultura y Turismo - El Oriente, Ecuador">Cultura y Turismo</a>
+                        <span class="square {{$slots['slot11']->slug}}"></span>
+                        <a class="section_link" href="/section/{{$slots['slot11']->slug}}"
+                            title="{{$slots['slot11']->name}}">{{$slots['slot11']->name}}</a>
                     </div>
                     <div class="row">
                         @foreach($articlesSlot11 as $article)
@@ -726,10 +721,10 @@
                 <!-- BLOQUE 12 -->
                 <div class="col-sm-4 item-noticias item article border-right">
                     <div class="mb-3">
-                        <span class="square salud"></span>
-                        <a class="section_link" href="/section/salud"
-                            title="Salud - El Oriente, Ecuador">
-                            Salud
+                        <span class="square {{$slots['slot12']->slug}}"></span>
+                        <a class="section_link" href="/section/{{$slots['slot12']->slug}}"
+                            title="{{$slots['slot12']->name}}">
+                            {{$slots['slot12']->name}}
                         </a>
                     </div>
                     <a target="_top"
@@ -754,9 +749,9 @@
                 <!-- BLOQUE 13 -->
                 <div class="col-sm-4 item-noticias item article" style="border-right:1px solid #d5d5d5">
                     <div class="mb-3">
-                        <span class="square internacional"></span>
-                        <a class="section_link" href="/section/internacional"
-                            title="Internacional - El Oriente, Ecuador">Internacional</a>
+                        <span class="square {{$slots['slot13']->slug}}"></span>
+                        <a class="section_link" href="/section/{{$slots['slot13']->slug}}"
+                            title="{{$slots['slot13']->name}}">{{$slots['slot13']->name}}</a>
                     </div>
                     <a target="_top"
                         href="/articulo/{{urlencode($articlesSlot13[0]->title_seo)}}/{{$articlesSlot13[0]->article_id}}">
@@ -780,10 +775,10 @@
                 <!-- BLOQUE 14 -->
                 <div class="col-sm-4 item-noticias item article">
                     <div class="mb-3">
-                        <span class="square ciencia-y-tecnologia"></span>
-                        <a class="section_link" href="/section/ciencia-y-tecnologia"
-                            title="Ciencia y Tecnología - El Oriente, Ecuador">
-                            Ciencia y Tecnología
+                        <span class="square {{$slots['slot14']->slug}}"></span>
+                        <a class="section_link" href="/section/{{$slots['slot14']->slug}}"
+                            title="{{$slots['slot14']->name}}">
+                            {{$slots['slot14']->name}}
                         </a>
                     </div>
                     <a target="_top"
@@ -816,9 +811,9 @@
                     <!-- BLOQUE 15 -->
                     <div class="col-sm-12 col_first_featured border-right">                  
                         <div class="mb-0">
-                            <span class="square cronicas"></span>
-                            <a class="section_link" href="/section/cronicas" title="Cronicas - El Oriente, Ecuador">
-                                Cronicas
+                            <span class="square {{$slots['slot15']->slug}}"></span>
+                            <a class="section_link" href="/section/{{$slots['slot15']->slug}}" title="{{$slots['slot15']->name}}">
+                                {{$slots['slot15']->name}}
                             </a>
                         </div>
                         <!-- PRIMER NOTICIA -->
@@ -856,9 +851,9 @@
                     <!-- BLOQUE 16 -->
                     <div class="col-sm-12 col_first_featured border-right">                  
                         <div class="mb-0">
-                            <span class="square informe-de-vias-en-ecuador"></span>
-                            <a class="section_link" href="/section/informe-de-vias-en-ecuador" title="Informe de vías en Ecuador - El Oriente, Ecuador">
-                                Informe de Vías en Ecuador
+                            <span class="{{$slots['slot16']->slug}}"></span>
+                            <a class="section_link" href="/section/{{$slots['slot16']->slug}}" title="{{$slots['slot16']->name}}">
+                                {{$slots['slot16']->name}}
                             </a>
                         </div>
                         <!-- PRIMER NOTICIA -->
@@ -895,9 +890,9 @@
                     <!-- BLOQUE 17 -->
                     <div class="col-sm-12 col_first_featured border-right">                  
                         <div class="mb-0">
-                            <span class="square animales-del-oriente-ecuatoriano"></span>
-                            <a class="section_link" href="/section/animales-del-oriente-ecuatoriano" title="Animales del Oriente Ecuatoriano - El Oriente, Ecuador">
-                                Animales del Oriente Ecuatoriano
+                            <span class="square {{$slots['slot17']->slug}}"></span>
+                            <a class="section_link" href="/section/{{$slots['slot17']->slug}}" title="{{$slots['slot17']->name}}">
+                                {{$slots['slot17']->name}}
                             </a>
                         </div>
                         <!-- PRIMER NOTICIA -->
@@ -934,9 +929,9 @@
                     <!-- BLOQUE 18 -->
                     <div class="col-sm-12 col_first_featured border-right">                  
                         <div class="mb-0">
-                            <span class="square elecciones-ecuador-2023"></span>
-                            <a class="section_link" href="/section/elecciones-ecuador-2023" title="Elecciones Ecuador 2023 - El Oriente, Ecuador">
-                                Elecciones Ecuador 2023
+                            <span class="square {{$slots['slot18']->slug}}"></span>
+                            <a class="section_link" href="/section/{{$slots['slot18']->slug}}" title="{{$slots['slot18']->name}}">
+                                {{$slots['slot18']->name}}
                             </a>
                         </div>
                         <!-- PRIMER NOTICIA -->
@@ -960,10 +955,10 @@
                         <!-- RESTO DE NOTICAS -->
                         @for($i = 1; $i < 4; $i++)
                         <div class="col-sm-12 item-noticias item">
-                            <a target="" href="/articulo/{{urlencode($articlesSlot15[$i]->title_seo)}}/{{$articlesSlot15[$i]->article_id}}">
+                            <a target="" href="/articulo/{{urlencode($articlesSlot18[$i]->title_seo)}}/{{$articlesSlot18[$i]->article_id}}">
                                 <div class="ft-item border-top pt-3">
-                                    <p class="date">{{date('d/m/Y', strtotime($articlesSlot15[$i]->date))}}</p>
-                                    <h4>{{$articlesSlot15[$i]->title_seo}}</h4>
+                                    <p class="date">{{date('d/m/Y', strtotime($articlesSlot18[$i]->date))}}</p>
+                                    <h4>{{$articlesSlot18[$i]->title_seo}}</h4>
                                 </div>
                             </a>
                         </div>
@@ -973,36 +968,36 @@
                     <!-- BLOQUE 19 -->
                     <div class="col-sm-12 col_first_featured border-right">                  
                         <div class="mb-0">
-                            <span class="square deportes"></span>
-                            <a class="section_link" href="/section/deportes" title="Deportes - El Oriente, Ecuador">
-                                Deportes
+                            <span class="square {{$slots['slot19']->slug}}"></span>
+                            <a class="section_link" href="/section/{{$slots['slot19']->slug}}" title="{{$slots['slot19']->name}}">
+                                {{$slots['slot19']->name}}
                             </a>
                         </div>
                         <!-- PRIMER NOTICIA -->
                         <div class="col-sm-12 item-noticias item">
-                            <a target="" href="/articulo/{{urlencode($articlesSlot15[0]->title_seo)}}/{{$articlesSlot15[0]->article_id}}">
+                            <a target="" href="/articulo/{{urlencode($articlesSlot19[0]->title_seo)}}/{{$articlesSlot19[0]->article_id}}">
                                 <div class="ft-item" style="min-height:auto">
                                     <div class="img_holder">
                                         <!-- Si articulo contiene video --> 
                                         <div class="icon_type_grid linea-music-play-button"><i class="fas fa-play"></i></div>
-                                        <img src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot15[0]->cover_image}}"
+                                        <img src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot19[0]->cover_image}}"
                                             alt="IMAGE CAPTION"
                                             width="540" height="303"
                                             title="IMAGE CAPTION"
                                             class="coverimage lazyload">
                                     </div>
-                                    <p class="date">{{date('d/m/Y', strtotime($articlesSlot15[0]->date))}}</p>
-                                    <h4>{{$articlesSlot15[0]->title_seo}}</h4>
+                                    <p class="date">{{date('d/m/Y', strtotime($articlesSlot19[0]->date))}}</p>
+                                    <h4>{{$articlesSlot19[0]->title_seo}}</h4>
                                 </div>
                             </a>
                         </div>
                         <!-- RESTO DE NOTICAS -->
                         @for($i = 1; $i < 4; $i++)
                         <div class="col-sm-12 item-noticias item">
-                            <a target="" href="/articulo/{{urlencode($articlesSlot15[$i]->title_seo)}}/{{$articlesSlot15[$i]->article_id}}">
+                            <a target="" href="/articulo/{{urlencode($articlesSlot19[$i]->title_seo)}}/{{$articlesSlot19[$i]->article_id}}">
                                 <div class="ft-item border-top pt-3">
-                                    <p class="date">{{date('d/m/Y', strtotime($articlesSlot15[$i]->date))}}</p>
-                                    <h4>{{$articlesSlot15[$i]->title_seo}}</h4>
+                                    <p class="date">{{date('d/m/Y', strtotime($articlesSlot19[$i]->date))}}</p>
+                                    <h4>{{$articlesSlot19[$i]->title_seo}}</h4>
                                 </div>
                             </a>
                         </div>
@@ -1012,36 +1007,114 @@
                     <!-- BLOQUE 20 -->
                     <div class="col-sm-12 col_first_featured border-right">                  
                         <div class="mb-0">
-                            <span class="square guillermo-lasso"></span>
-                            <a class="section_link" href="/section/guillermo-lasso" title="Guillermo Lasso - El Oriente, Ecuador">
-                                Guillermo Lasso
+                            <span class="square {{$slots['slot20']->slug}}"></span>
+                            <a class="section_link" href="/section/{{$slots['slot20']->slug}}" title="{{$slots['slot20']->name}}">
+                                {{$slots['slot20']->name}}
                             </a>
                         </div>
                         <!-- PRIMER NOTICIA -->
                         <div class="col-sm-12 item-noticias item">
-                            <a target="" href="/articulo/{{urlencode($articlesSlot15[0]->title_seo)}}/{{$articlesSlot15[0]->article_id}}">
+                            <a target="" href="/articulo/{{urlencode($articlesSlot20[0]->title_seo)}}/{{$articlesSlot20[0]->article_id}}">
                                 <div class="ft-item" style="min-height:auto">
                                     <div class="img_holder">
                                         <!-- Si articulo contiene video --> 
                                         <div class="icon_type_grid linea-music-play-button"><i class="fas fa-play"></i></div>
-                                        <img src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot15[0]->cover_image}}"
+                                        <img src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot20[0]->cover_image}}"
                                             alt="IMAGE CAPTION"
                                             width="540" height="303"
                                             title="IMAGE CAPTION"
                                             class="coverimage lazyload">
                                     </div>
-                                    <p class="date">{{date('d/m/Y', strtotime($articlesSlot15[0]->date))}}</p>
-                                    <h4>{{$articlesSlot15[0]->title_seo}}</h4>
+                                    <p class="date">{{date('d/m/Y', strtotime($articlesSlot20[0]->date))}}</p>
+                                    <h4>{{$articlesSlot20[0]->title_seo}}</h4>
                                 </div>
                             </a>
                         </div>
                         <!-- RESTO DE NOTICAS -->
                         @for($i = 1; $i < 4; $i++)
                         <div class="col-sm-12 item-noticias item">
-                            <a target="" href="/articulo/{{urlencode($articlesSlot15[$i]->title_seo)}}/{{$articlesSlot15[$i]->article_id}}">
+                            <a target="" href="/articulo/{{urlencode($articlesSlot20[$i]->title_seo)}}/{{$articlesSlot20[$i]->article_id}}">
                                 <div class="ft-item border-top pt-3">
-                                    <p class="date">{{date('d/m/Y', strtotime($articlesSlot15[$i]->date))}}</p>
-                                    <h4>{{$articlesSlot15[$i]->title_seo}}</h4>
+                                    <p class="date">{{date('d/m/Y', strtotime($articlesSlot20[$i]->date))}}</p>
+                                    <h4>{{$articlesSlot20[$i]->title_seo}}</h4>
+                                </div>
+                            </a>
+                        </div>
+                        @endfor
+                    </div>
+
+                     <!-- BLOQUE 21 -->
+                     <div class="col-sm-12 col_first_featured border-right">                  
+                        <div class="mb-0">
+                            <span class="square {{$slots['slot21']->slug}}"></span>
+                            <a class="section_link" href="/section/{{$slots['slot21']->slug}}" title="{{$slots['slot21']->name}}">
+                                {{$slots['slot21']->name}}
+                            </a>
+                        </div>
+                        <!-- PRIMER NOTICIA -->
+                        <div class="col-sm-12 item-noticias item">
+                            <a target="" href="/articulo/{{urlencode($articlesSlot21[0]->title_seo)}}/{{$articlesSlot21[0]->article_id}}">
+                                <div class="ft-item" style="min-height:auto">
+                                    <div class="img_holder">
+                                        <!-- Si articulo contiene video --> 
+                                        <div class="icon_type_grid linea-music-play-button"><i class="fas fa-play"></i></div>
+                                        <img src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot21[0]->cover_image}}"
+                                            alt="IMAGE CAPTION"
+                                            width="540" height="303"
+                                            title="IMAGE CAPTION"
+                                            class="coverimage lazyload">
+                                    </div>
+                                    <p class="date">{{date('d/m/Y', strtotime($articlesSlot21[0]->date))}}</p>
+                                    <h4>{{$articlesSlot21[0]->title_seo}}</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- RESTO DE NOTICAS -->
+                        @for($i = 1; $i < 4; $i++)
+                        <div class="col-sm-12 item-noticias item">
+                            <a target="" href="/articulo/{{urlencode($articlesSlot21[$i]->title_seo)}}/{{$articlesSlot21[$i]->article_id}}">
+                                <div class="ft-item border-top pt-3">
+                                    <p class="date">{{date('d/m/Y', strtotime($articlesSlot21[$i]->date))}}</p>
+                                    <h4>{{$articlesSlot21[$i]->title_seo}}</h4>
+                                </div>
+                            </a>
+                        </div>
+                        @endfor
+                    </div>
+
+                     <!-- BLOQUE 22 -->
+                     <div class="col-sm-12 col_first_featured border-right">                  
+                        <div class="mb-0">
+                            <span class="square {{$slots['slot22']->slug}}"></span>
+                            <a class="section_link" href="/section/{{$slots['slot22']->slug}}" title="{{$slots['slot22']->name}}">
+                                {{$slots['slot22']->name}}
+                            </a>
+                        </div>
+                        <!-- PRIMER NOTICIA -->
+                        <div class="col-sm-12 item-noticias item">
+                            <a target="" href="/articulo/{{urlencode($articlesSlot22[0]->title_seo)}}/{{$articlesSlot22[0]->article_id}}">
+                                <div class="ft-item" style="min-height:auto">
+                                    <div class="img_holder">
+                                        <!-- Si articulo contiene video --> 
+                                        <div class="icon_type_grid linea-music-play-button"><i class="fas fa-play"></i></div>
+                                        <img src="https://www.juiciocrudo.com/pics/nocrop/540x303/{{$articlesSlot22[0]->cover_image}}"
+                                            alt="IMAGE CAPTION"
+                                            width="540" height="303"
+                                            title="IMAGE CAPTION"
+                                            class="coverimage lazyload">
+                                    </div>
+                                    <p class="date">{{date('d/m/Y', strtotime($articlesSlot22[0]->date))}}</p>
+                                    <h4>{{$articlesSlot22[0]->title_seo}}</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- RESTO DE NOTICAS -->
+                        @for($i = 1; $i < 4; $i++)
+                        <div class="col-sm-12 item-noticias item">
+                            <a target="" href="/articulo/{{urlencode($articlesSlot22[$i]->title_seo)}}/{{$articlesSlot22[$i]->article_id}}">
+                                <div class="ft-item border-top pt-3">
+                                    <p class="date">{{date('d/m/Y', strtotime($articlesSlot22[$i]->date))}}</p>
+                                    <h4>{{$articlesSlot22[$i]->title_seo}}</h4>
                                 </div>
                             </a>
                         </div>

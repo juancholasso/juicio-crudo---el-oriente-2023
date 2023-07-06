@@ -4,7 +4,6 @@
 <div class="section container">
     <div class="row">
         <div class="col-12">
-
             <div class="row d-flex mb-3" style="align-items:center">
                 <div class="col-sm-12 col-lg-auto p-3 border-right">
                     <h1 style="font-size: 1.6em; font-family: 'Roboto Slab', serif; font-weight: 400; line-height: 1.4em;">
@@ -19,8 +18,19 @@
                     </h2>
                 </div>
             </div>
-
         </div>
+
+        <div class="row p-4">
+            <div style="display:table; margin:auto; width:100%; max-width:240px">
+                <form id="multimedia_f" action="/section/multimedia?type=videos" method="GET">
+                  <select id="s_type" onchange="$('#multimedia_f').submit();" name="type" class="form-control">
+                    <option selected="selected" value="">Todos</option>
+                    <option value="videos">Videos</option>
+                    <option value="imagenes">Imagénes</option>
+                  </select>
+                </form>
+            </div>
+          </div>
 
         <div class="ft-cards">
             <div class="col-12">

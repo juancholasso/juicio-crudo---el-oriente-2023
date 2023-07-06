@@ -20,8 +20,17 @@ class MicrositeSectionController extends Controller
         $section = MicrositeSection::where('slug', $title)->first();
         $articles =  DB::table('microsite_section_article')
         ->leftJoin('article', 'microsite_section_article.article_id', '=', 'article.id')
-        ->where('microsite_section_article.microsite_section_id', '=', $section->id)
-        ->orderBy('date', 'desc')
+        ->where('microsite_section_article.microsite_section_id', '=', $section->id);
+
+        if($request->query('type') == "videos"){
+            $articles = $articles->where('article.video_url', '!=', "")->whereNotNull('article.video_code');
+        }
+
+        if($request->query('type') == "imagenes"){
+            $articles = $articles->where('article.type', '=', "picture");
+        }
+
+        $articles = $articles->orderBy('date', 'desc')
         ->limit(11)
         ->get();
 
