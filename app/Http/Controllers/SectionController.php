@@ -18,7 +18,6 @@ class SectionController extends Controller
 
     public function index($title, Request $request){
         $section = MicrositeSection::where('slug', $title)->first();
-        dd($section);
         $articles =  DB::table('microsite_section_article')
         ->leftJoin('article', 'microsite_section_article.article_id', '=', 'article.id')
         ->where('microsite_section_article.microsite_section_id', '=', $section->id);
